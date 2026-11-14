@@ -1,4 +1,3 @@
-"""Download the pinned public mirror shards without committing raw data."""
 import argparse
 from pathlib import Path
 import urllib.request

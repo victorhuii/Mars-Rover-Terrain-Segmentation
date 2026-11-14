@@ -1,4 +1,3 @@
-"""Synchronized train augmentation; validation is deterministic."""
 from PIL import Image, ImageEnhance
 
 

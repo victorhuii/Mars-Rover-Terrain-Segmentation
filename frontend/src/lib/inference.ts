@@ -158,7 +158,6 @@ export async function analyze(
   const { ort, session } = await getSession(progress);
   const loadMs = performance.now() - loadStart;
   progress("Analyzing terrain…");
-  // Let the loading state render before CPU work begins.
   await new Promise((resolve) => setTimeout(resolve, 0));
   const { tensor, region } = prepareImage(source);
   const start = performance.now();

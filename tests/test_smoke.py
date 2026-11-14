@@ -1,5 +1,3 @@
-"""Minimal repository setup smoke test; ML tests follow with the pipeline."""
-
 import pathlib
 import sys
 import unittest
@@ -11,4 +9,4 @@ class PackageSmokeTest(unittest.TestCase):
     def test_package_imports(self):
         import marsterrain
 
-        self.assertIsNotNone(marsterrain.__doc__)
+        self.assertEqual(pathlib.Path(marsterrain.__file__).name, "__init__.py")

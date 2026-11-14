@@ -1,4 +1,3 @@
-"""Render local prepared examples for visual inspection; no expert labels."""
 import argparse
 import json
 from pathlib import Path

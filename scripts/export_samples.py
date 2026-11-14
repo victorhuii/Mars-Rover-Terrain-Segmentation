@@ -1,4 +1,3 @@
-"""Export four attributed, audited train images without labels for the demo."""
 import gzip
 import hashlib
 import json

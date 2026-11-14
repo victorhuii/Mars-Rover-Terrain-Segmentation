@@ -1,9 +1,3 @@
-"""One-shot expert evaluation after a checkpoint and protocol are frozen.
-
-This command refuses to read expert annotation columns until all frozen hashes
-and source image identities pass. Its exclusive result file prevents accidental
-re-evaluation with another model. Only use trusted local checkpoints.
-"""
 import argparse
 import gzip
 import hashlib
@@ -54,7 +48,7 @@ def main():
     parquet = pq.ParquetFile(shard)
     if len(expected) != EXPECTED_EXPERT_COUNT or parquet.metadata.num_rows != len(expected):
         raise ValueError('Unexpected expert image count')
-    # Verify every image identity without opening the expert annotation columns.
+
     index = 0
     for batch in parquet.iter_batches(batch_size=8, columns=['image']):
         for item in batch.to_pylist():
@@ -67,8 +61,8 @@ def main():
     model = make_model(config.get('architecture', 'unet'), channels=config['channels'], pretrained=False).to(device)
     model.load_state_dict(checkpoint['model']); model.eval()
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    # Exclusive reservation remains if evaluation fails: investigation is required
-    # before any rerun so that incomplete test access is not silently forgotten.
+
+
     descriptor = os.open(args.output, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644)
     with os.fdopen(descriptor, 'w') as output:
         output.write(json.dumps({'status': 'started', 'freeze_sha256': sha256(args.freeze)}) + '\n')

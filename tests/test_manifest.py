@@ -20,7 +20,7 @@ class ManifestTest(unittest.TestCase):
     def test_disjointness_and_near_duplicate_detection(self):
         rows = [row('a', 'train', 'train', 'a', 0), row('b', 'train', 'val', 'b', 0xaaaaaaaaaaaaaaaa),
                 row('c', 'test_min3', 'test_min3', 'c', 0xffffffffffffffff)]
-        # Rows from a common shard must have distinct row numbers.
+
         rows[1]['row'] = 1
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / 'manifest.gz'

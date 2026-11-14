@@ -1,4 +1,3 @@
-"""Write a real validation tensor and trusted PyTorch logits for browser parity."""
 import argparse
 import json
 from pathlib import Path

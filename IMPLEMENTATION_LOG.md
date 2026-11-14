@@ -89,3 +89,10 @@
 - Replaced the promotional hero with “Mars Rover Terrain Segmentation” and a direct description. Simplified navigation, image selection, result labels, research copy and footer; removed decorative mission labels and a redundant empty state. Kept the privacy, model limitations, attribution and evaluation details needed to interpret results.
 - Applied the principles in Nielsen Norman Group's usability heuristics (clear language, visible status and focus on relevant content): https://www.nngroup.com/articles/ten-usability-heuristics/ and GOV.UK's heading guidance: https://design-system.service.gov.uk/styles/headings/.
 - `npm run typecheck`, `npm run lint`, six frontend unit tests, production build and both Chrome E2E tests passed; E2E exercises the real model, input validation, controls, mobile and accessibility. Refreshed and visually inspected desktop and mobile screenshots. No training or expert evaluation was repeated.
+
+## 2026-11-14 — code readability cleanup
+
+- Removed explanatory comments and Python docstrings from project-owned source, scripts and tests. Retained the functional Vite type reference, documentation, attribution and model artifacts.
+- Used clearer resize helper, channel and output-dimension names. Replaced the package smoke test's docstring assertion with an import-path assertion, and kept screenshot server retry handling explicit without an empty catch block.
+- Verification: 27 Python tests, six frontend unit tests, TypeScript, ESLint, production build and both Chrome E2E tests passed. Compared Python syntax trees against the preceding commit: 30 changed Python files retain identical executable syntax after docstring removal; the smoke test assertion is the intentional exception. Browser tests required permission to bind the preview server port after the sandbox denied it. No training or expert evaluation was repeated.
+- Public deployment remains pending Cloudflare account connection. Next step: connect the repository using the documented Pages settings and verify the supplied public URL. The user's VS Code settings were excluded from this change.

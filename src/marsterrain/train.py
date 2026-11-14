@@ -1,4 +1,3 @@
-"""Seeded, resource-bounded U-Net training with validation-only selection."""
 from __future__ import annotations
 
 import argparse

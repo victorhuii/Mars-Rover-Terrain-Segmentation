@@ -1,4 +1,3 @@
-"""Evaluate a local trusted checkpoint on the clean validation split only."""
 import argparse
 import hashlib
 import json
@@ -31,7 +30,7 @@ def main():
     args = parser.parse_args()
     if args.batch_size <= 0 or args.limit < 0: parser.error('Invalid batch size or limit')
     if args.device == 'mps' and not torch.backends.mps.is_available(): raise RuntimeError('MPS is unavailable')
-    # Checkpoints must be produced locally by this project and not supplied by untrusted users.
+
     checkpoint = torch.load(args.checkpoint, map_location='cpu', weights_only=False)
     if checkpoint['metadata']['overfit_validation_is_training']:
         raise ValueError('Overfit diagnostics cannot be presented as validation')

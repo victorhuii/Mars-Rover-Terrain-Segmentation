@@ -1,4 +1,3 @@
-"""Integrity and real-inference smoke test for the frozen deployment artifact."""
 import hashlib
 import json
 from pathlib import Path

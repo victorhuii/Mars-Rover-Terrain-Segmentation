@@ -35,7 +35,6 @@ test("sample runs the trained model, controls change the mask and overlay downlo
   const before = await mask.evaluate((canvas: HTMLCanvasElement) =>
     canvas.toDataURL(),
   );
-  // Frozen PyTorch prediction on the same Pillow-preprocessed, non-expert image.
   const reference = await readFile(resolve("e2e/fixtures/plain-reference.bin"));
   const browserLabels = await mask.evaluate((canvas: HTMLCanvasElement) => {
     const context = canvas.getContext("2d")!;

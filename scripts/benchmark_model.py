@@ -1,4 +1,3 @@
-"""Measure single-image eager-PyTorch inference on one clean validation image."""
 import argparse
 import json
 from pathlib import Path

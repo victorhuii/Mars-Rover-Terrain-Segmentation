@@ -10,7 +10,7 @@ let browser
 try {
   let ready = false
   for (let i = 0; i < 40; i++) {
-    try { if ((await fetch('http://127.0.0.1:4174/')).ok) { ready = true; break } } catch { /* wait for server */ }
+    try { if ((await fetch('http://127.0.0.1:4174/')).ok) { ready = true; break } } catch { await delay(250); continue }
     await delay(250)
   }
   if (!ready) throw new Error('Preview server did not start')

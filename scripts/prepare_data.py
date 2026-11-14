@@ -1,4 +1,3 @@
-"""Prepare 256-pixel train/validation pairs using an image-only split manifest."""
 import argparse
 import collections
 import gzip

@@ -1,4 +1,3 @@
-"""Exercise a real training record and ONNX CPU; output is not a trained model."""
 import gzip
 import io
 import json

@@ -1,4 +1,3 @@
-"""Freeze a scratch-trained checkpoint and validation protocol before expert labels."""
 import argparse
 import gzip
 import hashlib

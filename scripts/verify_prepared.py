@@ -1,4 +1,3 @@
-"""Validate prepared manifest integrity, source splits, files and class totals."""
 import collections
 import gzip
 import hashlib

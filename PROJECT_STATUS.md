@@ -45,3 +45,10 @@ GitHub CI passed for the expert-result commit: https://github.com/victorhuii/Mar
 The real trained model runs in the React/TypeScript app on attributed examples and uploaded images. Local checks: 27 Python tests, six frontend unit tests and two production Chrome E2E tests passed, including accessibility, mobile/EXIF, filters, comparison, download and PyTorch-reference mask parity. `npm audit` reported zero vulnerabilities. Five warm browser inference calls had a 43 ms median in local headless Chrome, excluding load and preprocessing. Screenshots are in `docs/assets/`; no public deployment has been verified.
 
 The interface copy and layout were simplified after a usability-guidance review: the title is “Mars Rover Terrain Segmentation,” controls use direct labels, and redundant decorative text was removed. Local frontend checks and both Chrome E2E tests passed; public deployment is still pending Cloudflare account connection.
+
+## 2026-11-14 — code readability cleanup
+
+- Removed explanatory comments and Python docstrings from project-owned source, scripts and tests. Retained the functional Vite type reference, documentation, attribution and model artifacts.
+- Used clearer resize helper, channel and output-dimension names. Replaced the package smoke test's docstring assertion with an import-path assertion, and kept screenshot server retry handling explicit without an empty catch block.
+- Verification: 27 Python tests, six frontend unit tests, TypeScript, ESLint, production build and both Chrome E2E tests passed. Compared Python syntax trees against the preceding commit: 30 changed Python files retain identical executable syntax after docstring removal; the smoke test assertion is the intentional exception. Browser tests required permission to bind the preview server port after the sandbox denied it. No training or expert evaluation was repeated.
+- Public deployment remains pending Cloudflare account connection. Next step: connect the repository using the documented Pages settings and verify the supplied public URL. The user's VS Code settings were excluded from this change.

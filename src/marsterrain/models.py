@@ -1,4 +1,3 @@
-"""Compact U-Net segmentation models."""
 import torch
 from torch import nn
 from torch.nn import functional as F
@@ -40,7 +39,6 @@ class UNet(nn.Module):
 
 
 class MobileNetUNet(nn.Module):
-    """ImageNet-pretrained MobileNetV3-small with a compact skip decoder."""
     def __init__(self, pretrained=False, classes=4):
         super().__init__()
         from torchvision.models import MobileNet_V3_Small_Weights, mobilenet_v3_small

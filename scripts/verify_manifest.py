@@ -1,4 +1,3 @@
-"""Independently check split identities, scene keys, hashes and perceptual links."""
 import argparse
 import collections
 import gzip

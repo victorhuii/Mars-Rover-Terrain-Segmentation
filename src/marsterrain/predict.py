@@ -1,4 +1,3 @@
-"""Local ONNX inference using the same letterboxing and palette as the web app."""
 from dataclasses import dataclass
 from functools import lru_cache
 import json

@@ -1,4 +1,3 @@
-"""Segmentation metrics; classes absent in both truth and prediction are omitted."""
 import numpy as np
 
 

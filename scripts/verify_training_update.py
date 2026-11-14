@@ -1,4 +1,3 @@
-"""Verify a continued run changed weights from its recorded initialization."""
 import argparse
 import json
 from pathlib import Path

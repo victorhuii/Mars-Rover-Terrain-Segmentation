@@ -1,4 +1,3 @@
-"""Lossless AI4Mars mask decoding and exclusion masks."""
 from __future__ import annotations
 
 import io

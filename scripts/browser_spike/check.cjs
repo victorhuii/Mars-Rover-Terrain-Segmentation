@@ -1,5 +1,3 @@
-// Start the server and browser in one process, with an OS-assigned port and
-// bounded timeouts. This is a feasibility check, not a trained-model test.
 const { chromium } = require('playwright');
 const http = require('node:http');
 const fs = require('node:fs');

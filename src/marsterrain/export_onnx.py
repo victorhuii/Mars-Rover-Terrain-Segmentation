@@ -1,4 +1,3 @@
-"""Export a trusted trained checkpoint and validate CPU ONNX logits on validation images."""
 import argparse
 import json
 from pathlib import Path

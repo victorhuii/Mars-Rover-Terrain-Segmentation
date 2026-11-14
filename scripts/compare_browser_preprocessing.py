@@ -1,4 +1,3 @@
-"""Compare browser image decoding/resizing and prediction with the Python validation path."""
 import argparse
 import hashlib
 import json

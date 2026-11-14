@@ -1,10 +1,3 @@
-"""Conservative image identity grouping for leakage-safe AI4Mars splits.
-
-No expert annotations are needed to use this module. Site/drive grouping uses
-an identifier in the product name as a conservative proxy, not a guarantee of
-geographic independence. Similarity hashing is a screening heuristic, not a
-proof that all related scenes have been identified.
-"""
 from __future__ import annotations
 
 import hashlib
@@ -22,7 +15,6 @@ def scene_key(name: str) -> str:
 
 
 def dhash(image) -> int:
-    """64-bit horizontal difference hash of the decoded image."""
     from PIL import Image
     pixels = list(image.convert('L').resize((9, 8), Image.Resampling.LANCZOS).getdata())
     result = 0
@@ -55,12 +47,6 @@ class UnionFind:
 
 
 def group_records(records, seed=42, near_distance=2):
-    """Link scene groups, exact IDs/hashes and near images, then split groups.
-
-    Four 16-bit hash buckets find all pairs with Hamming distance <= 2.
-    Any component containing an expert image is entirely held out from training.
-    Splits depend only on seed and component members, not record order.
-    """
     if not 0 <= near_distance <= 3:
         raise ValueError('near_distance must be between 0 and 3')
     uf = UnionFind(len(records))

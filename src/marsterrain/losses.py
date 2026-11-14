@@ -1,4 +1,3 @@
-"""Class-aware cross entropy and soft Dice with ignored pixels."""
 import torch
 import torch.nn.functional as F
 

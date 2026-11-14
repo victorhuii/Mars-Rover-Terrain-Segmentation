@@ -1,4 +1,3 @@
-"""Plot class proportions of resized, valid training/validation pixels."""
 import json
 from pathlib import Path
 import matplotlib.pyplot as plt

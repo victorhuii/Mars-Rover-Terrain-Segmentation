@@ -1,4 +1,3 @@
-"""Audit all pinned image columns, without reading any expert label columns."""
 import argparse
 import collections
 import gzip
@@ -48,7 +47,7 @@ def audit(raw, output):
             print(f'{name}: {len(shard_records)} cached images audited', flush=True)
             continue
         shard_records = []
-        # Never request an expert label, mask, or derived label property.
+
         columns = ['image', 'has_labels'] if split == 'train' else ['image']
         offset = 0
         for batch in parquet.iter_batches(batch_size=16, columns=columns):

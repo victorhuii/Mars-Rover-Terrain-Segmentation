@@ -1,4 +1,3 @@
-"""Render local validation examples from a trusted U-Net checkpoint."""
 import argparse
 import json
 from pathlib import Path

@@ -1,5 +1,4 @@
-/** Antialiased separable bilinear resize, matching Pillow's pixel-center geometry. */
-function weights(input: number, output: number) {
+function resizeWeights(input: number, output: number) {
   const scale = input / output;
   const support = Math.max(1, scale);
   return Array.from({ length: output }, (_, index) => {
@@ -26,37 +25,40 @@ export function resizeRgb(
   rgba: Uint8ClampedArray,
   width: number,
   height: number,
-  outWidth: number,
-  outHeight: number,
+  outputWidth: number,
+  outputHeight: number,
 ) {
   if (
     rgba.length !== width * height * 4 ||
-    Math.min(width, height, outWidth, outHeight) <= 0
+    Math.min(width, height, outputWidth, outputHeight) <= 0
   )
     throw new Error("Invalid image dimensions.");
-  const horizontal = weights(width, outWidth);
-  const vertical = weights(height, outHeight);
-  const intermediate = new Uint8Array(outWidth * height * 3);
+  const horizontal = resizeWeights(width, outputWidth);
+  const vertical = resizeWeights(height, outputHeight);
+  const intermediate = new Uint8Array(outputWidth * height * 3);
   for (let y = 0; y < height; y++)
-    for (let x = 0; x < outWidth; x++) {
-      const base = (y * outWidth + x) * 3;
-      for (let c = 0; c < 3; c++) {
+    for (let x = 0; x < outputWidth; x++) {
+      const base = (y * outputWidth + x) * 3;
+      for (let channel = 0; channel < 3; channel++) {
         let value = 0;
-        for (const part of horizontal[x])
-          value += rgba[(y * width + part.index) * 4 + c] * part.weight;
-        intermediate[base + c] = Math.min(255, Math.floor(value + 0.5));
+        for (const contribution of horizontal[x])
+          value +=
+            rgba[(y * width + contribution.index) * 4 + channel] *
+            contribution.weight;
+        intermediate[base + channel] = Math.min(255, Math.floor(value + 0.5));
       }
     }
-  const output = new Uint8Array(outWidth * outHeight * 3);
-  for (let y = 0; y < outHeight; y++)
-    for (let x = 0; x < outWidth; x++) {
-      const base = (y * outWidth + x) * 3;
-      for (let c = 0; c < 3; c++) {
+  const output = new Uint8Array(outputWidth * outputHeight * 3);
+  for (let y = 0; y < outputHeight; y++)
+    for (let x = 0; x < outputWidth; x++) {
+      const base = (y * outputWidth + x) * 3;
+      for (let channel = 0; channel < 3; channel++) {
         let value = 0;
-        for (const part of vertical[y])
+        for (const contribution of vertical[y])
           value +=
-            intermediate[(part.index * outWidth + x) * 3 + c] * part.weight;
-        output[base + c] = Math.min(255, Math.floor(value + 0.5));
+            intermediate[(contribution.index * outputWidth + x) * 3 + channel] *
+            contribution.weight;
+        output[base + channel] = Math.min(255, Math.floor(value + 0.5));
       }
     }
   return output;

@@ -1359,7 +1359,6 @@ footer {
   }
 }
 
-/* Keep the task and results above decorative content. */
 .hero {
   grid-template-columns: minmax(0, 1fr) 38%;
   align-items: center;
