@@ -1,0 +1,17 @@
+{
+  "image_id": "NLB_443478972EDR_F0250886NCAM00258M1.JPG",
+  "runtime": "ONNX Runtime Web WASM, one thread",
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+  "warmup": 1,
+  "iterations": 5,
+  "measured_ms": [
+    43,
+    43,
+    42,
+    43,
+    41
+  ],
+  "median_ms": 43,
+  "initial_load_display": "MODEL INFERENCE ONLY · INITIAL LOAD 327 MS",
+  "scope": "session.run only; excludes image decode, resizing, model loading and display; local production preview"
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "plain",
+    "title": "Open plain",
+    "file": "/samples/plain.jpg",
+    "sourceId": "NLB_443478972EDR_F0250886NCAM00258M1.JPG",
+    "sha256": "e8927c39561d7766f44d085d57f52241f93b371af781ff970377dd0542e07445",
+    "credit": "NASA/JPL-Caltech; AI4Mars, Swan et al."
+  },
+  {
+    "id": "bedrock",
+    "title": "Fractured ground",
+    "file": "/samples/bedrock.jpg",
+    "sourceId": "NLB_533948978EDR_F0592830NCAM00323M1.JPG",
+    "sha256": "5f5488996feb55332e518cccf847432cdc65e644b843b215ac708c304f12756a",
+    "credit": "NASA/JPL-Caltech; AI4Mars, Swan et al."
+  },
+  {
+    "id": "dunes",
+    "title": "Wind-shaped sand",
+    "file": "/samples/dunes.jpg",
+    "sourceId": "NLB_460612405EDR_F0400540NCAM00259M1.JPG",
+    "sha256": "d22ec75cb612352fcf7d879fe0117cfd664e7c1085bec1280aa471d91ce99276",
+    "credit": "NASA/JPL-Caltech; AI4Mars, Swan et al."
+  },
+  {
+    "id": "outcrop",
+    "title": "Rocky outcrop",
+    "file": "/samples/outcrop.jpg",
+    "sourceId": "NLB_490980444EDR_F0482518NCAM07753M1.JPG",
+    "sha256": "2d834853a2121bb3106f8700ef76b1cbd9de8e3a0b3e695236c09ab2ddcc45e7",
+    "credit": "NASA/JPL-Caltech; AI4Mars, Swan et al."
+  }
+]

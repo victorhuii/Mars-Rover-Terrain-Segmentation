@@ -26,3 +26,5 @@ scripts/browser_spike/model.onnx
 build/
 scripts/browser_spike/input.bin
 scripts/browser_spike/expected.bin
+frontend/public/ort/
+frontend/*.tsbuildinfo

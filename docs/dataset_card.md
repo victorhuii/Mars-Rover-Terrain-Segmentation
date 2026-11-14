@@ -25,3 +25,7 @@ python3 -m unittest discover -s tests -v
 ```
 
 The audit saves image-only per-shard checkpoints under ignored `data/cache` and a compressed identity/split manifest in `data/manifests`. The summary includes SHA-256 checksums for every downloaded shard. The preparation output and training examples stay in ignored `data/processed`; they should not be redistributed until source and attribution requirements are reviewed. Rerunning preparation targets the same filenames. If source data, preparation parameters or code change, choose a fresh output directory to avoid stale artifacts.
+
+## Redistributed demonstration images
+
+The four small examples in `frontend/public/samples` are source images from audited training records, not the expert test. Their original product identifiers, SHA-256 hashes, credits and source paths are in `frontend/public/samples/samples.json`; `scripts/export_samples.py` verifies and recreates them. Images: NASA/JPL-Caltech; AI4Mars, Swan et al. The official Zenodo record reports CC BY 4.0. The processed website screenshots in `docs/assets/terrain-*.png` depict those examples and should retain this attribution.

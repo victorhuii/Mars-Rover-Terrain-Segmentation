@@ -20,11 +20,11 @@ Updated: 2026-11-14
 
 ## Remaining
 
-The baseline has been trained and evaluated on validation; production inference, interface, expanded CI verification, deployment and portfolio deliverables remain. No public application exists yet.
+Expanded GitHub CI, public deployment and live incognito/mobile verification remain. README, model/data cards, local screenshots and portfolio notes are prepared, but the live link and final report cannot be completed until deployment is verified. No public application exists yet.
 
 ## Exact next step
 
-Commit and push the verified frozen-model ONNX artifact and check GitHub CI. Then build the React/TypeScript image-upload interface, actual browser preprocessing and inference, sample gallery, overlays and tests. Do not alter model selection after seeing the expert test results.
+Commit and push the locally verified application, then inspect its GitHub Actions run. Cloudflare CLI is not authenticated. At the deployment checkpoint, connect the existing GitHub repository to Cloudflare Pages on a free plan (root `frontend`, build `npm run build`, output `dist`, production branch `main`) or authenticate the CLI, then verify the public URL and real uploads in a fresh browser. Do not retrain or reevaluate the expert test based on its results.
 
 ## Baseline result
 
@@ -39,3 +39,7 @@ Scratch MobileNetV3-small continuation v3, SHA-256 `d8c8ceb7dc2a535aeeb0b6246fc2
 ## Web model artifact
 
 GitHub CI passed for the expert-result commit: https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43603057395. The frozen model is exported at `frontend/public/models/marsterrain-v1-be2513a68f69.onnx`, SHA-256 `be2513a68f691802b01a6b88f4328295fba6aa88addacfdc343383fb1a3ec483`, 4,385,772 bytes. CPU ONNX/PyTorch and Chrome WASM/PyTorch logits passed on real prepared validation tensors. Browser image preprocessing and public deployment remain unverified.
+
+## Local application verification
+
+The real trained model runs in the React/TypeScript app on attributed examples and uploaded images. Local checks: 27 Python tests, six frontend unit tests and two production Chrome E2E tests passed, including accessibility, mobile/EXIF, filters, comparison, download and PyTorch-reference mask parity. `npm audit` reported zero vulnerabilities. Five warm browser inference calls had a 43 ms median in local headless Chrome, excluding load and preprocessing. Screenshots are in `docs/assets/`; no public deployment has been verified.
