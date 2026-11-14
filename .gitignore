@@ -21,3 +21,6 @@ checkpoints/
 *.pt
 *.pth
 *.ckpt
+scripts/browser_spike/model.onnx
+*.egg-info/
+build/
