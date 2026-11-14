@@ -20,11 +20,11 @@ Updated: 2026-11-14
 
 ## Remaining
 
-Expanded GitHub CI, public deployment and live incognito/mobile verification remain. README, model/data cards, local screenshots and portfolio notes are prepared, but the live link and final report cannot be completed until deployment is verified. No public application exists yet.
+Public deployment and live incognito/mobile verification remain. README, model/data cards, local screenshots and portfolio notes are prepared, but the live link and final report cannot be completed until deployment is verified. No public application exists yet.
 
 ## Exact next step
 
-The locally verified application was pushed as `194cd9e`; its [GitHub Actions run](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43644313226) failed while installing the browser; Python and frontend lint/typecheck/unit/build passed. A fix using runner-provided Chrome is ready to push and verify. Cloudflare CLI is not authenticated. At the deployment checkpoint, connect the existing GitHub repository to Cloudflare Pages on a free plan (root `frontend`, build `npm run build`, output `dist`, production branch `main`) or authenticate the CLI, then verify the public URL and real uploads in a fresh browser. Do not retrain or reevaluate the expert test based on its results.
+The application was pushed as `194cd9e` and the browser CI fix as `8b3a1cf`; both Python and frontend jobs passed in [GitHub Actions](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43644643743). Cloudflare CLI is not authenticated. At the deployment checkpoint, connect the existing GitHub repository to Cloudflare Pages on a free plan (root `frontend`, build `npm run build`, output `dist`, production branch `main`) or authenticate the CLI, then verify the public URL and real uploads in a fresh browser. Do not retrain or reevaluate the expert test based on its results.
 
 ## Baseline result
 
