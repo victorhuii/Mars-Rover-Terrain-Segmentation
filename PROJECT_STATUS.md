@@ -24,7 +24,7 @@ Expanded GitHub CI, public deployment and live incognito/mobile verification rem
 
 ## Exact next step
 
-Commit and push the locally verified application, then inspect its GitHub Actions run. Cloudflare CLI is not authenticated. At the deployment checkpoint, connect the existing GitHub repository to Cloudflare Pages on a free plan (root `frontend`, build `npm run build`, output `dist`, production branch `main`) or authenticate the CLI, then verify the public URL and real uploads in a fresh browser. Do not retrain or reevaluate the expert test based on its results.
+The locally verified application was pushed as `194cd9e`; its [GitHub Actions run](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43644313226) failed while installing the browser; Python and frontend lint/typecheck/unit/build passed. A fix using runner-provided Chrome is ready to push and verify. Cloudflare CLI is not authenticated. At the deployment checkpoint, connect the existing GitHub repository to Cloudflare Pages on a free plan (root `frontend`, build `npm run build`, output `dist`, production branch `main`) or authenticate the CLI, then verify the public URL and real uploads in a fresh browser. Do not retrain or reevaluate the expert test based on its results.
 
 ## Baseline result
 

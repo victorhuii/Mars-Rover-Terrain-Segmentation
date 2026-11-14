@@ -20,7 +20,7 @@ jobs:
       - run: python -m unittest discover -s tests -v
 
   frontend:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: frontend
@@ -36,5 +36,7 @@ jobs:
       - run: npm run typecheck
       - run: npm run test
       - run: npm run build
-      - run: npx playwright install --with-deps chromium
-      - run: npm run test:e2e
+      - name: Run browser tests with runner Chrome
+        run: test -x "$CHROME_PATH" && npm run test:e2e
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
