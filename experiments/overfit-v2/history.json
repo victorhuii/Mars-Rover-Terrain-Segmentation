@@ -1,0 +1,9282 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 2.1986517906188965,
+    "validation": {
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          17016,
+          0
+        ],
+        [
+          0,
+          0,
+          12812,
+          0
+        ],
+        [
+          0,
+          0,
+          4431,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.0,
+        0.0,
+        0.12933827607344056,
+        null
+      ],
+      "mean_iou": 0.043112758691146856,
+      "per_class_dice": [
+        0.0,
+        0.0,
+        0.2290514344791936,
+        null
+      ],
+      "mean_dice": 0.0763504781597312,
+      "pixel_accuracy": 0.12933827607344056,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 2.194632053375244
+    },
+    "seconds_elapsed": 1.337840749998577,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 2,
+    "train_loss": 2.194632053375244,
+    "validation": {
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          17016,
+          0
+        ],
+        [
+          0,
+          0,
+          12812,
+          0
+        ],
+        [
+          0,
+          0,
+          4431,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.0,
+        0.0,
+        0.12933827607344056,
+        null
+      ],
+      "mean_iou": 0.043112758691146856,
+      "per_class_dice": [
+        0.0,
+        0.0,
+        0.2290514344791936,
+        null
+      ],
+      "mean_dice": 0.0763504781597312,
+      "pixel_accuracy": 0.12933827607344056,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 2.1903247833251953
+    },
+    "seconds_elapsed": 1.420329124899581,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 3,
+    "train_loss": 2.1903247833251953,
+    "validation": {
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          17016,
+          0
+        ],
+        [
+          0,
+          0,
+          12812,
+          0
+        ],
+        [
+          0,
+          0,
+          4431,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.0,
+        0.0,
+        0.12933827607344056,
+        null
+      ],
+      "mean_iou": 0.043112758691146856,
+      "per_class_dice": [
+        0.0,
+        0.0,
+        0.2290514344791936,
+        null
+      ],
+      "mean_dice": 0.0763504781597312,
+      "pixel_accuracy": 0.12933827607344056,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 2.18546199798584
+    },
+    "seconds_elapsed": 1.4932017920073122,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 4,
+    "train_loss": 2.18546199798584,
+    "validation": {
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          4792,
+          12224
+        ],
+        [
+          0,
+          0,
+          10630,
+          2182
+        ],
+        [
+          0,
+          0,
+          4257,
+          174
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.0,
+        0.0,
+        0.21442603133027754,
+        0.0
+      ],
+      "mean_iou": 0.053606507832569386,
+      "per_class_dice": [
+        0.0,
+        0.0,
+        0.35313148071339695,
+        0.0
+      ],
+      "mean_dice": 0.08828287017834924,
+      "pixel_accuracy": 0.12425931871916869,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 2.178452491760254
+    },
+    "seconds_elapsed": 1.5801369999535382,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 5,
+    "train_loss": 2.178452491760254,
+    "validation": {
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          43,
+          16973
+        ],
+        [
+          0,
+          0,
+          37,
+          12775
+        ],
+        [
+          0,
+          0,
+          196,
+          4235
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.0,
+        0.0,
+        0.04344934604300599,
+        0.0
+      ],
+      "mean_iou": 0.010862336510751497,
+      "per_class_dice": [
+        0.0,
+        0.0,
+        0.08328022094752496,
+        0.0
+      ],
+      "mean_dice": 0.02082005523688124,
+      "pixel_accuracy": 0.0057211243760763595,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 2.163790225982666
+    },
+    "seconds_elapsed": 1.6630811669165269,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 6,
+    "train_loss": 2.163790464401245,
+    "validation": {
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          21,
+          16995
+        ],
+        [
+          0,
+          0,
+          3,
+          12809
+        ],
+        [
+          0,
+          0,
+          13,
+          4418
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.0,
+        0.0,
+        0.0029180695847362513,
+        0.0
+      ],
+      "mean_iou": 0.0007295173961840628,
+      "per_class_dice": [
+        0.0,
+        0.0,
+        0.005819158460161146,
+        0.0
+      ],
+      "mean_dice": 0.0014547896150402864,
+      "pixel_accuracy": 0.00037946233106628914,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 2.12679386138916
+    },
+    "seconds_elapsed": 1.731974249938503,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 7,
+    "train_loss": 2.126793622970581,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16187,
+          0,
+          21,
+          808
+        ],
+        [
+          12137,
+          0,
+          3,
+          672
+        ],
+        [
+          3877,
+          0,
+          1,
+          553
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.4900696336663639,
+        0.0,
+        0.0002244668911335578,
+        0.0
+      ],
+      "mean_iou": 0.12257352513937436,
+      "per_class_dice": [
+        0.6577808480809476,
+        0.0,
+        0.0004488330341113106,
+        0.0
+      ],
+      "mean_dice": 0.16455742027876474,
+      "pixel_accuracy": 0.47251817040777605,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 2.0376296043395996
+    },
+    "seconds_elapsed": 1.813773832982406,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 8,
+    "train_loss": 2.0376296043395996,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17011,
+          0,
+          0,
+          5
+        ],
+        [
+          12809,
+          0,
+          0,
+          3
+        ],
+        [
+          4427,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.49664253182295925,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_iou": 0.12416063295573981,
+      "per_class_dice": [
+        0.6636755554688567,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_dice": 0.16591888886721418,
+      "pixel_accuracy": 0.4965410549052804,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.8985333442687988
+    },
+    "seconds_elapsed": 1.9280219579814002,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 9,
+    "train_loss": 1.8985333442687988,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17016,
+          0,
+          0,
+          0
+        ],
+        [
+          12812,
+          0,
+          0,
+          0
+        ],
+        [
+          4431,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.4966870019556905,
+        0.0,
+        0.0,
+        null
+      ],
+      "mean_iou": 0.16556233398523015,
+      "per_class_dice": [
+        0.6637152608483666,
+        0.0,
+        0.0,
+        null
+      ],
+      "mean_dice": 0.22123842028278887,
+      "pixel_accuracy": 0.4966870019556905,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 2.080889940261841
+    },
+    "seconds_elapsed": 2.0178517919266596,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 10,
+    "train_loss": 2.0808897018432617,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17016,
+          0,
+          0,
+          0
+        ],
+        [
+          12812,
+          0,
+          0,
+          0
+        ],
+        [
+          4431,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.4966870019556905,
+        0.0,
+        0.0,
+        null
+      ],
+      "mean_iou": 0.16556233398523015,
+      "per_class_dice": [
+        0.6637152608483666,
+        0.0,
+        0.0,
+        null
+      ],
+      "mean_dice": 0.22123842028278887,
+      "pixel_accuracy": 0.4966870019556905,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 2.2827162742614746
+    },
+    "seconds_elapsed": 2.111980416928418,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 11,
+    "train_loss": 2.2827162742614746,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16922,
+          94,
+          0,
+          0
+        ],
+        [
+          12746,
+          66,
+          0,
+          0
+        ],
+        [
+          4414,
+          17,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.4951427902621723,
+        0.005107173256983673,
+        0.0,
+        null
+      ],
+      "mean_iou": 0.16674998783971864,
+      "per_class_dice": [
+        0.6623351207483659,
+        0.010162445145892679,
+        0.0,
+        null
+      ],
+      "mean_dice": 0.2241658552980862,
+      "pixel_accuracy": 0.49586969847339385,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 2.053616762161255
+    },
+    "seconds_elapsed": 2.1761109170038253,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 12,
+    "train_loss": 2.053616762161255,
+    "validation": {
+      "confusion_matrix": [
+        [
+          734,
+          16282,
+          0,
+          0
+        ],
+        [
+          393,
+          12419,
+          0,
+          0
+        ],
+        [
+          225,
+          4205,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.04162413519337643,
+        0.3729541427670501,
+        0.00022568269013766644,
+        null
+      ],
+      "mean_iou": 0.1382679868835214,
+      "per_class_dice": [
+        0.07992160278745644,
+        0.5432871079224812,
+        0.0004512635379061372,
+        null
+      ],
+      "mean_dice": 0.2078866580826146,
+      "pixel_accuracy": 0.38395750021892056,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.797327995300293
+    },
+    "seconds_elapsed": 2.2679354168940336,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 13,
+    "train_loss": 1.797327995300293,
+    "validation": {
+      "confusion_matrix": [
+        [
+          116,
+          16879,
+          21,
+          0
+        ],
+        [
+          43,
+          12766,
+          3,
+          0
+        ],
+        [
+          22,
+          4271,
+          138,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.006791171477079796,
+        0.37589070137212177,
+        0.030976430976430977,
+        null
+      ],
+      "mean_iou": 0.13788610127521087,
+      "per_class_dice": [
+        0.013490725126475547,
+        0.5463961650402328,
+        0.06009144350097975,
+        null
+      ],
+      "mean_dice": 0.20665944455589602,
+      "pixel_accuracy": 0.3800461192679296,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.6522067785263062
+    },
+    "seconds_elapsed": 2.3322305829497054,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 14,
+    "train_loss": 1.6522067785263062,
+    "validation": {
+      "confusion_matrix": [
+        [
+          4,
+          16114,
+          898,
+          0
+        ],
+        [
+          2,
+          12310,
+          500,
+          0
+        ],
+        [
+          0,
+          2388,
+          2043,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.0002350452462098954,
+        0.3931149006834004,
+        0.350488934637159,
+        null
+      ],
+      "mean_iou": 0.24794629352225642,
+      "per_class_dice": [
+        0.0004699800258489014,
+        0.5643682376673391,
+        0.5190548780487805,
+        null
+      ],
+      "mean_dice": 0.36129769858065613,
+      "pixel_accuracy": 0.41907236054759334,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.7924470901489258
+    },
+    "seconds_elapsed": 2.4120601669419557,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 15,
+    "train_loss": 1.7924469709396362,
+    "validation": {
+      "confusion_matrix": [
+        [
+          4,
+          710,
+          16302,
+          0
+        ],
+        [
+          2,
+          663,
+          12147,
+          0
+        ],
+        [
+          0,
+          0,
+          4431,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.0002350452462098954,
+        0.04903120840112409,
+        0.13476277372262774,
+        null
+      ],
+      "mean_iou": 0.06134300912332058,
+      "per_class_dice": [
+        0.0004699800258489014,
+        0.0934790271413465,
+        0.23751708611401465,
+        null
+      ],
+      "mean_dice": 0.11048869776040333,
+      "pixel_accuracy": 0.1488076125981494,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.8902350664138794
+    },
+    "seconds_elapsed": 2.508278249995783,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 16,
+    "train_loss": 1.890235185623169,
+    "validation": {
+      "confusion_matrix": [
+        [
+          11,
+          767,
+          16238,
+          0
+        ],
+        [
+          5,
+          686,
+          12121,
+          0
+        ],
+        [
+          0,
+          0,
+          4431,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.0006462605017331531,
+        0.05051918403417041,
+        0.13513266239707228,
+        null
+      ],
+      "mean_iou": 0.06209936897765861,
+      "per_class_dice": [
+        0.0012916862376702678,
+        0.0961794602173151,
+        0.23809140001611992,
+        null
+      ],
+      "mean_dice": 0.11185418215703509,
+      "pixel_accuracy": 0.14968329490061005,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.8722413778305054
+    },
+    "seconds_elapsed": 2.570206291973591,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 17,
+    "train_loss": 1.8722413778305054,
+    "validation": {
+      "confusion_matrix": [
+        [
+          9341,
+          6970,
+          705,
+          0
+        ],
+        [
+          2023,
+          10390,
+          399,
+          0
+        ],
+        [
+          376,
+          1552,
+          2503,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.4811228431625032,
+        0.4870160307490391,
+        0.45221318879855466,
+        null
+      ],
+      "mean_iou": 0.47345068757003234,
+      "per_class_dice": [
+        0.6496731116984281,
+        0.655024587063422,
+        0.6227917392386165,
+        null
+      ],
+      "mean_dice": 0.6424964793334889,
+      "pixel_accuracy": 0.6489973437636826,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.7958734035491943
+    },
+    "seconds_elapsed": 2.632047332939692,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 18,
+    "train_loss": 1.7958732843399048,
+    "validation": {
+      "confusion_matrix": [
+        [
+          3080,
+          13915,
+          21,
+          0
+        ],
+        [
+          1527,
+          11282,
+          3,
+          0
+        ],
+        [
+          1791,
+          2116,
+          524,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.15147044359201337,
+        0.3911520992961897,
+        0.11762065095398429,
+        null
+      ],
+      "mean_iou": 0.2200810646140625,
+      "per_class_dice": [
+        0.26309045869992315,
+        0.5623426791277258,
+        0.21048403293834103,
+        null
+      ],
+      "mean_dice": 0.34530572358866335,
+      "pixel_accuracy": 0.4345135584809831,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.6825968027114868
+    },
+    "seconds_elapsed": 2.720485874917358,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 19,
+    "train_loss": 1.6825966835021973,
+    "validation": {
+      "confusion_matrix": [
+        [
+          14225,
+          2791,
+          0,
+          0
+        ],
+        [
+          9520,
+          3292,
+          0,
+          0
+        ],
+        [
+          2948,
+          1344,
+          139,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.48246506579839915,
+        0.19425267008910133,
+        0.03136989392913563,
+        null
+      ],
+      "mean_iou": 0.2360292099388787,
+      "per_class_dice": [
+        0.6508956965384703,
+        0.32531251544048617,
+        0.060831509846827135,
+        null
+      ],
+      "mean_dice": 0.3456799072752612,
+      "pixel_accuracy": 0.5153682244081847,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.6022562980651855
+    },
+    "seconds_elapsed": 2.80772870790679,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 20,
+    "train_loss": 1.6022562980651855,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16722,
+          294,
+          0,
+          0
+        ],
+        [
+          12510,
+          302,
+          0,
+          0
+        ],
+        [
+          4203,
+          197,
+          31,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.49577514898158853,
+        0.02270164624520785,
+        0.00699616339426766,
+        null
+      ],
+      "mean_iou": 0.175157652873688,
+      "per_class_dice": [
+        0.6629006362609264,
+        0.04439544285189269,
+        0.013895114298520844,
+        null
+      ],
+      "mean_dice": 0.24039706447044665,
+      "pixel_accuracy": 0.49782538894888934,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.6464495658874512
+    },
+    "seconds_elapsed": 2.8694368329597637,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 21,
+    "train_loss": 1.6464495658874512,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16919,
+          97,
+          0,
+          0
+        ],
+        [
+          12745,
+          67,
+          0,
+          0
+        ],
+        [
+          4402,
+          17,
+          12,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.4952433919737728,
+        0.0051833513848058175,
+        0.002708192281651997,
+        null
+      ],
+      "mean_iou": 0.1677116452134102,
+      "per_class_dice": [
+        0.6624251203946596,
+        0.010313245593781268,
+        0.0054017555705604325,
+        null
+      ],
+      "mean_dice": 0.22604670718633377,
+      "pixel_accuracy": 0.49616159257421405,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.6767590045928955
+    },
+    "seconds_elapsed": 2.930305582936853,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 22,
+    "train_loss": 1.676759123802185,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          12745,
+          67,
+          0,
+          0
+        ],
+        [
+          4288,
+          17,
+          126,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.4969308937120033,
+        0.005183752417794971,
+        0.02843601895734597,
+        null
+      ],
+      "mean_iou": 0.17685022169571474,
+      "per_class_dice": [
+        0.663932978869509,
+        0.010314039408866995,
+        0.055299539170506916,
+        null
+      ],
+      "mean_dice": 0.24318218581629428,
+      "pixel_accuracy": 0.49951837473364663,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.6276131868362427
+    },
+    "seconds_elapsed": 3.0033088329946622,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 23,
+    "train_loss": 1.6276133060455322,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17016,
+          0,
+          0,
+          0
+        ],
+        [
+          12812,
+          0,
+          0,
+          0
+        ],
+        [
+          4173,
+          5,
+          253,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.500455868945031,
+        0.0,
+        0.05709772060482961,
+        null
+      ],
+      "mean_iou": 0.18585119651662022,
+      "per_class_dice": [
+        0.6670717603935943,
+        0.0,
+        0.10802732707087959,
+        null
+      ],
+      "mean_dice": 0.258366362488158,
+      "pixel_accuracy": 0.5040719227064421,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.5706465244293213
+    },
+    "seconds_elapsed": 3.0811860419344157,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 24,
+    "train_loss": 1.5706465244293213,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16995,
+          0,
+          21,
+          0
+        ],
+        [
+          12809,
+          0,
+          3,
+          0
+        ],
+        [
+          3916,
+          5,
+          510,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5036898728549836,
+        0.0,
+        0.11447811447811448,
+        null
+      ],
+      "mean_iou": 0.20605599577769937,
+      "per_class_dice": [
+        0.6699385052034059,
+        0.0,
+        0.2054380664652568,
+        null
+      ],
+      "mean_dice": 0.2917921905562209,
+      "pixel_accuracy": 0.5109606234857994,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.5939569473266602
+    },
+    "seconds_elapsed": 3.147180916974321,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 25,
+    "train_loss": 1.5939569473266602,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16908,
+          87,
+          21,
+          0
+        ],
+        [
+          12751,
+          58,
+          3,
+          0
+        ],
+        [
+          3806,
+          12,
+          613,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5036189795371281,
+        0.004492293393230579,
+        0.13759820426487093,
+        null
+      ],
+      "mean_iou": 0.21523649239840983,
+      "per_class_dice": [
+        0.6698757948535092,
+        0.008944405890970777,
+        0.24191002367797948,
+        null
+      ],
+      "mean_dice": 0.3069100748074865,
+      "pixel_accuracy": 0.513120639831869,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.5944173336029053
+    },
+    "seconds_elapsed": 3.225728999939747,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 26,
+    "train_loss": 1.5944173336029053,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16917,
+          93,
+          6,
+          0
+        ],
+        [
+          12745,
+          64,
+          3,
+          0
+        ],
+        [
+          3912,
+          13,
+          506,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5023906393846702,
+        0.004954327295246942,
+        0.11396396396396397,
+        null
+      ],
+      "mean_iou": 0.20710297688129367,
+      "per_class_dice": [
+        0.6687882980826251,
+        0.009859805885071639,
+        0.20460978568540233,
+        null
+      ],
+      "mean_dice": 0.294419296551033,
+      "pixel_accuracy": 0.5104352141043229,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.547044038772583
+    },
+    "seconds_elapsed": 3.306412082980387,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 27,
+    "train_loss": 1.547044038772583,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          12745,
+          67,
+          0,
+          0
+        ],
+        [
+          4145,
+          15,
+          271,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.4990267209343479,
+        0.005184554669968274,
+        0.06116000902730761,
+        null
+      ],
+      "mean_iou": 0.18845709487720794,
+      "per_class_dice": [
+        0.6658009680084996,
+        0.01031562740569669,
+        0.11527009783071034,
+        null
+      ],
+      "mean_dice": 0.2637955644149689,
+      "pixel_accuracy": 0.5037508391955399,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.538163423538208
+    },
+    "seconds_elapsed": 3.374567082966678,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 28,
+    "train_loss": 1.538163423538208,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          12745,
+          67,
+          0,
+          0
+        ],
+        [
+          4154,
+          15,
+          262,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.49889429455992923,
+        0.005184554669968274,
+        0.059128864816068605,
+        null
+      ],
+      "mean_iou": 0.18773590468198872,
+      "per_class_dice": [
+        0.6656830923576276,
+        0.01031562740569669,
+        0.11165565736202855,
+        null
+      ],
+      "mean_dice": 0.2625514590417843,
+      "pixel_accuracy": 0.5034881345048017,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.5701978206634521
+    },
+    "seconds_elapsed": 3.441121207899414,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 29,
+    "train_loss": 1.5701978206634521,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          12745,
+          67,
+          0,
+          0
+        ],
+        [
+          4061,
+          15,
+          355,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5002660989888238,
+        0.005184554669968274,
+        0.08011735499887158,
+        null
+      ],
+      "mean_iou": 0.19518933621922122,
+      "per_class_dice": [
+        0.6669031571479248,
+        0.01031562740569669,
+        0.14834935227747598,
+        null
+      ],
+      "mean_dice": 0.27518937894369916,
+      "pixel_accuracy": 0.5062027496424297,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.5450342893600464
+    },
+    "seconds_elapsed": 3.509599707904272,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 30,
+    "train_loss": 1.5450342893600464,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          12745,
+          67,
+          0,
+          0
+        ],
+        [
+          3888,
+          12,
+          531,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5028381229754227,
+        0.005185758513931889,
+        0.11983750846310089,
+        null
+      ],
+      "mean_iou": 0.20928712998415186,
+      "per_class_dice": [
+        0.6691846783602602,
+        0.010318010318010318,
+        0.2140266021765417,
+        null
+      ],
+      "mean_dice": 0.29784309695160405,
+      "pixel_accuracy": 0.5113400858168656,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.4847197532653809
+    },
+    "seconds_elapsed": 3.584852166939527,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 31,
+    "train_loss": 1.4847198724746704,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16899,
+          96,
+          21,
+          0
+        ],
+        [
+          12742,
+          67,
+          3,
+          0
+        ],
+        [
+          3328,
+          6,
+          1097,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5107598379979448,
+        0.00518816787982035,
+        0.2462401795735129,
+        null
+      ],
+      "mean_iou": 0.2540627284837593,
+      "per_class_dice": [
+        0.6761628488546564,
+        0.010322779446883907,
+        0.39517291066282423,
+        null
+      ],
+      "mean_dice": 0.36055284632145485,
+      "pixel_accuracy": 0.5272483143115677,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.5045580863952637
+    },
+    "seconds_elapsed": 3.672035750001669,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 32,
+    "train_loss": 1.5045580863952637,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16899,
+          96,
+          21,
+          0
+        ],
+        [
+          12742,
+          67,
+          3,
+          0
+        ],
+        [
+          2828,
+          1,
+          1602,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.518596943472657,
+        0.005190177395615462,
+        0.3595959595959596,
+        null
+      ],
+      "mean_iou": 0.2944610268214107,
+      "per_class_dice": [
+        0.6829948469233101,
+        0.01032675709001233,
+        0.5289747399702823,
+        null
+      ],
+      "mean_dice": 0.4074321146612016,
+      "pixel_accuracy": 0.541988966402989,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.562544345855713
+    },
+    "seconds_elapsed": 3.7597090000053868,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 33,
+    "train_loss": 1.562544345855713,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16902,
+          93,
+          21,
+          0
+        ],
+        [
+          12745,
+          64,
+          3,
+          0
+        ],
+        [
+          2661,
+          0,
+          1770,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5213126889149343,
+        0.004959318093762107,
+        0.39730639730639733,
+        null
+      ],
+      "mean_iou": 0.3078594681050313,
+      "per_class_dice": [
+        0.6853458762468575,
+        0.009869689259002236,
+        0.5686746987951807,
+        null
+      ],
+      "mean_dice": 0.4212967547670135,
+      "pixel_accuracy": 0.5468927872967687,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.538886308670044
+    },
+    "seconds_elapsed": 3.821223667007871,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 34,
+    "train_loss": 1.538886308670044,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16919,
+          93,
+          4,
+          0
+        ],
+        [
+          12748,
+          64,
+          0,
+          0
+        ],
+        [
+          2786,
+          1,
+          1644,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5197849462365591,
+        0.004958933829226716,
+        0.3706877113866967,
+        null
+      ],
+      "mean_iou": 0.29847719715082754,
+      "per_class_dice": [
+        0.6840243384746002,
+        0.009868928296067848,
+        0.5408784339529528,
+        null
+      ],
+      "mean_dice": 0.4115905669078736,
+      "pixel_accuracy": 0.5437111415978283,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.4502347707748413
+    },
+    "seconds_elapsed": 3.8847013749182224,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 35,
+    "train_loss": 1.4502346515655518,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          12745,
+          67,
+          0,
+          0
+        ],
+        [
+          3038,
+          4,
+          1389,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5158693862617763,
+        0.005188971499380421,
+        0.31347325660121866,
+        null
+      ],
+      "mean_iou": 0.27817720478745844,
+      "per_class_dice": [
+        0.6806251131358233,
+        0.010324370136374142,
+        0.477319587628866,
+        null
+      ],
+      "mean_dice": 0.3894230236336878,
+      "pixel_accuracy": 0.5363845996672407,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.4172859191894531
+    },
+    "seconds_elapsed": 3.956689666956663,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 36,
+    "train_loss": 1.4172859191894531,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          12745,
+          67,
+          0,
+          0
+        ],
+        [
+          2939,
+          4,
+          1488,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5174311926605505,
+        0.005188971499380421,
+        0.3358158429248477,
+        null
+      ],
+      "mean_iou": 0.28614533569492623,
+      "per_class_dice": [
+        0.6819830713422007,
+        0.010324370136374142,
+        0.5027876330461226,
+        null
+      ],
+      "mean_dice": 0.3983650248415658,
+      "pixel_accuracy": 0.5392743512653609,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.4342657327651978
+    },
+    "seconds_elapsed": 4.036671499954537,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 37,
+    "train_loss": 1.4342658519744873,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16697,
+          319,
+          0,
+          0
+        ],
+        [
+          12428,
+          384,
+          0,
+          0
+        ],
+        [
+          2423,
+          257,
+          1751,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5239589544042427,
+        0.02868240215118016,
+        0.39517039043105395,
+        null
+      ],
+      "mean_iou": 0.31593724899549225,
+      "per_class_dice": [
+        0.6876286961535294,
+        0.05576532094103979,
+        0.5664833387253316,
+        null
+      ],
+      "mean_dice": 0.43662578527330026,
+      "pixel_accuracy": 0.5496949706646429,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.4241645336151123
+    },
+    "seconds_elapsed": 4.104380457894877,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 38,
+    "train_loss": 1.4241645336151123,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          12745,
+          67,
+          0,
+          0
+        ],
+        [
+          2384,
+          0,
+          2047,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5263649090060663,
+        0.005190579485590332,
+        0.4619724667118032,
+        null
+      ],
+      "mean_iou": 0.3311759850678199,
+      "per_class_dice": [
+        0.6896973402629165,
+        0.010327552986512525,
+        0.6319851806112998,
+        null
+      ],
+      "mean_dice": 0.4440033579535763,
+      "pixel_accuracy": 0.5555912315012114,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.379603385925293
+    },
+    "seconds_elapsed": 4.184139041928574,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 39,
+    "train_loss": 1.379603385925293,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          12745,
+          67,
+          0,
+          0
+        ],
+        [
+          1997,
+          0,
+          2434,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5327791422633668,
+        0.005190579485590332,
+        0.5493116677950801,
+        null
+      ],
+      "mean_iou": 0.3624271298480124,
+      "per_class_dice": [
+        0.6951805743867866,
+        0.010327552986512525,
+        0.7091041514930808,
+        null
+      ],
+      "mean_dice": 0.4715374262887933,
+      "pixel_accuracy": 0.5668875332029539,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.3601768016815186
+    },
+    "seconds_elapsed": 4.273307457915507,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 40,
+    "train_loss": 1.3601768016815186,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16984,
+          32,
+          0,
+          0
+        ],
+        [
+          12790,
+          22,
+          0,
+          0
+        ],
+        [
+          2064,
+          0,
+          2367,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5329149670536555,
+        0.0017128620367486765,
+        0.5341909275558565,
+        null
+      ],
+      "mean_iou": 0.35627291888208684,
+      "per_class_dice": [
+        0.6952961886437139,
+        0.003419866314316804,
+        0.6963812886142984,
+        null
+      ],
+      "mean_dice": 0.465032447857443,
+      "pixel_accuracy": 0.565486441519017,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.3548356294631958
+    },
+    "seconds_elapsed": 4.3602762499358505,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 41,
+    "train_loss": 1.3548357486724854,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16916,
+          95,
+          5,
+          0
+        ],
+        [
+          12745,
+          67,
+          0,
+          0
+        ],
+        [
+          2012,
+          0,
+          2419,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5324017247348377,
+        0.005190981637870923,
+        0.5453110910730388,
+        null
+      ],
+      "mean_iou": 0.3609679324819158,
+      "per_class_dice": [
+        0.6948592084454395,
+        0.010328349005703716,
+        0.7057622173595915,
+        null
+      ],
+      "mean_dice": 0.47031659160357825,
+      "pixel_accuracy": 0.5663329344113955,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.335965871810913
+    },
+    "seconds_elapsed": 4.445619374979287,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 42,
+    "train_loss": 1.335965871810913,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16898,
+          94,
+          24,
+          0
+        ],
+        [
+          12718,
+          63,
+          31,
+          0
+        ],
+        [
+          1890,
+          0,
+          2541,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5343410068302555,
+        0.0048814504881450485,
+        0.5664288898796255,
+        null
+      ],
+      "mean_iou": 0.3685504490660087,
+      "per_class_dice": [
+        0.696508800131899,
+        0.009715475364330326,
+        0.723210473886438,
+        null
+      ],
+      "mean_dice": 0.47647824979422243,
+      "pixel_accuracy": 0.5692518754195978,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.3113524913787842
+    },
+    "seconds_elapsed": 4.511540624895133,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 43,
+    "train_loss": 1.3113524913787842,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16872,
+          93,
+          51,
+          0
+        ],
+        [
+          12682,
+          62,
+          68,
+          0
+        ],
+        [
+          1844,
+          0,
+          2587,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5349058398326042,
+        0.004804339403332042,
+        0.5685714285714286,
+        null
+      ],
+      "mean_iou": 0.36942720260245493,
+      "per_class_dice": [
+        0.696988474408229,
+        0.009562736176447905,
+        0.7249544626593807,
+        null
+      ],
+      "mean_dice": 0.47716855774801914,
+      "pixel_accuracy": 0.5698064742111562,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.2964208126068115
+    },
+    "seconds_elapsed": 4.587026999914087,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 44,
+    "train_loss": 1.296420693397522,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16855,
+          92,
+          69,
+          0
+        ],
+        [
+          12669,
+          60,
+          83,
+          0
+        ],
+        [
+          1836,
+          0,
+          2595,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5347228831572602,
+        0.0046497210167389955,
+        0.5662229980362208,
+        null
+      ],
+      "mean_iou": 0.36853186740340665,
+      "per_class_dice": [
+        0.6968331404001984,
+        0.009256402344955261,
+        0.7230426302591251,
+        null
+      ],
+      "mean_dice": 0.47637739100142623,
+      "pixel_accuracy": 0.569485390700254,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.2795891761779785
+    },
+    "seconds_elapsed": 4.662982749985531,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 45,
+    "train_loss": 1.2795891761779785,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16774,
+          92,
+          150,
+          0
+        ],
+        [
+          12631,
+          59,
+          122,
+          0
+        ],
+        [
+          1761,
+          0,
+          2670,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5340677534386143,
+        0.004572225666460012,
+        0.5677227301722305,
+        null
+      ],
+      "mean_iou": 0.3687875697591016,
+      "per_class_dice": [
+        0.6962766178240837,
+        0.009102831134768187,
+        0.7242642072426421,
+        null
+      ],
+      "mean_dice": 0.47654788540049803,
+      "pixel_accuracy": 0.5692810648296798,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.2597277164459229
+    },
+    "seconds_elapsed": 4.729776082909666,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 46,
+    "train_loss": 1.2597277164459229,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16436,
+          289,
+          291,
+          0
+        ],
+        [
+          12257,
+          375,
+          180,
+          0
+        ],
+        [
+          1467,
+          208,
+          2756,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5346779440468445,
+        0.028176421970095424,
+        0.5622195022439821,
+        null
+      ],
+      "mean_iou": 0.3750246227536407,
+      "per_class_dice": [
+        0.6967949804985586,
+        0.05480853551593101,
+        0.7197701749804126,
+        null
+      ],
+      "mean_dice": 0.4904578969983007,
+      "pixel_accuracy": 0.5711491870749292,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.246713638305664
+    },
+    "seconds_elapsed": 4.807494291919284,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 47,
+    "train_loss": 1.246713638305664,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16299,
+          412,
+          305,
+          0
+        ],
+        [
+          12103,
+          510,
+          199,
+          0
+        ],
+        [
+          1392,
+          275,
+          2764,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5342007800465406,
+        0.03778057633898807,
+        0.5600810536980749,
+        null
+      ],
+      "mean_iou": 0.37735413669453455,
+      "per_class_dice": [
+        0.6963896603289895,
+        0.07281033621243486,
+        0.7180153266658007,
+        null
+      ],
+      "mean_dice": 0.495738441069075,
+      "pixel_accuracy": 0.5713243235354214,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.223395586013794
+    },
+    "seconds_elapsed": 4.8820231249555945,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 48,
+    "train_loss": 1.223395586013794,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16731,
+          95,
+          190,
+          0
+        ],
+        [
+          12578,
+          63,
+          171,
+          0
+        ],
+        [
+          1738,
+          0,
+          2693,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5339908081194944,
+        0.004881072286356241,
+        0.5619782971619366,
+        null
+      ],
+      "mean_iou": 0.36695005918926243,
+      "per_class_dice": [
+        0.6962112227701143,
+        0.009714726291441789,
+        0.7195724782899131,
+        null
+      ],
+      "mean_dice": 0.47516614245048966,
+      "pixel_accuracy": 0.5688140342683674,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.216768503189087
+    },
+    "seconds_elapsed": 4.947974249953404,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 49,
+    "train_loss": 1.216768503189087,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16777,
+          98,
+          141,
+          0
+        ],
+        [
+          12579,
+          68,
+          165,
+          0
+        ],
+        [
+          1764,
+          0,
+          2667,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5349979272298224,
+        0.005267234701781564,
+        0.5630145661811273,
+        null
+      ],
+      "mean_iou": 0.36775990937091046,
+      "per_class_dice": [
+        0.6970666445072295,
+        0.010479272615194945,
+        0.720421393841167,
+        null
+      ],
+      "mean_dice": 0.4759891036545305,
+      "pixel_accuracy": 0.569543769520418,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.20009183883667
+    },
+    "seconds_elapsed": 5.02685941697564,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 50,
+    "train_loss": 1.20009183883667,
+    "validation": {
+      "confusion_matrix": [
+        [
+          15553,
+          1295,
+          168,
+          0
+        ],
+        [
+          11103,
+          1502,
+          207,
+          0
+        ],
+        [
+          954,
+          779,
+          2698,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5349637120352216,
+        0.10090017466075507,
+        0.5613816063254266,
+        null
+      ],
+      "mean_iou": 0.39908183100713446,
+      "per_class_dice": [
+        0.697037601398288,
+        0.18330485721259457,
+        0.7190831556503199,
+        null
+      ],
+      "mean_dice": 0.5331418714204008,
+      "pixel_accuracy": 0.5765784173501853,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.1831753253936768
+    },
+    "seconds_elapsed": 5.118458082899451,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 51,
+    "train_loss": 1.1831753253936768,
+    "validation": {
+      "confusion_matrix": [
+        [
+          15381,
+          1438,
+          197,
+          0
+        ],
+        [
+          10862,
+          1653,
+          297,
+          0
+        ],
+        [
+          827,
+          857,
+          2747,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5358299947744295,
+        0.10941947441583372,
+        0.557766497461929,
+        null
+      ],
+      "mean_iou": 0.40100532221739743,
+      "per_class_dice": [
+        0.6977725354987978,
+        0.19725536992840095,
+        0.7161105318039624,
+        null
+      ],
+      "mean_dice": 0.5370461457437204,
+      "pixel_accuracy": 0.577395720832482,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.1724952459335327
+    },
+    "seconds_elapsed": 5.19761449994985,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 52,
+    "train_loss": 1.1724953651428223,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16738,
+          111,
+          167,
+          0
+        ],
+        [
+          12253,
+          179,
+          380,
+          0
+        ],
+        [
+          1557,
+          107,
+          2767,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5429831960033737,
+        0.013737528779739064,
+        0.5558457211731619,
+        null
+      ],
+      "mean_iou": 0.3708554819854249,
+      "per_class_dice": [
+        0.7038096039021109,
+        0.027102732985085927,
+        0.7145255003227889,
+        null
+      ],
+      "mean_dice": 0.4818126124033286,
+      "pixel_accuracy": 0.5745643480545258,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.175124168395996
+    },
+    "seconds_elapsed": 5.265978957992047,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 53,
+    "train_loss": 1.1751244068145752,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16565,
+          299,
+          152,
+          0
+        ],
+        [
+          12077,
+          287,
+          448,
+          0
+        ],
+        [
+          1535,
+          115,
+          2781,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5408449784510905,
+        0.021699682443671556,
+        0.552772808586762,
+        null
+      ],
+      "mean_iou": 0.37177248982717465,
+      "per_class_dice": [
+        0.7020108914457652,
+        0.04247761414933768,
+        0.7119815668202765,
+        null
+      ],
+      "mean_dice": 0.4854900241384598,
+      "pixel_accuracy": 0.5730756881403427,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.1505051851272583
+    },
+    "seconds_elapsed": 5.345621416927315,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 54,
+    "train_loss": 1.1505051851272583,
+    "validation": {
+      "confusion_matrix": [
+        [
+          7889,
+          9003,
+          124,
+          0
+        ],
+        [
+          3966,
+          8412,
+          434,
+          0
+        ],
+        [
+          370,
+          1306,
+          2755,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.369473585612589,
+        0.3638250940703257,
+        0.5522148727199839,
+        null
+      ],
+      "mean_iou": 0.4285045174676328,
+      "per_class_dice": [
+        0.5395848295201943,
+        0.5335362953096756,
+        0.7115185950413223,
+        null
+      ],
+      "mean_dice": 0.5948799066237308,
+      "pixel_accuracy": 0.5562333985230159,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.2590126991271973
+    },
+    "seconds_elapsed": 5.433615332935005,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 55,
+    "train_loss": 1.2590126991271973,
+    "validation": {
+      "confusion_matrix": [
+        [
+          4989,
+          11957,
+          70,
+          0
+        ],
+        [
+          2442,
+          10000,
+          370,
+          0
+        ],
+        [
+          246,
+          1476,
+          2709,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.2531973203410475,
+        0.3810249571346923,
+        0.5561486347772532,
+        null
+      ],
+      "mean_iou": 0.39679030408433097,
+      "per_class_dice": [
+        0.4040821285384522,
+        0.5518002483101118,
+        0.7147757255936675,
+        null
+      ],
+      "mean_dice": 0.5568860341474106,
+      "pixel_accuracy": 0.5165941796316297,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.278936743736267
+    },
+    "seconds_elapsed": 5.514749207999557,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 56,
+    "train_loss": 1.2789368629455566,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16520,
+          463,
+          33,
+          0
+        ],
+        [
+          12037,
+          477,
+          298,
+          0
+        ],
+        [
+          1574,
+          178,
+          2679,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5393933457406863,
+        0.03545677544042221,
+        0.5625787484250315,
+        null
+      ],
+      "mean_iou": 0.37914295653538005,
+      "per_class_dice": [
+        0.7007869005451036,
+        0.06848528356066044,
+        0.7200645074586749,
+        null
+      ],
+      "mean_dice": 0.4964455638548129,
+      "pixel_accuracy": 0.5743308327738696,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.1039202213287354
+    },
+    "seconds_elapsed": 5.58087208296638,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 57,
+    "train_loss": 1.1039202213287354,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16402,
+          501,
+          113,
+          0
+        ],
+        [
+          11671,
+          568,
+          573,
+          0
+        ],
+        [
+          1333,
+          170,
+          2928,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5463690872751499,
+        0.042127123043832974,
+        0.5722102794606214,
+        null
+      ],
+      "mean_iou": 0.3869021632598681,
+      "per_class_dice": [
+        0.7066477101374349,
+        0.08084833819656964,
+        0.727905531385954,
+        null
+      ],
+      "mean_dice": 0.5051338599066528,
+      "pixel_accuracy": 0.5808108818120786,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0921781063079834
+    },
+    "seconds_elapsed": 5.660141499945894,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 58,
+    "train_loss": 1.0921781063079834,
+    "validation": {
+      "confusion_matrix": [
+        [
+          753,
+          16262,
+          1,
+          0
+        ],
+        [
+          248,
+          12416,
+          148,
+          0
+        ],
+        [
+          24,
+          1882,
+          2525,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.043556223970384084,
+        0.4010854115518801,
+        0.5513100436681223,
+        null
+      ],
+      "mean_iou": 0.33198389306346215,
+      "per_class_dice": [
+        0.08347652569148052,
+        0.5725352762150696,
+        0.7107670654468684,
+        null
+      ],
+      "mean_dice": 0.45559295578447284,
+      "pixel_accuracy": 0.4580986018272571,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.3798593282699585
+    },
+    "seconds_elapsed": 5.754912874894217,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 59,
+    "train_loss": 1.3798593282699585,
+    "validation": {
+      "confusion_matrix": [
+        [
+          1322,
+          15694,
+          0,
+          0
+        ],
+        [
+          547,
+          12194,
+          71,
+          0
+        ],
+        [
+          36,
+          2082,
+          2313,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.07511790442638787,
+        0.39865306656205046,
+        0.513771657041315,
+        null
+      ],
+      "mean_iou": 0.3291808760099178,
+      "per_class_dice": [
+        0.139738914433698,
+        0.5700528259548409,
+        0.6787967718268525,
+        null
+      ],
+      "mean_dice": 0.46286283740513046,
+      "pixel_accuracy": 0.46203917218833007,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.3603851795196533
+    },
+    "seconds_elapsed": 5.819434291915968,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 60,
+    "train_loss": 1.3603851795196533,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16716,
+          300,
+          0,
+          0
+        ],
+        [
+          12368,
+          377,
+          67,
+          0
+        ],
+        [
+          1991,
+          240,
+          2200,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.532780876494024,
+        0.02823547034152187,
+        0.48910626945309027,
+        null
+      ],
+      "mean_iou": 0.35004087209621204,
+      "per_class_dice": [
+        0.6951820506955564,
+        0.05492024182387647,
+        0.6569125111973724,
+        null
+      ],
+      "mean_dice": 0.46900493457226844,
+      "pixel_accuracy": 0.5631512887124551,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.1370086669921875
+    },
+    "seconds_elapsed": 5.88374037493486,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 61,
+    "train_loss": 1.137008547782898,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16812,
+          194,
+          10,
+          0
+        ],
+        [
+          12217,
+          230,
+          365,
+          0
+        ],
+        [
+          1505,
+          71,
+          2855,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5469451493265665,
+        0.01758813183451862,
+        0.5940491052850604,
+        null
+      ],
+      "mean_iou": 0.3861941288153818,
+      "per_class_dice": [
+        0.7071293375394322,
+        0.03456827233786729,
+        0.7453335073750164,
+        null
+      ],
+      "mean_dice": 0.49567703908410526,
+      "pixel_accuracy": 0.5807816924019965,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0814125537872314
+    },
+    "seconds_elapsed": 5.958630749955773,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 62,
+    "train_loss": 1.081412672996521,
+    "validation": {
+      "confusion_matrix": [
+        [
+          15552,
+          878,
+          586,
+          0
+        ],
+        [
+          9387,
+          1266,
+          2159,
+          0
+        ],
+        [
+          187,
+          317,
+          3927,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5848815344114329,
+        0.09038337973870207,
+        0.5472408026755853,
+        null
+      ],
+      "mean_iou": 0.40750190560857336,
+      "per_class_dice": [
+        0.7380760286649898,
+        0.165782753879395,
+        0.7073763847608754,
+        null
+      ],
+      "mean_dice": 0.5370783891017533,
+      "pixel_accuracy": 0.6055343121515514,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.218458652496338
+    },
+    "seconds_elapsed": 6.038022166932933,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 63,
+    "train_loss": 1.218458652496338,
+    "validation": {
+      "confusion_matrix": [
+        [
+          15844,
+          704,
+          468,
+          0
+        ],
+        [
+          9958,
+          974,
+          1880,
+          0
+        ],
+        [
+          258,
+          266,
+          3907,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5818155111633373,
+        0.07067189087215209,
+        0.5763386930225697,
+        null
+      ],
+      "mean_iou": 0.4096086983526863,
+      "per_class_dice": [
+        0.7356300492153404,
+        0.13201409596096503,
+        0.7312371326969868,
+        null
+      ],
+      "mean_dice": 0.532960425957764,
+      "pixel_accuracy": 0.604950523949911,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.1765360832214355
+    },
+    "seconds_elapsed": 6.103908707969822,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 64,
+    "train_loss": 1.1765360832214355,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16896,
+          96,
+          24,
+          0
+        ],
+        [
+          12142,
+          86,
+          584,
+          0
+        ],
+        [
+          1077,
+          0,
+          3354,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5588225566396561,
+        0.006662534862101023,
+        0.6656082556062711,
+        null
+      ],
+      "mean_iou": 0.4103644490360094,
+      "per_class_dice": [
+        0.7169803314166896,
+        0.013236878559335077,
+        0.7992374597879185,
+        null
+      ],
+      "mean_dice": 0.5098182232546478,
+      "pixel_accuracy": 0.5935958434280043,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0719456672668457
+    },
+    "seconds_elapsed": 6.178314332966693,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 65,
+    "train_loss": 1.0719456672668457,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          12481,
+          146,
+          185,
+          0
+        ],
+        [
+          1472,
+          97,
+          2862,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5463528044173206,
+        0.011226451364859669,
+        0.6200173310225303,
+        null
+      ],
+      "mean_iou": 0.39253219560157016,
+      "per_class_dice": [
+        0.706634091336215,
+        0.022203634704585203,
+        0.7654453062316128,
+        null
+      ],
+      "mean_dice": 0.49809434409080433,
+      "pixel_accuracy": 0.5816865641145392,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0545783042907715
+    },
+    "seconds_elapsed": 6.2550722499145195,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 66,
+    "train_loss": 1.0545783042907715,
+    "validation": {
+      "confusion_matrix": [
+        [
+          15887,
+          1129,
+          0,
+          0
+        ],
+        [
+          10956,
+          1640,
+          216,
+          0
+        ],
+        [
+          406,
+          952,
+          3073,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5598350835153992,
+        0.11011884778083664,
+        0.6612868517323004,
+        null
+      ],
+      "mean_iou": 0.4437469276761788,
+      "per_class_dice": [
+        0.7178131706766068,
+        0.1983910965946894,
+        0.7961139896373057,
+        null
+      ],
+      "mean_dice": 0.5707727523028673,
+      "pixel_accuracy": 0.6013018476896582,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.115099310874939
+    },
+    "seconds_elapsed": 6.332307167002,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 67,
+    "train_loss": 1.115099310874939,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16335,
+          679,
+          2,
+          0
+        ],
+        [
+          11488,
+          963,
+          361,
+          0
+        ],
+        [
+          474,
+          607,
+          3350,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5637034992062945,
+        0.06830756135622074,
+        0.6987901543596162,
+        null
+      ],
+      "mean_iou": 0.4436004049740438,
+      "per_class_dice": [
+        0.7209851477500938,
+        0.12787995485027553,
+        0.8226915520628684,
+        null
+      ],
+      "mean_dice": 0.5571855515544125,
+      "pixel_accuracy": 0.6027029393735953,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0621321201324463
+    },
+    "seconds_elapsed": 6.399092042003758,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 68,
+    "train_loss": 1.0621321201324463,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16883,
+          96,
+          37,
+          0
+        ],
+        [
+          12211,
+          61,
+          540,
+          0
+        ],
+        [
+          805,
+          0,
+          3626,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5621670218433671,
+        0.004725751471955376,
+        0.7240415335463258,
+        null
+      ],
+      "mean_iou": 0.43031143562054947,
+      "per_class_dice": [
+        0.7197271661515506,
+        0.009407047574986506,
+        0.8399351401436183,
+        null
+      ],
+      "mean_dice": 0.5230231179567185,
+      "pixel_accuracy": 0.6004261653871975,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.062779188156128
+    },
+    "seconds_elapsed": 6.477790666976944,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 69,
+    "train_loss": 1.062779188156128,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16904,
+          96,
+          16,
+          0
+        ],
+        [
+          12371,
+          65,
+          376,
+          0
+        ],
+        [
+          924,
+          10,
+          3497,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5576853287585365,
+        0.005031738659235176,
+        0.7250673854447439,
+        null
+      ],
+      "mean_iou": 0.42926148428750527,
+      "per_class_dice": [
+        0.7160436302022662,
+        0.010013094046060232,
+        0.840625,
+        null
+      ],
+      "mean_dice": 0.5222272414161088,
+      "pixel_accuracy": 0.5973904667386672,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0290906429290771
+    },
+    "seconds_elapsed": 6.564337124931626,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 70,
+    "train_loss": 1.0290906429290771,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16556,
+          449,
+          11,
+          0
+        ],
+        [
+          11775,
+          718,
+          319,
+          0
+        ],
+        [
+          491,
+          441,
+          3499,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5653985383512056,
+        0.05240110932710553,
+        0.7349296366309599,
+        null
+      ],
+      "mean_iou": 0.45090976143642364,
+      "per_class_dice": [
+        0.7223700859548846,
+        0.09958391123439667,
+        0.8472154963680387,
+        null
+      ],
+      "mean_dice": 0.5563898311857733,
+      "pixel_accuracy": 0.606351615633848,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.021352767944336
+    },
+    "seconds_elapsed": 6.648257249966264,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 71,
+    "train_loss": 1.021352767944336,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16606,
+          382,
+          28,
+          0
+        ],
+        [
+          11895,
+          537,
+          380,
+          0
+        ],
+        [
+          523,
+          223,
+          3685,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5641774818237413,
+        0.04002385033912201,
+        0.7615209754081422,
+        null
+      ],
+      "mean_iou": 0.4552407691903351,
+      "per_class_dice": [
+        0.721372719374457,
+        0.07696717787014476,
+        0.8646175504458001,
+        null
+      ],
+      "mean_dice": 0.5543191492301339,
+      "pixel_accuracy": 0.6079570331883593,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0016567707061768
+    },
+    "seconds_elapsed": 6.716353332973085,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 72,
+    "train_loss": 1.0016568899154663,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16868,
+          96,
+          52,
+          0
+        ],
+        [
+          12287,
+          52,
+          473,
+          0
+        ],
+        [
+          586,
+          0,
+          3845,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5643547793502627,
+        0.004028509451502944,
+        0.7758272800645682,
+        null
+      ],
+      "mean_iou": 0.4480701896221113,
+      "per_class_dice": [
+        0.7215176337232928,
+        0.008024691358024692,
+        0.8737643449607999,
+        null
+      ],
+      "mean_dice": 0.5344355566807057,
+      "pixel_accuracy": 0.6061181003531919,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.978051483631134
+    },
+    "seconds_elapsed": 6.793564666993916,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 73,
+    "train_loss": 0.978051483631134,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16861,
+          96,
+          59,
+          0
+        ],
+        [
+          12270,
+          49,
+          493,
+          0
+        ],
+        [
+          470,
+          0,
+          3961,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5666420217771205,
+        0.003796095444685466,
+        0.7949026690748545,
+        null
+      ],
+      "mean_iou": 0.45511359543222013,
+      "per_class_dice": [
+        0.7233841731557157,
+        0.007563479200432199,
+        0.8857334525939177,
+        null
+      ],
+      "mean_dice": 0.5388937016500218,
+      "pixel_accuracy": 0.6092121778218862,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.9475796222686768
+    },
+    "seconds_elapsed": 6.879874666919932,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 74,
+    "train_loss": 0.947579562664032,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16585,
+          379,
+          52,
+          0
+        ],
+        [
+          11805,
+          458,
+          549,
+          0
+        ],
+        [
+          199,
+          160,
+          4072,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5715024121295658,
+        0.034304546475919406,
+        0.809220985691574,
+        null
+      ],
+      "mean_iou": 0.471675981432353,
+      "per_class_dice": [
+        0.7273325293279246,
+        0.06633355058295315,
+        0.8945518453427065,
+        null
+      ],
+      "mean_dice": 0.5627393084178615,
+      "pixel_accuracy": 0.6163343938818997,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.998253345489502
+    },
+    "seconds_elapsed": 6.9744382499484345,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 75,
+    "train_loss": 0.998253345489502,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16657,
+          331,
+          28,
+          0
+        ],
+        [
+          11950,
+          439,
+          423,
+          0
+        ],
+        [
+          252,
+          183,
+          3996,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5700937778082005,
+        0.03294311871529341,
+        0.8185170012290045,
+        null
+      ],
+      "mean_iou": 0.4738512992508328,
+      "per_class_dice": [
+        0.7261907356948228,
+        0.06378496185978932,
+        0.9002027483667493,
+        null
+      ],
+      "mean_dice": 0.5633928153071205,
+      "pixel_accuracy": 0.6156630374500132,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.969322919845581
+    },
+    "seconds_elapsed": 7.0632465420058,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 76,
+    "train_loss": 0.969322919845581,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16911,
+          96,
+          9,
+          0
+        ],
+        [
+          12436,
+          48,
+          328,
+          0
+        ],
+        [
+          546,
+          0,
+          3885,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5637375825055003,
+        0.0037186241090796405,
+        0.8148070469798657,
+        null
+      ],
+      "mean_iou": 0.46075441786481525,
+      "per_class_dice": [
+        0.7210130252190411,
+        0.007409694350108058,
+        0.8979544666589622,
+        null
+      ],
+      "mean_dice": 0.5421257287427038,
+      "pixel_accuracy": 0.6084240637496716,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.907551109790802
+    },
+    "seconds_elapsed": 7.142674332950264,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 77,
+    "train_loss": 0.9075510501861572,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16647,
+          92,
+          277,
+          0
+        ],
+        [
+          10901,
+          54,
+          1857,
+          0
+        ],
+        [
+          106,
+          0,
+          4325,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5940477464939514,
+        0.004184748915065096,
+        0.6587966488956588,
+        null
+      ],
+      "mean_iou": 0.4190097147682252,
+      "per_class_dice": [
+        0.7453324378777704,
+        0.008334619540052476,
+        0.7943067033976124,
+        null
+      ],
+      "mean_dice": 0.5159912536051451,
+      "pixel_accuracy": 0.6137365363845997,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.9582822322845459
+    },
+    "seconds_elapsed": 7.216055582975969,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 78,
+    "train_loss": 0.9582823514938354,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          12666,
+          146,
+          0,
+          0
+        ],
+        [
+          1573,
+          107,
+          2751,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5413533834586466,
+        0.011217825585862467,
+        0.6208530805687204,
+        null
+      ],
+      "mean_iou": 0.3911414298710765,
+      "per_class_dice": [
+        0.7024390243902439,
+        0.022186763923714003,
+        0.7660818713450293,
+        null
+      ],
+      "mean_dice": 0.4969025532196623,
+      "pixel_accuracy": 0.5784465395954348,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.1106915473937988
+    },
+    "seconds_elapsed": 7.3061249169986695,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 79,
+    "train_loss": 1.1106915473937988,
+    "validation": {
+      "confusion_matrix": [
+        [
+          15733,
+          1283,
+          0,
+          0
+        ],
+        [
+          10553,
+          2259,
+          0,
+          0
+        ],
+        [
+          23,
+          2447,
+          1961,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5702015076833865,
+        0.1365614798694233,
+        0.4425637553599639,
+        null
+      ],
+      "mean_iou": 0.3831089143042579,
+      "per_class_dice": [
+        0.7262781304096941,
+        0.24030636668262326,
+        0.6135794743429287,
+        null
+      ],
+      "mean_dice": 0.5267213238117487,
+      "pixel_accuracy": 0.5824162993665898,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.4649956226348877
+    },
+    "seconds_elapsed": 7.3955966249341145,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 80,
+    "train_loss": 1.4649956226348877,
+    "validation": {
+      "confusion_matrix": [
+        [
+          14831,
+          2185,
+          0,
+          0
+        ],
+        [
+          9522,
+          3290,
+          0,
+          0
+        ],
+        [
+          23,
+          2868,
+          1540,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5583750611799254,
+        0.1841589700531766,
+        0.34755134281200634,
+        null
+      ],
+      "mean_iou": 0.3633617913483695,
+      "per_class_dice": [
+        0.7166119056822574,
+        0.31103757976837626,
+        0.5158264947245017,
+        null
+      ],
+      "mean_dice": 0.5144919933917118,
+      "pixel_accuracy": 0.5738929916226393,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.7190337181091309
+    },
+    "seconds_elapsed": 7.46331854199525,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 81,
+    "train_loss": 1.7190337181091309,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16914,
+          102,
+          0,
+          0
+        ],
+        [
+          12655,
+          157,
+          0,
+          0
+        ],
+        [
+          2296,
+          740,
+          1395,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5291081427722338,
+        0.011498461989160685,
+        0.3148273527420447,
+        null
+      ],
+      "mean_iou": 0.28514465250114646,
+      "per_class_dice": [
+        0.6920480350238334,
+        0.022735500687857506,
+        0.4788877445932029,
+        null
+      ],
+      "mean_dice": 0.3978904267682979,
+      "pixel_accuracy": 0.5390116465746227,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.8520028591156006
+    },
+    "seconds_elapsed": 7.544307000003755,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 82,
+    "train_loss": 1.8520028591156006,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16895,
+          121,
+          0,
+          0
+        ],
+        [
+          12549,
+          263,
+          0,
+          0
+        ],
+        [
+          1709,
+          1271,
+          1451,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5402251071177335,
+        0.018515911010982822,
+        0.327465583389754,
+        null
+      ],
+      "mean_iou": 0.2954022005061568,
+      "per_class_dice": [
+        0.7014885092071664,
+        0.03635860924863482,
+        0.4933696021761306,
+        null
+      ],
+      "mean_dice": 0.4104055735439773,
+      "pixel_accuracy": 0.5431857322163519,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.698061466217041
+    },
+    "seconds_elapsed": 7.630467457929626,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 83,
+    "train_loss": 1.698061466217041,
+    "validation": {
+      "confusion_matrix": [
+        [
+          6512,
+          10504,
+          0,
+          0
+        ],
+        [
+          2180,
+          10632,
+          0,
+          0
+        ],
+        [
+          12,
+          2566,
+          1853,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.3390254060807997,
+        0.4107874198284522,
+        0.41819002482509593,
+        null
+      ],
+      "mean_iou": 0.38933428357811595,
+      "per_class_dice": [
+        0.5063763608087092,
+        0.5823519745850907,
+        0.5897517504774029,
+        null
+      ],
+      "mean_dice": 0.5594933619570677,
+      "pixel_accuracy": 0.5545112233281765,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.601731300354004
+    },
+    "seconds_elapsed": 7.6988866669125855,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 84,
+    "train_loss": 1.601731300354004,
+    "validation": {
+      "confusion_matrix": [
+        [
+          6312,
+          10704,
+          0,
+          0
+        ],
+        [
+          1620,
+          11192,
+          0,
+          0
+        ],
+        [
+          8,
+          2100,
+          2323,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.3385539583780305,
+        0.43691442848219864,
+        0.5242608891897992,
+        null
+      ],
+      "mean_iou": 0.4332430920166761,
+      "per_class_dice": [
+        0.5058502965218785,
+        0.6081286676809389,
+        0.6878886585726977,
+        null
+      ],
+      "mean_dice": 0.6006225409251718,
+      "pixel_accuracy": 0.578738433696255,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.3838603496551514
+    },
+    "seconds_elapsed": 7.774238499929197,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 85,
+    "train_loss": 1.3838603496551514,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16765,
+          251,
+          0,
+          0
+        ],
+        [
+          12167,
+          645,
+          0,
+          0
+        ],
+        [
+          859,
+          732,
+          2840,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5580520604487051,
+        0.04675607104023197,
+        0.6409388399909727,
+        null
+      ],
+      "mean_iou": 0.41524899049330327,
+      "per_class_dice": [
+        0.7163458457068387,
+        0.08933518005540166,
+        0.7811855315637464,
+        null
+      ],
+      "mean_dice": 0.5289555191086622,
+      "pixel_accuracy": 0.5910855541609504,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0441505908966064
+    },
+    "seconds_elapsed": 7.857635416905396,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 86,
+    "train_loss": 1.0441505908966064,
+    "validation": {
+      "confusion_matrix": [
+        [
+          15629,
+          54,
+          1333,
+          0
+        ],
+        [
+          11589,
+          32,
+          1191,
+          0
+        ],
+        [
+          429,
+          0,
+          4002,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5382999242267686,
+        0.002487175501321312,
+        0.5754133716750539,
+        null
+      ],
+      "mean_iou": 0.3720668238010479,
+      "per_class_dice": [
+        0.6998634216241632,
+        0.004962009613893627,
+        0.7304919229716164,
+        null
+      ],
+      "mean_dice": 0.47843911806989103,
+      "pixel_accuracy": 0.5739513704428033,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.2707617282867432
+    },
+    "seconds_elapsed": 7.923435999895446,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 87,
+    "train_loss": 1.2707617282867432,
+    "validation": {
+      "confusion_matrix": [
+        [
+          15422,
+          11,
+          1583,
+          0
+        ],
+        [
+          11136,
+          11,
+          1665,
+          0
+        ],
+        [
+          278,
+          0,
+          4153,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5424551530073866,
+        0.0008578335802854246,
+        0.5408256283370231,
+        null
+      ],
+      "mean_iou": 0.36137953830823166,
+      "per_class_dice": [
+        0.703365867007206,
+        0.001714196665108306,
+        0.7019945909398242,
+        null
+      ],
+      "mean_dice": 0.4690248848707128,
+      "pixel_accuracy": 0.5717037858664876,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.3938488960266113
+    },
+    "seconds_elapsed": 7.988496582955122,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 88,
+    "train_loss": 1.3938488960266113,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16923,
+          1,
+          92,
+          0
+        ],
+        [
+          12502,
+          4,
+          306,
+          0
+        ],
+        [
+          960,
+          0,
+          3471,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5552529693549445,
+        0.0003121829392023726,
+        0.7187823565955684,
+        null
+      ],
+      "mean_iou": 0.42478250296323844,
+      "per_class_dice": [
+        0.7140355688698551,
+        0.0006241710228602637,
+        0.8363855421686747,
+        null
+      ],
+      "mean_dice": 0.5170150940204633,
+      "pixel_accuracy": 0.5954055868530898,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0903058052062988
+    },
+    "seconds_elapsed": 8.05957966693677,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 89,
+    "train_loss": 1.0903058052062988,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16959,
+          49,
+          8,
+          0
+        ],
+        [
+          12616,
+          128,
+          68,
+          0
+        ],
+        [
+          1200,
+          44,
+          3187,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5500454073689673,
+        0.009918636187524215,
+        0.7071222542711338,
+        null
+      ],
+      "mean_iou": 0.42236209927587515,
+      "per_class_dice": [
+        0.7097152183465506,
+        0.019642446098365688,
+        0.8284377436963868,
+        null
+      ],
+      "mean_dice": 0.519265136047101,
+      "pixel_accuracy": 0.591786100002919,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0130972862243652
+    },
+    "seconds_elapsed": 8.133927374961786,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 90,
+    "train_loss": 1.0130971670150757,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          11951,
+          816,
+          45,
+          0
+        ],
+        [
+          482,
+          793,
+          3156,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5745526163876532,
+        0.0595576965185023,
+        0.7050938337801609,
+        null
+      ],
+      "mean_iou": 0.4464013822287722,
+      "per_class_dice": [
+        0.7297979253380491,
+        0.11241992147137839,
+        0.8270440251572327,
+        null
+      ],
+      "mean_dice": 0.5564206239888868,
+      "pixel_accuracy": 0.6098251554336087,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0158770084381104
+    },
+    "seconds_elapsed": 8.199750166968442,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 91,
+    "train_loss": 1.0158770084381104,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16897,
+          119,
+          0,
+          0
+        ],
+        [
+          11501,
+          1188,
+          123,
+          0
+        ],
+        [
+          82,
+          1145,
+          3204,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5908248540158747,
+        0.08439897698209718,
+        0.7035573122529645,
+        null
+      ],
+      "mean_iou": 0.4595937144169788,
+      "per_class_dice": [
+        0.742790574995604,
+        0.15566037735849056,
+        0.8259860788863109,
+        null
+      ],
+      "mean_dice": 0.5748123437468018,
+      "pixel_accuracy": 0.6214133512361715,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0108600854873657
+    },
+    "seconds_elapsed": 8.26654591690749,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 92,
+    "train_loss": 1.0108599662780762,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          11900,
+          561,
+          351,
+          0
+        ],
+        [
+          292,
+          555,
+          3584,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5792933442892358,
+        0.04166976156874397,
+        0.7494772061898787,
+        null
+      ],
+      "mean_iou": 0.4568134373492862,
+      "per_class_dice": [
+        0.7336108220603538,
+        0.08000570450656018,
+        0.8568013387520917,
+        null
+      ],
+      "mean_dice": 0.5568059551063352,
+      "pixel_accuracy": 0.6148749233777986,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.9298431873321533
+    },
+    "seconds_elapsed": 8.346253374940716,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 93,
+    "train_loss": 0.9298431277275085,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16999,
+          13,
+          4,
+          0
+        ],
+        [
+          12053,
+          39,
+          720,
+          0
+        ],
+        [
+          356,
+          0,
+          4075,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5777060322854716,
+        0.0030409356725146198,
+        0.7904946653734238,
+        null
+      ],
+      "mean_iou": 0.4570805444438033,
+      "per_class_dice": [
+        0.7323367223849733,
+        0.006063432835820896,
+        0.8829902491874323,
+        null
+      ],
+      "mean_dice": 0.5404634681360755,
+      "pixel_accuracy": 0.6162760150617356,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8894210457801819
+    },
+    "seconds_elapsed": 8.43657874991186,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 94,
+    "train_loss": 0.8894211649894714,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16938,
+          1,
+          77,
+          0
+        ],
+        [
+          11216,
+          5,
+          1591,
+          0
+        ],
+        [
+          31,
+          0,
+          4400,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5992994374270247,
+        0.00039022867400296575,
+        0.721429742580751,
+        null
+      ],
+      "mean_iou": 0.44037313622725954,
+      "per_class_dice": [
+        0.7494524457423508,
+        0.0007801529099703542,
+        0.8381750642918373,
+        null
+      ],
+      "mean_dice": 0.5294692209813862,
+      "pixel_accuracy": 0.6229895793806007,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.96492600440979
+    },
+    "seconds_elapsed": 8.510452082962729,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 95,
+    "train_loss": 0.96492600440979,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16924,
+          72,
+          20,
+          0
+        ],
+        [
+          11733,
+          41,
+          1038,
+          0
+        ],
+        [
+          66,
+          0,
+          4365,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5873329862918619,
+        0.0031822415398944427,
+        0.7952268172709055,
+        null
+      ],
+      "mean_iou": 0.46191401503422064,
+      "per_class_dice": [
+        0.7400249240254487,
+        0.006344294003868472,
+        0.885934645829105,
+        null
+      ],
+      "mean_dice": 0.5441012879528074,
+      "pixel_accuracy": 0.6226101170495344,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8780589699745178
+    },
+    "seconds_elapsed": 8.582093624980189,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 96,
+    "train_loss": 0.8780589699745178,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16903,
+          113,
+          0,
+          0
+        ],
+        [
+          11807,
+          483,
+          522,
+          0
+        ],
+        [
+          56,
+          193,
+          4182,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5853042002839434,
+        0.0368196371398079,
+        0.8443367655966081,
+        null
+      ],
+      "mean_iou": 0.4888202010067864,
+      "per_class_dice": [
+        0.738412476519156,
+        0.07102418939783839,
+        0.91559934318555,
+        null
+      ],
+      "mean_dice": 0.5750120030341814,
+      "pixel_accuracy": 0.6295571966490557,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8441747426986694
+    },
+    "seconds_elapsed": 8.666870707995258,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 97,
+    "train_loss": 0.8441747426986694,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16897,
+          119,
+          0,
+          0
+        ],
+        [
+          11343,
+          1096,
+          373,
+          0
+        ],
+        [
+          24,
+          458,
+          3949,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5953211429376739,
+        0.08185824184031668,
+        0.8220233139050791,
+        null
+      ],
+      "mean_iou": 0.49973423289435653,
+      "per_class_dice": [
+        0.7463339222614841,
+        0.15132896099413187,
+        0.9023192048440535,
+        null
+      ],
+      "mean_dice": 0.5999940293665564,
+      "pixel_accuracy": 0.6404740360197321,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8904651403427124
+    },
+    "seconds_elapsed": 8.763483832939528,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 98,
+    "train_loss": 0.8904651403427124,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          96,
+          0,
+          0
+        ],
+        [
+          12249,
+          256,
+          307,
+          0
+        ],
+        [
+          222,
+          412,
+          3797,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5738121884220165,
+        0.01921921921921922,
+        0.8013929928239764,
+        null
+      ],
+      "mean_iou": 0.464808133488404,
+      "per_class_dice": [
+        0.7292003361561833,
+        0.03771361225692398,
+        0.8897480960749854,
+        null
+      ],
+      "mean_dice": 0.5522206814960309,
+      "pixel_accuracy": 0.6121894976502524,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8664512634277344
+    },
+    "seconds_elapsed": 8.84342900000047,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 99,
+    "train_loss": 0.8664512634277344,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16923,
+          93,
+          0,
+          0
+        ],
+        [
+          12341,
+          93,
+          378,
+          0
+        ],
+        [
+          286,
+          98,
+          4047,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5708936342475458,
+        0.007152195647158348,
+        0.8415470991890206,
+        null
+      ],
+      "mean_iou": 0.4731976430279083,
+      "per_class_dice": [
+        0.7268393248292746,
+        0.014202810018326207,
+        0.9139566395663956,
+        null
+      ],
+      "mean_dice": 0.5516662581379989,
+      "pixel_accuracy": 0.6148165445576345,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8374132513999939
+    },
+    "seconds_elapsed": 8.914056207984686,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 100,
+    "train_loss": 0.8374132513999939,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16996,
+          15,
+          5,
+          0
+        ],
+        [
+          11162,
+          640,
+          1010,
+          0
+        ],
+        [
+          46,
+          47,
+          4338,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6021825396825397,
+        0.04971259903681839,
+        0.7965479250826295,
+        null
+      ],
+      "mean_iou": 0.48281435460066247,
+      "per_class_dice": [
+        0.7517027863777089,
+        0.0947165902027527,
+        0.8867538838920687,
+        null
+      ],
+      "mean_dice": 0.5777244201575101,
+      "pixel_accuracy": 0.6414080971423568,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8233016729354858
+    },
+    "seconds_elapsed": 9.002176207955927,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 101,
+    "train_loss": 0.8233016729354858,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16939,
+          77,
+          0,
+          0
+        ],
+        [
+          12412,
+          139,
+          261,
+          0
+        ],
+        [
+          303,
+          120,
+          4008,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.569742020113686,
+        0.010684910446613882,
+        0.8542199488491049,
+        null
+      ],
+      "mean_iou": 0.4782156264698016,
+      "per_class_dice": [
+        0.7259052924791086,
+        0.021143900212960146,
+        0.9213793103448276,
+        null
+      ],
+      "mean_dice": 0.5561428343456322,
+      "pixel_accuracy": 0.615487900989521,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8295707702636719
+    },
+    "seconds_elapsed": 9.065557749941945,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 102,
+    "train_loss": 0.8295708298683167,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16921,
+          95,
+          0,
+          0
+        ],
+        [
+          12371,
+          379,
+          62,
+          0
+        ],
+        [
+          370,
+          461,
+          3600,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5686393117585778,
+        0.028351286654697785,
+        0.8012463832628534,
+        null
+      ],
+      "mean_iou": 0.46607899389204305,
+      "per_class_dice": [
+        0.7250096405158747,
+        0.055139303120680876,
+        0.8896577289015198,
+        null
+      ],
+      "mean_dice": 0.5566022241793585,
+      "pixel_accuracy": 0.6100586707142649,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8564603924751282
+    },
+    "seconds_elapsed": 9.133923832909204,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 103,
+    "train_loss": 0.8564603924751282,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16489,
+          415,
+          112,
+          0
+        ],
+        [
+          9485,
+          2338,
+          989,
+          0
+        ],
+        [
+          0,
+          98,
+          4333,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.622202935738274,
+        0.1754596622889306,
+        0.7832610267534346,
+        null
+      ],
+      "mean_iou": 0.5269745415935464,
+      "per_class_dice": [
+        0.7671086299139335,
+        0.2985379556917577,
+        0.8784591991890522,
+        null
+      ],
+      "mean_dice": 0.6480352615982478,
+      "pixel_accuracy": 0.6760267374996352,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.911750078201294
+    },
+    "seconds_elapsed": 9.219477457925677,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 104,
+    "train_loss": 0.9117501378059387,
+    "validation": {
+      "confusion_matrix": [
+        [
+          13671,
+          1674,
+          1671,
+          0
+        ],
+        [
+          3517,
+          4935,
+          4360,
+          0
+        ],
+        [
+          0,
+          9,
+          4422,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6658062630886865,
+        0.34046222835460505,
+        0.4226725291531256,
+        null
+      ],
+      "mean_iou": 0.476313673532139,
+      "per_class_dice": [
+        0.7993801894515261,
+        0.5079773546062789,
+        0.5941951088417092,
+        null
+      ],
+      "mean_dice": 0.6338508842998382,
+      "pixel_accuracy": 0.6721737353688082,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.5996522903442383
+    },
+    "seconds_elapsed": 9.309435333008878,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 105,
+    "train_loss": 1.5996522903442383,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16447,
+          425,
+          144,
+          0
+        ],
+        [
+          8443,
+          2930,
+          1439,
+          0
+        ],
+        [
+          0,
+          18,
+          4413,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6460190895164775,
+        0.22104866088268577,
+        0.733787828400399,
+        null
+      ],
+      "mean_iou": 0.5336185262665207,
+      "per_class_dice": [
+        0.7849472629217773,
+        0.3620636391720729,
+        0.8464563153351875,
+        null
+      ],
+      "mean_dice": 0.6644890724763459,
+      "pixel_accuracy": 0.6944160658513091,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.918052077293396
+    },
+    "seconds_elapsed": 9.383168207947165,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 106,
+    "train_loss": 0.918052077293396,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16985,
+          22,
+          9,
+          0
+        ],
+        [
+          11985,
+          245,
+          582,
+          0
+        ],
+        [
+          18,
+          64,
+          4349,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5853061787105001,
+        0.01899519305318654,
+        0.8659896455595381,
+        null
+      ],
+      "mean_iou": 0.49009700577440823,
+      "per_class_dice": [
+        0.7384140509520911,
+        0.03728220345431028,
+        0.9281826912816135,
+        null
+      ],
+      "mean_dice": 0.5679596485626717,
+      "pixel_accuracy": 0.629878280159958,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8004240989685059
+    },
+    "seconds_elapsed": 9.477044999948703,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 107,
+    "train_loss": 0.8004240989685059,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17013,
+          3,
+          0,
+          0
+        ],
+        [
+          12316,
+          176,
+          320,
+          0
+        ],
+        [
+          129,
+          177,
+          4125,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5774753063371916,
+        0.013546798029556651,
+        0.8682382656282888,
+        null
+      ],
+      "mean_iou": 0.48642012333167894,
+      "per_class_dice": [
+        0.7321513104101218,
+        0.026731470230862697,
+        0.9294727354664263,
+        null
+      ],
+      "mean_dice": 0.5627851720358036,
+      "pixel_accuracy": 0.622143086488222,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8873749375343323
+    },
+    "seconds_elapsed": 9.54570233298,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 108,
+    "train_loss": 0.8873748779296875,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17015,
+          1,
+          0,
+          0
+        ],
+        [
+          12309,
+          313,
+          190,
+          0
+        ],
+        [
+          187,
+          380,
+          3864,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5765451341827054,
+        0.023724702493746683,
+        0.8361826444492534,
+        null
+      ],
+      "mean_iou": 0.4788174937085685,
+      "per_class_dice": [
+        0.7314032712188622,
+        0.046349770472382645,
+        0.9107837360047142,
+        null
+      ],
+      "mean_dice": 0.5628455925653196,
+      "pixel_accuracy": 0.6185819784582154,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.9022285342216492
+    },
+    "seconds_elapsed": 9.621041999896988,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 109,
+    "train_loss": 0.9022285342216492,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16993,
+          23,
+          0,
+          0
+        ],
+        [
+          11862,
+          799,
+          151,
+          0
+        ],
+        [
+          19,
+          676,
+          3736,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5880541232653909,
+        0.05913699948190363,
+        0.8153644696639022,
+        null
+      ],
+      "mean_iou": 0.4875185308037322,
+      "per_class_dice": [
+        0.7405970799738505,
+        0.1116701607267645,
+        0.898292858860303,
+        null
+      ],
+      "mean_dice": 0.5835200331869727,
+      "pixel_accuracy": 0.6283896202457748,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8413581252098083
+    },
+    "seconds_elapsed": 9.69841341697611,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 110,
+    "train_loss": 0.8413580656051636,
+    "validation": {
+      "confusion_matrix": [
+        [
+          11845,
+          5171,
+          0,
+          0
+        ],
+        [
+          2499,
+          10012,
+          301,
+          0
+        ],
+        [
+          5,
+          407,
+          4019,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6068135245901639,
+        0.544426318651441,
+        0.849323753169907,
+        null
+      ],
+      "mean_iou": 0.6668545321371706,
+      "per_class_dice": [
+        0.7553004941814124,
+        0.705020773184987,
+        0.9185235973031654,
+        null
+      ],
+      "mean_dice": 0.7929482882231883,
+      "pixel_accuracy": 0.7553051752824076,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.9854798316955566
+    },
+    "seconds_elapsed": 9.769739874987863,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 111,
+    "train_loss": 0.9854798316955566,
+    "validation": {
+      "confusion_matrix": [
+        [
+          178,
+          16833,
+          5,
+          0
+        ],
+        [
+          0,
+          12284,
+          528,
+          0
+        ],
+        [
+          0,
+          250,
+          4181,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.010460742830277385,
+        0.4109048335842114,
+        0.8422643029814666,
+        null
+      ],
+      "mean_iou": 0.42120995979865183,
+      "per_class_dice": [
+        0.020704897057112946,
+        0.5824699495009364,
+        0.9143794423182067,
+        null
+      ],
+      "mean_dice": 0.5058514296254187,
+      "pixel_accuracy": 0.48579935199509616,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.2182321548461914
+    },
+    "seconds_elapsed": 9.868535749963485,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 112,
+    "train_loss": 1.2182321548461914,
+    "validation": {
+      "confusion_matrix": [
+        [
+          362,
+          16642,
+          12,
+          0
+        ],
+        [
+          0,
+          11999,
+          813,
+          0
+        ],
+        [
+          0,
+          130,
+          4301,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.021274094969440528,
+        0.4055908599242834,
+        0.818302891933029,
+        null
+      ],
+      "mean_iou": 0.41505594894225095,
+      "per_class_dice": [
+        0.04166187133156865,
+        0.5771108385638362,
+        0.9000732447420738,
+        null
+      ],
+      "mean_dice": 0.5062819848791595,
+      "pixel_accuracy": 0.4863539507866546,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.221574068069458
+    },
+    "seconds_elapsed": 9.931454916950315,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 113,
+    "train_loss": 1.221574068069458,
+    "validation": {
+      "confusion_matrix": [
+        [
+          7849,
+          9146,
+          21,
+          0
+        ],
+        [
+          813,
+          10917,
+          1082,
+          0
+        ],
+        [
+          0,
+          53,
+          4378,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.4402378147961187,
+        0.49597928308572986,
+        0.7911095048789303,
+        null
+      ],
+      "mean_iou": 0.575775534253593,
+      "per_class_dice": [
+        0.6113404470753174,
+        0.6630830903790087,
+        0.8833736884584342,
+        null
+      ],
+      "mean_dice": 0.71926574197092,
+      "pixel_accuracy": 0.6755597069383228,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0934748649597168
+    },
+    "seconds_elapsed": 10.002832416910678,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 114,
+    "train_loss": 1.0934748649597168,
+    "validation": {
+      "confusion_matrix": [
+        [
+          14935,
+          2060,
+          21,
+          0
+        ],
+        [
+          4188,
+          7433,
+          1191,
+          0
+        ],
+        [
+          7,
+          23,
+          4401,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.7041157889774173,
+        0.499026518966096,
+        0.7799043062200957,
+        null
+      ],
+      "mean_iou": 0.6610155380545363,
+      "per_class_dice": [
+        0.826370829414043,
+        0.6658007882479398,
+        0.8763440860215054,
+        null
+      ],
+      "mean_dice": 0.7895052345611627,
+      "pixel_accuracy": 0.7813713184856534,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.950541079044342
+    },
+    "seconds_elapsed": 10.086527167004533,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 115,
+    "train_loss": 0.950541079044342,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16971,
+          25,
+          20,
+          0
+        ],
+        [
+          10362,
+          1476,
+          974,
+          0
+        ],
+        [
+          8,
+          56,
+          4367,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.619696195136201,
+        0.11448072597533546,
+        0.8049769585253457,
+        null
+      ],
+      "mean_iou": 0.513051293212294,
+      "per_class_dice": [
+        0.765200532046802,
+        0.2054422715568237,
+        0.891952614379085,
+        null
+      ],
+      "mean_dice": 0.6208651393275703,
+      "pixel_accuracy": 0.6659272016112554,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8400241136550903
+    },
+    "seconds_elapsed": 10.163800499984063,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 116,
+    "train_loss": 0.8400241732597351,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17010,
+          1,
+          5,
+          0
+        ],
+        [
+          12199,
+          174,
+          439,
+          0
+        ],
+        [
+          131,
+          114,
+          4186,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5796360662441219,
+        0.013460199582269667,
+        0.8586666666666667,
+        null
+      ],
+      "mean_iou": 0.4839209774976861,
+      "per_class_dice": [
+        0.733885581154543,
+        0.026562857797114724,
+        0.9239598278335724,
+        null
+      ],
+      "mean_dice": 0.5614694222617435,
+      "pixel_accuracy": 0.6237776934528153,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.9613134860992432
+    },
+    "seconds_elapsed": 10.229383291909471,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 117,
+    "train_loss": 0.9613134860992432,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17015,
+          0,
+          1,
+          0
+        ],
+        [
+          12396,
+          102,
+          314,
+          0
+        ],
+        [
+          286,
+          107,
+          4038,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5729342043235235,
+        0.007895347937146838,
+        0.8508217446270544,
+        null
+      ],
+      "mean_iou": 0.47721709896257486,
+      "per_class_dice": [
+        0.7284909982231926,
+        0.01566699946240688,
+        0.9193989071038251,
+        null
+      ],
+      "mean_dice": 0.5545189682631415,
+      "pixel_accuracy": 0.6175019702851805,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0722728967666626
+    },
+    "seconds_elapsed": 10.304533874965273,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 118,
+    "train_loss": 1.072272777557373,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16728,
+          288,
+          0,
+          0
+        ],
+        [
+          12182,
+          354,
+          276,
+          0
+        ],
+        [
+          201,
+          274,
+          3956,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5689989455423654,
+        0.026469268730372364,
+        0.840450393031655,
+        null
+      ],
+      "mean_iou": 0.47863953576813095,
+      "per_class_dice": [
+        0.7253018839291521,
+        0.051573426573426576,
+        0.9133094770864597,
+        null
+      ],
+      "mean_dice": 0.5633949291963462,
+      "pixel_accuracy": 0.6140868093055839,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.823581337928772
+    },
+    "seconds_elapsed": 10.391053207917139,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 119,
+    "train_loss": 0.8235813975334167,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16835,
+          177,
+          4,
+          0
+        ],
+        [
+          11875,
+          427,
+          510,
+          0
+        ],
+        [
+          15,
+          120,
+          4296,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5824050370165363,
+        0.03257304142192387,
+        0.8687563195146613,
+        null
+      ],
+      "mean_iou": 0.4945781326510405,
+      "per_class_dice": [
+        0.7361010909249907,
+        0.06309101654846336,
+        0.9297695054647765,
+        null
+      ],
+      "mean_dice": 0.5763205376460768,
+      "pixel_accuracy": 0.6292653025482355,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.7803415656089783
+    },
+    "seconds_elapsed": 10.456360041978769,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 120,
+    "train_loss": 0.7803415060043335,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16993,
+          10,
+          13,
+          0
+        ],
+        [
+          11807,
+          201,
+          804,
+          0
+        ],
+        [
+          10,
+          8,
+          4413,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5893594145597059,
+        0.015666406858924398,
+        0.840891768292683,
+        null
+      ],
+      "mean_iou": 0.4819725299037711,
+      "per_class_dice": [
+        0.7416313882948544,
+        0.030849512700483462,
+        0.9135700238070593,
+        null
+      ],
+      "mean_dice": 0.5620169749341324,
+      "pixel_accuracy": 0.6306955836422546,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8738347887992859
+    },
+    "seconds_elapsed": 10.522563999984413,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 121,
+    "train_loss": 0.8738347887992859,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16926,
+          50,
+          40,
+          0
+        ],
+        [
+          11233,
+          364,
+          1215,
+          0
+        ],
+        [
+          6,
+          4,
+          4421,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5990444169173598,
+        0.028291621327529923,
+        0.7775237425255013,
+        null
+      ],
+      "mean_iou": 0.46828659359013036,
+      "per_class_dice": [
+        0.7492530045815718,
+        0.05502645502645503,
+        0.874839220342337,
+        null
+      ],
+      "mean_dice": 0.5597062266501213,
+      "pixel_accuracy": 0.6337312822907849,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8505805730819702
+    },
+    "seconds_elapsed": 10.594822666957043,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 122,
+    "train_loss": 0.8505805730819702,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16727,
+          263,
+          26,
+          0
+        ],
+        [
+          8998,
+          2716,
+          1098,
+          0
+        ],
+        [
+          4,
+          21,
+          4406,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6429010684910447,
+        0.2073915699450214,
+        0.7931593159315932,
+        null
+      ],
+      "mean_iou": 0.5478173181225531,
+      "per_class_dice": [
+        0.7826412445900105,
+        0.3435365545155578,
+        0.8846501355285614,
+        null
+      ],
+      "mean_dice": 0.6702759782113766,
+      "pixel_accuracy": 0.6961382410461484,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8570306897163391
+    },
+    "seconds_elapsed": 10.673948457930237,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 123,
+    "train_loss": 0.8570306897163391,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16920,
+          89,
+          7,
+          0
+        ],
+        [
+          11149,
+          951,
+          712,
+          0
+        ],
+        [
+          11,
+          163,
+          4257,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.600511073253833,
+        0.07279546846295162,
+        0.8266019417475728,
+        null
+      ],
+      "mean_iou": 0.49996949448811917,
+      "per_class_dice": [
+        0.7503991484832357,
+        0.13571173742418838,
+        0.9050706920378442,
+        null
+      ],
+      "mean_dice": 0.5970605259817562,
+      "pixel_accuracy": 0.6459032662949882,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8111716508865356
+    },
+    "seconds_elapsed": 10.770331374951638,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 124,
+    "train_loss": 0.8111716508865356,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17012,
+          4,
+          0,
+          0
+        ],
+        [
+          12105,
+          567,
+          140,
+          0
+        ],
+        [
+          180,
+          281,
+          3970,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5805945189583973,
+        0.0432923570283271,
+        0.8685189236490921,
+        null
+      ],
+      "mean_iou": 0.4974685998786055,
+      "per_class_dice": [
+        0.734653337075983,
+        0.08299180327868852,
+        0.9296335323732584,
+        null
+      ],
+      "mean_dice": 0.5824262242426433,
+      "pixel_accuracy": 0.6290025978574973,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8124746084213257
+    },
+    "seconds_elapsed": 10.833425832912326,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 125,
+    "train_loss": 0.8124746084213257,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17010,
+          6,
+          0,
+          0
+        ],
+        [
+          12168,
+          627,
+          17,
+          0
+        ],
+        [
+          158,
+          295,
+          3978,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5797150841796742,
+        0.04781514527568062,
+        0.8943345323741008,
+        null
+      ],
+      "mean_iou": 0.5072882539431519,
+      "per_class_dice": [
+        0.7339489126682776,
+        0.09126637554585153,
+        0.9442202705910278,
+        null
+      ],
+      "mean_dice": 0.5898118529350523,
+      "pixel_accuracy": 0.6309290989229107,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8099964261054993
+    },
+    "seconds_elapsed": 10.903454749961384,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 126,
+    "train_loss": 0.8099964261054993,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16993,
+          19,
+          4,
+          0
+        ],
+        [
+          11695,
+          915,
+          202,
+          0
+        ],
+        [
+          8,
+          213,
+          4210,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5916988753090289,
+        0.07014719411223551,
+        0.9079145999568686,
+        null
+      ],
+      "mean_iou": 0.5232535564593777,
+      "per_class_dice": [
+        0.7434809240462024,
+        0.1310982162045992,
+        0.9517350514298633,
+        null
+      ],
+      "mean_dice": 0.6087713972268882,
+      "pixel_accuracy": 0.645611372194168,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.7392436861991882
+    },
+    "seconds_elapsed": 10.991890791920014,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 127,
+    "train_loss": 0.7392436861991882,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16579,
+          415,
+          22,
+          0
+        ],
+        [
+          8769,
+          3401,
+          642,
+          0
+        ],
+        [
+          5,
+          5,
+          4421,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6428460643660333,
+        0.25702841596130593,
+        0.8677134445534838,
+        null
+      ],
+      "mean_iou": 0.5891959749602743,
+      "per_class_dice": [
+        0.7826004862045364,
+        0.40894607106354836,
+        0.9291719209751996,
+        null
+      ],
+      "mean_dice": 0.706906159414428,
+      "pixel_accuracy": 0.7122507954114248,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.7375870943069458
+    },
+    "seconds_elapsed": 11.08819037489593,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 128,
+    "train_loss": 0.7375870943069458,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16995,
+          15,
+          6,
+          0
+        ],
+        [
+          11482,
+          922,
+          408,
+          0
+        ],
+        [
+          7,
+          14,
+          4410,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5962111910191195,
+        0.07180126158398878,
+        0.9102167182662538,
+        null
+      ],
+      "mean_iou": 0.5260763902897874,
+      "per_class_dice": [
+        0.7470329670329671,
+        0.1339824166242825,
+        0.9529983792544571,
+        null
+      ],
+      "mean_dice": 0.6113379209705689,
+      "pixel_accuracy": 0.6517119589013106,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.7856942415237427
+    },
+    "seconds_elapsed": 11.150474666967057,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 129,
+    "train_loss": 0.7856942415237427,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16919,
+          97,
+          0,
+          0
+        ],
+        [
+          10630,
+          1949,
+          233,
+          0
+        ],
+        [
+          23,
+          300,
+          4108,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6114785500018071,
+        0.14755091225679462,
+        0.8807890222984562,
+        null
+      ],
+      "mean_iou": 0.5466061615190193,
+      "per_class_dice": [
+        0.7589037409168387,
+        0.25715793640321943,
+        0.9366165070679434,
+        null
+      ],
+      "mean_dice": 0.6508927281293339,
+      "pixel_accuracy": 0.6706558860445431,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.7844558954238892
+    },
+    "seconds_elapsed": 11.22001808299683,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 130,
+    "train_loss": 0.7844558954238892,
+    "validation": {
+      "confusion_matrix": [
+        [
+          753,
+          16263,
+          0,
+          0
+        ],
+        [
+          190,
+          12489,
+          133,
+          0
+        ],
+        [
+          9,
+          622,
+          3800,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.043740923613128084,
+        0.4205475300535408,
+        0.8326029798422436,
+        null
+      ],
+      "mean_iou": 0.43229714450297085,
+      "per_class_dice": [
+        0.08381567230632235,
+        0.5920921632769165,
+        0.9086561453849833,
+        null
+      ],
+      "mean_dice": 0.528187993656074,
+      "pixel_accuracy": 0.49744592661782305,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.4569848775863647
+    },
+    "seconds_elapsed": 11.303868249990046,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 131,
+    "train_loss": 1.4569848775863647,
+    "validation": {
+      "confusion_matrix": [
+        [
+          236,
+          16780,
+          0,
+          0
+        ],
+        [
+          51,
+          12695,
+          66,
+          0
+        ],
+        [
+          17,
+          740,
+          3674,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.013814095059704988,
+        0.41853488065409467,
+        0.8169891038470091,
+        null
+      ],
+      "mean_iou": 0.4164460265202696,
+      "per_class_dice": [
+        0.02725173210161663,
+        0.5900945917679596,
+        0.8992779341573859,
+        null
+      ],
+      "mean_dice": 0.5055414193423208,
+      "pixel_accuracy": 0.4846901544119793,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 2.0290093421936035
+    },
+    "seconds_elapsed": 11.393577582901344,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 132,
+    "train_loss": 2.0290095806121826,
+    "validation": {
+      "confusion_matrix": [
+        [
+          4834,
+          12182,
+          0,
+          0
+        ],
+        [
+          2185,
+          10598,
+          29,
+          0
+        ],
+        [
+          88,
+          695,
+          3648,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.250609155477215,
+        0.4125501187278602,
+        0.8179372197309417,
+        null
+      ],
+      "mean_iou": 0.49369883131200565,
+      "per_class_dice": [
+        0.4007793392198317,
+        0.5841210350814341,
+        0.8998519980266404,
+        null
+      ],
+      "mean_dice": 0.6282507907759688,
+      "pixel_accuracy": 0.5569339443649843,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0999624729156494
+    },
+    "seconds_elapsed": 11.461866999976337,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 133,
+    "train_loss": 1.0999624729156494,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17009,
+          7,
+          0,
+          0
+        ],
+        [
+          11721,
+          1083,
+          8,
+          0
+        ],
+        [
+          303,
+          446,
+          3682,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5857093663911845,
+        0.08164342254052016,
+        0.8294660959675603,
+        null
+      ],
+      "mean_iou": 0.49893962829975497,
+      "per_class_dice": [
+        0.7387348259462746,
+        0.15096180652355728,
+        0.9067848787095185,
+        null
+      ],
+      "mean_dice": 0.5988271703931168,
+      "pixel_accuracy": 0.6355702151259524,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.9463822841644287
+    },
+    "seconds_elapsed": 11.541597291943617,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 134,
+    "train_loss": 0.9463822841644287,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17006,
+          10,
+          0,
+          0
+        ],
+        [
+          11733,
+          1046,
+          33,
+          0
+        ],
+        [
+          148,
+          295,
+          3988,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5885039969547011,
+        0.07974384386673782,
+        0.8933691756272402,
+        null
+      ],
+      "mean_iou": 0.520539005482893,
+      "per_class_dice": [
+        0.7409537502995447,
+        0.14770881875308903,
+        0.9436819687647894,
+        null
+      ],
+      "mean_dice": 0.6107815126058077,
+      "pixel_accuracy": 0.6433345982077702,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.9083843231201172
+    },
+    "seconds_elapsed": 11.63268712500576,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 135,
+    "train_loss": 0.9083843231201172,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16640,
+          376,
+          0,
+          0
+        ],
+        [
+          8857,
+          3742,
+          213,
+          0
+        ],
+        [
+          50,
+          160,
+          4221,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6419010145430699,
+        0.2803416242133653,
+        0.9089147286821705,
+        null
+      ],
+      "mean_iou": 0.6103857891462019,
+      "per_class_dice": [
+        0.7818997721025304,
+        0.43791691047396136,
+        0.9522842639593908,
+        null
+      ],
+      "mean_dice": 0.7240336488452942,
+      "pixel_accuracy": 0.7181470562479932,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.7147325873374939
+    },
+    "seconds_elapsed": 11.710237874998711,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 136,
+    "train_loss": 0.7147325873374939,
+    "validation": {
+      "confusion_matrix": [
+        [
+          12121,
+          4890,
+          5,
+          0
+        ],
+        [
+          1159,
+          11022,
+          631,
+          0
+        ],
+        [
+          7,
+          56,
+          4368,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6666483335166649,
+        0.6206780042797613,
+        0.8620485494375371,
+        null
+      ],
+      "mean_iou": 0.7164582957446544,
+      "per_class_dice": [
+        0.7999867999868,
+        0.765948575399583,
+        0.9259141494435612,
+        null
+      ],
+      "mean_dice": 0.830616508276648,
+      "pixel_accuracy": 0.803029860766514,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.895284116268158
+    },
+    "seconds_elapsed": 11.781875624903478,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 137,
+    "train_loss": 0.8952840566635132,
+    "validation": {
+      "confusion_matrix": [
+        [
+          6150,
+          10837,
+          29,
+          0
+        ],
+        [
+          37,
+          10369,
+          2406,
+          0
+        ],
+        [
+          0,
+          29,
+          4402,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.36064035653550697,
+        0.43791705380522006,
+        0.6411302068161957,
+        null
+      ],
+      "mean_iou": 0.47989587238564085,
+      "per_class_dice": [
+        0.5301038658794122,
+        0.609099186418774,
+        0.7813276535321264,
+        null
+      ],
+      "mean_dice": 0.6401769019434376,
+      "pixel_accuracy": 0.6106716483259873,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.169351577758789
+    },
+    "seconds_elapsed": 11.877384249935858,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 138,
+    "train_loss": 1.169351577758789,
+    "validation": {
+      "confusion_matrix": [
+        [
+          12435,
+          4308,
+          273,
+          0
+        ],
+        [
+          584,
+          9865,
+          2363,
+          0
+        ],
+        [
+          0,
+          26,
+          4405,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.7065340909090909,
+        0.5753528519771375,
+        0.6233196547332673,
+        null
+      ],
+      "mean_iou": 0.6350688658731652,
+      "per_class_dice": [
+        0.8280339603795572,
+        0.7304431527896043,
+        0.7679567642956764,
+        null
+      ],
+      "mean_dice": 0.775477959154946,
+      "pixel_accuracy": 0.779503196240404,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0837578773498535
+    },
+    "seconds_elapsed": 11.945974792004563,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 139,
+    "train_loss": 1.0837578773498535,
+    "validation": {
+      "confusion_matrix": [
+        [
+          14699,
+          2313,
+          4,
+          0
+        ],
+        [
+          5441,
+          6187,
+          1184,
+          0
+        ],
+        [
+          0,
+          65,
+          4366,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6545397871487733,
+        0.40730743910467415,
+        0.7770065848015661,
+        null
+      ],
+      "mean_iou": 0.6129512703516712,
+      "per_class_dice": [
+        0.7912046506620735,
+        0.5788464237264349,
+        0.8745117676514772,
+        null
+      ],
+      "mean_dice": 0.7481876140133285,
+      "pixel_accuracy": 0.7370909833912257,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.764430046081543
+    },
+    "seconds_elapsed": 12.028943082899787,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 140,
+    "train_loss": 0.764430046081543,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17011,
+          5,
+          0,
+          0
+        ],
+        [
+          12209,
+          603,
+          0,
+          0
+        ],
+        [
+          45,
+          362,
+          4024,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5811752647762214,
+        0.04575460960619167,
+        0.9081471451139698,
+        null
+      ],
+      "mean_iou": 0.5116923398321277,
+      "per_class_dice": [
+        0.735118083014628,
+        0.08750544188071398,
+        0.9518628030751035,
+        null
+      ],
+      "mean_dice": 0.5914954426568152,
+      "pixel_accuracy": 0.6316004553547973,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8362350463867188
+    },
+    "seconds_elapsed": 12.114296916988678,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 141,
+    "train_loss": 0.8362351059913635,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17015,
+          1,
+          0,
+          0
+        ],
+        [
+          12493,
+          319,
+          0,
+          0
+        ],
+        [
+          174,
+          627,
+          3630,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5732237307549776,
+        0.023735119047619047,
+        0.8192281651997292,
+        null
+      ],
+      "mean_iou": 0.47206233833410866,
+      "per_class_dice": [
+        0.7287249989292903,
+        0.046369648957046296,
+        0.9006326758466692,
+        null
+      ],
+      "mean_dice": 0.5585757745776686,
+      "pixel_accuracy": 0.6119267929595142,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0724477767944336
+    },
+    "seconds_elapsed": 12.181710582925007,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 142,
+    "train_loss": 1.0724477767944336,
+    "validation": {
+      "confusion_matrix": [
+        [
+          17011,
+          5,
+          0,
+          0
+        ],
+        [
+          12448,
+          364,
+          0,
+          0
+        ],
+        [
+          136,
+          686,
+          3609,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.574695945945946,
+        0.02695697252462416,
+        0.8144888287068381,
+        null
+      ],
+      "mean_iou": 0.4720472490591361,
+      "per_class_dice": [
+        0.7299135397223832,
+        0.0524987380111055,
+        0.8977611940298508,
+        null
+      ],
+      "mean_dice": 0.5600578239211131,
+      "pixel_accuracy": 0.6125105811611548,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.0560922622680664
+    },
+    "seconds_elapsed": 12.260781832970679,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 143,
+    "train_loss": 1.0560922622680664,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16996,
+          19,
+          1,
+          0
+        ],
+        [
+          12050,
+          762,
+          0,
+          0
+        ],
+        [
+          12,
+          537,
+          3882,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.5844968704862783,
+        0.057001795332136444,
+        0.8759025270758123,
+        null
+      ],
+      "mean_iou": 0.505800397631409,
+      "per_class_dice": [
+        0.7377696748708599,
+        0.10785562632696391,
+        0.9338465239355305,
+        null
+      ],
+      "mean_dice": 0.5931572750444514,
+      "pixel_accuracy": 0.6316588341749613,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8454338312149048
+    },
+    "seconds_elapsed": 12.349922124994919,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 144,
+    "train_loss": 0.8454338312149048,
+    "validation": {
+      "confusion_matrix": [
+        [
+          15981,
+          1030,
+          5,
+          0
+        ],
+        [
+          7079,
+          5733,
+          0,
+          0
+        ],
+        [
+          0,
+          195,
+          4236,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6632496368541191,
+        0.4084206026928831,
+        0.9549143372407575,
+        null
+      ],
+      "mean_iou": 0.6755281922625865,
+      "per_class_dice": [
+        0.7975346841002096,
+        0.5799696509863429,
+        0.9769372693726938,
+        null
+      ],
+      "mean_dice": 0.7848138681530821,
+      "pixel_accuracy": 0.7574651916284771,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.6908574104309082
+    },
+    "seconds_elapsed": 12.441336332936771,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 145,
+    "train_loss": 0.6908574104309082,
+    "validation": {
+      "confusion_matrix": [
+        [
+          12629,
+          4332,
+          55,
+          0
+        ],
+        [
+          1961,
+          10089,
+          762,
+          0
+        ],
+        [
+          0,
+          11,
+          4420,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6654898034462771,
+        0.5881084232002332,
+        0.8422256097560976,
+        null
+      ],
+      "mean_iou": 0.6986079454675359,
+      "per_class_dice": [
+        0.7991520597354933,
+        0.7406401409484658,
+        0.9143566404633844,
+        null
+      ],
+      "mean_dice": 0.8180496137157811,
+      "pixel_accuracy": 0.7921422108059196,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8195666670799255
+    },
+    "seconds_elapsed": 12.495183749939315,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 146,
+    "train_loss": 0.8195666670799255,
+    "validation": {
+      "confusion_matrix": [
+        [
+          11035,
+          5521,
+          460,
+          0
+        ],
+        [
+          448,
+          9979,
+          2385,
+          0
+        ],
+        [
+          0,
+          0,
+          4431,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6318712780577187,
+        0.5443189876179567,
+        0.6089884551951622,
+        null
+      ],
+      "mean_iou": 0.5950595736236125,
+      "per_class_dice": [
+        0.7744131373030633,
+        0.7049307714043516,
+        0.7569830016229606,
+        null
+      ],
+      "mean_dice": 0.7454423034434585,
+      "pixel_accuracy": 0.742724539537056,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.1000559329986572
+    },
+    "seconds_elapsed": 12.55446824990213,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 147,
+    "train_loss": 1.1000559329986572,
+    "validation": {
+      "confusion_matrix": [
+        [
+          10977,
+          5471,
+          568,
+          0
+        ],
+        [
+          638,
+          8946,
+          3228,
+          0
+        ],
+        [
+          0,
+          0,
+          4431,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6217854310637816,
+        0.4893070065087786,
+        0.5385924395283822,
+        null
+      ],
+      "mean_iou": 0.5498949590336474,
+      "per_class_dice": [
+        0.7667912402640494,
+        0.6570935399757611,
+        0.7001106019908359,
+        null
+      ],
+      "mean_dice": 0.7079984607435489,
+      "pixel_accuracy": 0.7108788931375697,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 1.141564965248108
+    },
+    "seconds_elapsed": 12.623657541931607,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 148,
+    "train_loss": 1.141564965248108,
+    "validation": {
+      "confusion_matrix": [
+        [
+          13618,
+          3206,
+          192,
+          0
+        ],
+        [
+          2624,
+          9041,
+          1147,
+          0
+        ],
+        [
+          0,
+          5,
+          4426,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6933808553971487,
+        0.564251388628846,
+        0.7670710571923743,
+        null
+      ],
+      "mean_iou": 0.6749011004061231,
+      "per_class_dice": [
+        0.8189307835708701,
+        0.7214331311841685,
+        0.8681836014123185,
+        null
+      ],
+      "mean_dice": 0.8028491720557858,
+      "pixel_accuracy": 0.7905951720715725,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.794724702835083
+    },
+    "seconds_elapsed": 12.703536749933846,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 149,
+    "train_loss": 0.794724702835083,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16095,
+          896,
+          25,
+          0
+        ],
+        [
+          6320,
+          6160,
+          332,
+          0
+        ],
+        [
+          2,
+          17,
+          4412,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6896477847287685,
+        0.448816029143898,
+        0.9214703425229741,
+        null
+      ],
+      "mean_iou": 0.6866447187985468,
+      "per_class_dice": [
+        0.8163213552101032,
+        0.6195624842846367,
+        0.9591304347826087,
+        null
+      ],
+      "mean_dice": 0.7983380914257828,
+      "pixel_accuracy": 0.7783939986572871,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.7229433059692383
+    },
+    "seconds_elapsed": 12.791244416963309,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 150,
+    "train_loss": 0.7229433059692383,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16640,
+          373,
+          3,
+          0
+        ],
+        [
+          8205,
+          4557,
+          50,
+          0
+        ],
+        [
+          5,
+          92,
+          4334,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6596368825814636,
+        0.34322512615801765,
+        0.9665477252453167,
+        null
+      ],
+      "mean_iou": 0.656469911328266,
+      "per_class_dice": [
+        0.7949171165145942,
+        0.5110463160255692,
+        0.9829893399863915,
+        null
+      ],
+      "mean_dice": 0.7629842575088516,
+      "pixel_accuracy": 0.7452348288041099,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8437505960464478
+    },
+    "seconds_elapsed": 12.85827566694934,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 151,
+    "train_loss": 0.8437506556510925,
+    "validation": {
+      "confusion_matrix": [
+        [
+          16513,
+          503,
+          0,
+          0
+        ],
+        [
+          7503,
+          5309,
+          0,
+          0
+        ],
+        [
+          6,
+          320,
+          4105,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6733129459734964,
+        0.3893656032269894,
+        0.9264274430151207,
+        null
+      ],
+      "mean_iou": 0.6630353307385355,
+      "per_class_dice": [
+        0.8047663141478629,
+        0.5604940878378378,
+        0.961808809746954,
+        null
+      ],
+      "mean_dice": 0.7756897372442183,
+      "pixel_accuracy": 0.7567938351965907,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.8121753334999084
+    },
+    "seconds_elapsed": 12.930527874967083,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 152,
+    "train_loss": 0.8121753334999084,
+    "validation": {
+      "confusion_matrix": [
+        [
+          14820,
+          2196,
+          0,
+          0
+        ],
+        [
+          4068,
+          8744,
+          0,
+          0
+        ],
+        [
+          2,
+          507,
+          3922,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.7028360049321825,
+        0.5635836287463745,
+        0.8851275107199278,
+        null
+      ],
+      "mean_iou": 0.7171823814661615,
+      "per_class_dice": [
+        0.8254887762490949,
+        0.7208870934498537,
+        0.9390638094097928,
+        null
+      ],
+      "mean_dice": 0.8284798930362473,
+      "pixel_accuracy": 0.8023001255144634,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.6744393110275269
+    },
+    "seconds_elapsed": 13.009888874948956,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 153,
+    "train_loss": 0.6744393110275269,
+    "validation": {
+      "confusion_matrix": [
+        [
+          13035,
+          3981,
+          0,
+          0
+        ],
+        [
+          2078,
+          10734,
+          0,
+          0
+        ],
+        [
+          0,
+          425,
+          4006,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6826751859222793,
+        0.6234173539319317,
+        0.9040848566914917,
+        null
+      ],
+      "mean_iou": 0.7367257988485676,
+      "per_class_dice": [
+        0.8114164773257805,
+        0.7680309101316543,
+        0.9496266445418988,
+        null
+      ],
+      "mean_dice": 0.8430246773331111,
+      "pixel_accuracy": 0.8107358650281677,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.6935495138168335
+    },
+    "seconds_elapsed": 13.10880812490359,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 154,
+    "train_loss": 0.6935495138168335,
+    "validation": {
+      "confusion_matrix": [
+        [
+          14403,
+          2612,
+          1,
+          0
+        ],
+        [
+          3502,
+          9310,
+          0,
+          0
+        ],
+        [
+          3,
+          357,
+          4071,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.7018663807806637,
+        0.5899499398010265,
+        0.9185469314079422,
+        null
+      ],
+      "mean_iou": 0.7367877506632108,
+      "per_class_dice": [
+        0.8248196082922918,
+        0.7420987605117373,
+        0.9575443960954957,
+        null
+      ],
+      "mean_dice": 0.8414875882998416,
+      "pixel_accuracy": 0.8109985697189059,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.6310924887657166
+    },
+    "seconds_elapsed": 13.192771916976199,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 155,
+    "train_loss": 0.6310925483703613,
+    "validation": {
+      "confusion_matrix": [
+        [
+          15719,
+          1294,
+          3,
+          0
+        ],
+        [
+          5590,
+          7048,
+          174,
+          0
+        ],
+        [
+          5,
+          224,
+          4202,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6951926053690681,
+        0.49183531053733426,
+        0.9118923611111112,
+        null
+      ],
+      "mean_iou": 0.6996400923391711,
+      "per_class_dice": [
+        0.82019306026611,
+        0.6593694452240622,
+        0.9539160045402951,
+        null
+      ],
+      "mean_dice": 0.8111595033434891,
+      "pixel_accuracy": 0.7872092005020579,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.640061616897583
+    },
+    "seconds_elapsed": 13.28117391699925,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 156,
+    "train_loss": 0.640061616897583,
+    "validation": {
+      "confusion_matrix": [
+        [
+          15197,
+          1814,
+          5,
+          0
+        ],
+        [
+          4852,
+          7399,
+          561,
+          0
+        ],
+        [
+          0,
+          121,
+          4310,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6949423815620999,
+        0.50172916525395,
+        0.8625175105063038,
+        null
+      ],
+      "mean_iou": 0.6863963524407845,
+      "per_class_dice": [
+        0.8200188857412654,
+        0.6682019326289171,
+        0.9261845922423982,
+        null
+      ],
+      "mean_dice": 0.804801803537527,
+      "pixel_accuracy": 0.7853702676668904,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.633378267288208
+    },
+    "seconds_elapsed": 13.36748970800545,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 157,
+    "train_loss": 0.6333781480789185,
+    "validation": {
+      "confusion_matrix": [
+        [
+          13507,
+          3497,
+          12,
+          0
+        ],
+        [
+          2485,
+          9523,
+          804,
+          0
+        ],
+        [
+          0,
+          56,
+          4375,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6926311471206604,
+        0.5819126183929118,
+        0.833809796073947,
+        null
+      ],
+      "mean_iou": 0.702784520529173,
+      "per_class_dice": [
+        0.8184076587493941,
+        0.7357076637824475,
+        0.9093743504468925,
+        null
+      ],
+      "mean_dice": 0.8211632243262447,
+      "pixel_accuracy": 0.7999357832978196,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.6430100798606873
+    },
+    "seconds_elapsed": 13.434161041979678,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 158,
+    "train_loss": 0.6430100798606873,
+    "validation": {
+      "confusion_matrix": [
+        [
+          13657,
+          3351,
+          8,
+          0
+        ],
+        [
+          2659,
+          9678,
+          475,
+          0
+        ],
+        [
+          0,
+          95,
+          4336,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6941296060991106,
+        0.5952761717308402,
+        0.8823768823768824,
+        null
+      ],
+      "mean_iou": 0.7239275534022777,
+      "per_class_dice": [
+        0.8194527781111245,
+        0.7462985811227637,
+        0.9375135135135135,
+        null
+      ],
+      "mean_dice": 0.8344216242491339,
+      "pixel_accuracy": 0.8077001663796375,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.5696939826011658
+    },
+    "seconds_elapsed": 13.48767537495587,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 159,
+    "train_loss": 0.5696939826011658,
+    "validation": {
+      "confusion_matrix": [
+        [
+          13623,
+          3389,
+          4,
+          0
+        ],
+        [
+          2475,
+          10337,
+          0,
+          0
+        ],
+        [
+          0,
+          310,
+          4121,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6989379713714022,
+        0.6260674701714009,
+        0.9291995490417136,
+        null
+      ],
+      "mean_iou": 0.7514016635281723,
+      "per_class_dice": [
+        0.822793984417467,
+        0.7700387365911799,
+        0.9633006077606359,
+        null
+      ],
+      "mean_dice": 0.8520444429230943,
+      "pixel_accuracy": 0.8196678245132666,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.5509291887283325
+    },
+    "seconds_elapsed": 13.544206749997102,
+    "learning_rate": 0.001
+  },
+  {
+    "epoch": 160,
+    "train_loss": 0.5509291887283325,
+    "validation": {
+      "confusion_matrix": [
+        [
+          15390,
+          1626,
+          0,
+          0
+        ],
+        [
+          5080,
+          7732,
+          0,
+          0
+        ],
+        [
+          0,
+          826,
+          3605,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class_iou": [
+        0.6965061549601738,
+        0.5065513626834381,
+        0.8135860979462876,
+        null
+      ],
+      "mean_iou": 0.6722145385299664,
+      "per_class_dice": [
+        0.8211065464440057,
+        0.6724647764828666,
+        0.8972125435540069,
+        null
+      ],
+      "mean_dice": 0.7969279554936265,
+      "pixel_accuracy": 0.7801453632622085,
+      "support": [
+        17016,
+        12812,
+        4431,
+        0
+      ],
+      "valid_pixels": 34259,
+      "absent_class_convention": "omit classes absent from both truth and prediction",
+      "loss": 0.6604970693588257
+    },
+    "seconds_elapsed": 13.627897041966207,
+    "learning_rate": 0.001
+  }
+]

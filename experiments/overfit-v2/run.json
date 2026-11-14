@@ -1,0 +1,33 @@
+{
+  "config": {
+    "data": "data/processed/pairs256",
+    "output": "checkpoints/overfit-v2",
+    "seed": 42,
+    "epochs": 160,
+    "batch_size": 4,
+    "lr": 0.001,
+    "channels": 16,
+    "size": 128,
+    "limit_train": 4,
+    "limit_val": 0,
+    "patience": 160,
+    "overfit": true,
+    "device": "mps"
+  },
+  "device": "mps",
+  "torch_version": "2.15.0",
+  "prepared_manifest_sha256": "1cf8870f4a96c6e0797a0f06917a16e70e86cde4848927f44120ba9384ac927a",
+  "train_ids": [
+    "NLB_462215553EDR_F0401850NCAM05114M1.JPG",
+    "NLA_402732976EDR_F0050036NCAM00448M1.JPG",
+    "NLB_562976219EDR_F0661994NCAM00292M1.JPG",
+    "NLB_511391897EDR_F0531756NCAM05113M1.JPG"
+  ],
+  "val_ids": [
+    "NLB_462215553EDR_F0401850NCAM05114M1.JPG",
+    "NLA_402732976EDR_F0050036NCAM00448M1.JPG",
+    "NLB_562976219EDR_F0661994NCAM00292M1.JPG",
+    "NLB_511391897EDR_F0531756NCAM05113M1.JPG"
+  ],
+  "overfit_validation_is_training": true
+}

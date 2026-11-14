@@ -15,13 +15,17 @@ Updated: 2026-11-14
 - Full audit: all 322 unique expert images also occur in train by filename and content. Conservative grouping marks 6,837 of 18,130 train rows as expert-related; 9,230 labeled rows are assigned to train and 1,563 to validation before mask validation. Three non-image files are excluded. Split identity, scene, hash and near-duplicate checks passed. Expert labels remain unexamined.
 - Mirror lists CC0; official Zenodo record lists CC BY 4.0. NASA catalogue leaves license unspecified. Attribution and redistribution terms require care.
 - Local dataset shards and audit cache are ignored and are not in Git; hashes and source details are in IMPLEMENTATION_LOG.md. The audit found a non-image `current.txt`; it is excluded and completed shard scans are checkpointed.
-- The data pipeline has 13 passing local Python tests and a passing clean-install Chrome smoke; the expanded workflow has not yet run on GitHub. Preparation yielded 9,154 train and 1,557 validation samples, excluding 82 further unusable annotations. Counts and manifests are tracked under `data/manifests`; raw/prepared imagery remains ignored.
+- The data pipeline has 13 passing local Python tests and a passing clean-install Chrome smoke; GitHub CI passed for milestone 1: https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43600221766. Preparation yielded 9,154 train and 1,557 validation samples, excluding 82 further unusable annotations. Counts and manifests are tracked under `data/manifests`; raw/prepared imagery remains ignored.
 - A single-update real-image CPU spike exported ONNX with max logit error 6.71e-8 on an audited clean training record. Chrome WASM loaded that experimental model and produced finite output of the expected shape on a zero tensor using a temporary server. This is not a trained model or production parity test. The self-contained, dynamically ported browser smoke check now passes in Chrome.
 
 ## Remaining
 
-Training, evaluation, production inference, interface, expanded CI verification, deployment and portfolio deliverables remain. No model, measured performance or deployed application exists yet.
+The baseline has been trained and evaluated on validation; improved model selection, frozen expert evaluation, production inference, interface, expanded CI verification, deployment and portfolio deliverables remain. No public application exists yet.
 
 ## Exact next step
 
-Commit and push the verified data milestone, verify its GitHub Actions run, then implement and run the seeded baseline training ladder starting with a 2–4-image overfit test. Do not inspect expert labels before freezing model selection. Expand browser parity to actual image preprocessing and trained outputs. Verify licensing/attribution for redistributed assets. See IMPLEMENTATION_PLAN.md and IMPLEMENTATION_LOG.md for details.
+Commit and push the verified baseline milestone and check its GitHub CI run. Then improve class balance and/or architecture, compare against baseline using the same validation protocol, and freeze selection before the first expert-test evaluation. Do not inspect expert labels before freezing model selection. Expand browser parity to actual image preprocessing and trained outputs. Verify licensing/attribution for redistributed assets. See IMPLEMENTATION_PLAN.md and IMPLEMENTATION_LOG.md for details.
+
+## Baseline result
+
+The trained U-Net baseline achieved validation mIoU 0.1663 on 1,557 images, with IoU 0.0000 / 0.6653 / 0.0000 / 0.0000 for soil / bedrock / sand / big rock. It predicts almost entirely bedrock and needs improvement. The local checkpoint and reproducible experiment details are recorded in IMPLEMENTATION_LOG.md and docs/experiments.md; expert labels remain untouched.
