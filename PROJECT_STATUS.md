@@ -24,7 +24,7 @@ The baseline has been trained and evaluated on validation; production inference,
 
 ## Exact next step
 
-Commit and push the completed expert-test results and check its GitHub CI. Do not alter model selection after seeing the test results. Next export the frozen trained checkpoint with parity and metadata, then complete the website, browser E2E, deployment and documentation.
+Commit and push the verified frozen-model ONNX artifact and check GitHub CI. Then build the React/TypeScript image-upload interface, actual browser preprocessing and inference, sample gallery, overlays and tests. Do not alter model selection after seeing the expert test results.
 
 ## Baseline result
 
@@ -35,3 +35,7 @@ The baseline milestone was pushed as `b24f2aa`; its [GitHub Actions run](https:/
 ## Frozen model
 
 Scratch MobileNetV3-small continuation v3, SHA-256 `d8c8ceb7dc2a535aeeb0b6246fc22d4f6bab306dff32fa1664476af9c821ca8f`, selected on clean validation: mIoU 0.6312; per-class IoU 0.7111 / 0.8808 / 0.6935 / 0.2395 for soil / bedrock / sand / big rock. The pretrained comparison scored 0.6978 but its weight redistribution terms are unresolved. The protocol and lineage were committed in `experiments/frozen-model.json` before the single expert evaluation; [CI passed](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43602866225) for that freeze commit. Expert mIoU is 0.6581 across 287 images with valid labels; 35 were all-ignore. Per-class IoU is 0.8463 / 0.8104 / 0.7692 / 0.2066; big-rock support is 4,852 pixels. Full results are in `results/expert-test-min3.json`.
+
+## Web model artifact
+
+GitHub CI passed for the expert-result commit: https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43603057395. The frozen model is exported at `frontend/public/models/marsterrain-v1-be2513a68f69.onnx`, SHA-256 `be2513a68f691802b01a6b88f4328295fba6aa88addacfdc343383fb1a3ec483`, 4,385,772 bytes. CPU ONNX/PyTorch and Chrome WASM/PyTorch logits passed on real prepared validation tensors. Browser image preprocessing and public deployment remain unverified.
