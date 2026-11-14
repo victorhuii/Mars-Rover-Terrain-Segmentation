@@ -1,10 +1,10 @@
 # Portfolio notes
 
-The application and model have been verified locally. A public deployment is still pending; do not describe it as live until the URL and upload inference have been verified.
+[Live application](https://mars-rover-terrain-segmentation.pages.dev/) · [Source](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation). Public sample and upload inference passed fresh Chrome desktop and mobile viewport tests.
 
 ## Project card
 
-I built an interactive computer vision project that identifies soil, bedrock, sand and large rocks in Mars rover images. I trained and evaluated a pixel-level model on AI4Mars data, then built a browser-based interface for exploring its predictions on examples and uploaded images.
+I built an interactive computer vision project that identifies soil, bedrock, sand and large rocks in Mars rover images. I trained and evaluated a pixel-level model on AI4Mars data, then deployed a browser-based interface for exploring its predictions on examples and uploaded images.
 
 ## Case study
 
@@ -16,7 +16,7 @@ I built an interactive computer vision project that identifies soil, bedrock, sa
 
 **System.** I exported the selected checkpoint to ONNX and checked its logits against PyTorch and Chrome WASM. The React/TypeScript interface runs inference locally, supports uploads and examples, and lets visitors compare the original, mask and overlay. Automated tests cover the data pipeline, model artifact, browser flow, accessibility and invalid uploads. [Architecture](architecture.md) · [Experiments](experiments.md) · [Model card](model_card.md)
 
-**Next step.** Connect the repository to a free hosting account, verify the production build and real uploads in a fresh browser, and add the live URL after those checks pass.
+**Deployment.** Cloudflare Pages builds the React application from GitHub. The trained ONNX model runs in the visitor’s browser. Public tests verified sample predictions against a saved PyTorch mask, uploaded-image inference, class filters, comparison, PNG download and accessibility. The model hash and deployed assets match the tested production build. Desktop, result and mobile screenshots are in `docs/assets/`.
 
 ## Resume bullets
 
@@ -27,7 +27,7 @@ I built an interactive computer vision project that identifies soil, bedrock, sa
 
 ### Software engineering / full stack
 
-- Built a React and TypeScript terrain exploration app with local image uploads, ONNX Runtime Web inference, pixel overlays, class filters and PNG downloads.
-- Added Python, TypeScript and browser tests, artifact hash checks and GitHub Actions workflows for a reproducible computer vision application.
+- Built and deployed a React and TypeScript terrain exploration app with local image uploads, ONNX Runtime Web inference, pixel overlays, class filters and PNG downloads.
+- Added 27 Python tests, six frontend unit tests and two browser tests, artifact hash checks and GitHub Actions workflows for a reproducible computer vision application.
 
-Add deployment language or test counts only after the corresponding live deployment and CI runs are verified.
+Browser checks cover Chrome desktop and a mobile viewport; they do not establish compatibility with every mobile device or browser. Research limitations and measured results are documented in the model card.

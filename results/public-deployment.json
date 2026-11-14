@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-14T23:56:51.636Z",
+  "url": "https://mars-rover-terrain-segmentation.pages.dev",
+  "assets": [
+    {
+      "path": "/assets/index-Bdmsg16Z.js",
+      "sha256": "27b7d2f171eb2d779f9229ab45037f69f40f4fd1f25ae8f1101247722f72b869",
+      "bytes": 223889
+    },
+    {
+      "path": "/assets/index-LtzrsFoO.css",
+      "sha256": "59901f1d36a56e406b2cf5b9e53b74783d1f7a65f6c935523f06ad240d25f0ea",
+      "bytes": 26999
+    }
+  ],
+  "model": {
+    "path": "/models/marsterrain-v1-be2513a68f69.onnx",
+    "sha256": "be2513a68f691802b01a6b88f4328295fba6aa88addacfdc343383fb1a3ec483",
+    "bytes": 4385772,
+    "cache_control": "public, max-age=31536000, immutable"
+  },
+  "content_security_policy": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; connect-src 'self'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
+  "wasm_content_type": "application/wasm",
+  "scope": "Hosted assets match the local production build; model matches frozen metadata; security and cache headers verified. Browser flow is verified separately by the production E2E suite."
+}

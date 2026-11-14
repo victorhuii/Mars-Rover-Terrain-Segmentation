@@ -4,7 +4,7 @@ Rover teams need to understand whether a landscape is made up of loose soil, san
 
 ![MarsTerrain desktop interface with a rover image and terrain lab](docs/assets/terrain-lab-desktop.png)
 
-**Live demo:** deployment pending. · [Source repository](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation) · [![CI](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/workflows/ci.yml/badge.svg)](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/workflows/ci.yml)
+**Live demo:** [Mars Rover Terrain Segmentation](https://mars-rover-terrain-segmentation.pages.dev/) · [Source repository](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation) · [![CI](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/workflows/ci.yml/badge.svg)](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/workflows/ci.yml)
 
 ## Data and labels
 
@@ -115,10 +115,21 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-To use an installed Chrome instead of Playwright's Chromium, set `CHROME_PATH` before `npm run test:e2e`. Production build assets are in `frontend/dist`; build checks reject files larger than Cloudflare Pages' 25 MiB single-asset limit and verify the model hash. For Cloudflare Pages Git integration, use repository root `frontend`, build command `npm run build`, output directory `dist`, and production branch `main`. Connecting an account and verifying a public deployment are still required. No environment variables or paid service are needed for client inference.
+To use an installed Chrome instead of Playwright's Chromium, set `CHROME_PATH` before `npm run test:e2e`. Production build assets are in `frontend/dist`; build checks reject files larger than Cloudflare Pages' 25 MiB single-asset limit and verify the model hash. For Cloudflare Pages Git integration, use repository root `frontend`, build command `npm run build`, output directory `dist`, and production branch `main`. The public application is deployed at [https://mars-rover-terrain-segmentation.pages.dev/](https://mars-rover-terrain-segmentation.pages.dev/) through Cloudflare Pages Git integration; pushes to `main` trigger deployments. No environment variables or paid service are needed for client inference.
 
 ## Limitations and citation
 
 The model always assigns one of four classes; it does not predict unknown, calibrated confidence, hazards, or a route. Training images are primarily grayscale Curiosity Navcam scenes, so other cameras, lighting, non-Martian images and unusual crops can perform poorly. Labels are sparse and imbalanced, particularly for big rock. Rover hardware, the sky and terrain beyond the labeled range can still receive a predicted class in uploads. The split's filename and perceptual grouping reduces leakage but cannot prove geographic independence. Uploaded images larger than the stated limits are rejected, and display/export resolution is capped at 2,048 pixels on the longer side.
 
 This is an independent project, with no NASA affiliation or endorsement. Cite: Swan et al., [*AI4MARS: A Dataset for Terrain-Aware Autonomous Driving on Mars*](https://openaccess.thecvf.com/content/CVPR2021W/AI4Space/html/Swan_AI4MARS_A_Dataset_for_Terrain-Aware_Autonomous_Driving_on_Mars_CVPRW_2021_paper.html), CVPR Workshops 2021. See [architecture](docs/architecture.md), [dataset card](docs/dataset_card.md), [model card](docs/model_card.md), and [portfolio notes](docs/portfolio.md).
+
+### Verify the public deployment
+
+From `frontend`, build the current checkout with `npm run build`, then run:
+
+```sh
+PLAYWRIGHT_BASE_URL=https://mars-rover-terrain-segmentation.pages.dev npm run test:e2e
+PLAYWRIGHT_BASE_URL=https://mars-rover-terrain-segmentation.pages.dev node scripts/verify-live.mjs
+```
+
+Set `CHROME_PATH` if using an installed Chrome instead of Playwright Chromium. The first command tests the public site in fresh browser contexts, including real predictions and an uploaded image. The second compares hosted JavaScript/CSS with the local build, checks the frozen model hash, WASM MIME type, security policy and model caching, and writes `results/public-deployment.json`. Run these against a deployed commit matching the local build. Live checks are separate from CI, which tests a local production preview to avoid depending on hosting availability.

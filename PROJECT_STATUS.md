@@ -18,13 +18,13 @@ Updated: 2026-11-14
 - The data pipeline has 13 passing local Python tests and a passing clean-install Chrome smoke; GitHub CI passed for milestone 1: https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43600221766. Preparation yielded 9,154 train and 1,557 validation samples, excluding 82 further unusable annotations. Counts and manifests are tracked under `data/manifests`; raw/prepared imagery remains ignored.
 - A single-update real-image CPU spike exported ONNX with max logit error 6.71e-8 on an audited clean training record. Chrome WASM loaded that experimental model and produced finite output of the expected shape on a zero tensor using a temporary server. This is not a trained model or production parity test. The self-contained, dynamically ported browser smoke check now passes in Chrome.
 
-## Remaining
+## Release status
 
-Public deployment and live incognito/mobile verification remain. README, model/data cards, local screenshots and portfolio notes are prepared, but the live link and final report cannot be completed until deployment is verified. No public application exists yet.
+The application is live at [https://mars-rover-terrain-segmentation.pages.dev/](https://mars-rover-terrain-segmentation.pages.dev/). Training, frozen expert evaluation, ONNX export, local and public browser inference, CI and portfolio documentation are complete. Fresh public Chrome contexts passed sample-reference parity, uploaded-image prediction, mobile viewport, EXIF, input validation, filters, comparison, download and accessibility checks. Hosted assets and model hash match the tested build; CSP, WASM MIME type and model caching passed. Details: `results/public-deployment.json`.
 
 ## Exact next step
 
-The application was pushed as `194cd9e` and the browser CI fix as `8b3a1cf`; both Python and frontend jobs passed in [GitHub Actions](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43644643743). Cloudflare CLI is not authenticated. At the deployment checkpoint, connect the existing GitHub repository to Cloudflare Pages on a free plan (root `frontend`, build `npm run build`, output `dist`, production branch `main`) or authenticate the CLI, then verify the public URL and real uploads in a fresh browser. Do not retrain or reevaluate the expert test based on its results.
+No implementation milestone remains. For future changes, run the relevant local checks and GitHub CI, let Cloudflare deploy `main`, and rerun the public checks documented in README. Do not retrain or repeat the frozen expert evaluation to improve the reported score. Earlier entries below record historical checkpoints; the release status above supersedes their deployment-pending notes.
 
 ## Baseline result
 
@@ -52,3 +52,10 @@ The interface copy and layout were simplified after a usability-guidance review:
 - Used clearer resize helper, channel and output-dimension names. Replaced the package smoke test's docstring assertion with an import-path assertion, and kept screenshot server retry handling explicit without an empty catch block.
 - Verification: 27 Python tests, six frontend unit tests, TypeScript, ESLint, production build and both Chrome E2E tests passed. Compared Python syntax trees against the preceding commit: 30 changed Python files retain identical executable syntax after docstring removal; the smoke test assertion is the intentional exception. Browser tests required permission to bind the preview server port after the sandbox denied it. No training or expert evaluation was repeated.
 - Public deployment remains pending Cloudflare account connection. Next step: connect the repository using the documented Pages settings and verify the supplied public URL. The user's VS Code settings were excluded from this change.
+
+## 2026-11-14 — public deployment and release verification
+
+- Public URL: https://mars-rover-terrain-segmentation.pages.dev/. Cloudflare Pages' successful GitHub check confirms deployment from `2803fc9`; GitHub CI passed: https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43653680324.
+- Added `PLAYWRIGHT_BASE_URL` support to reuse the production E2E suite against hosting without starting a local server. Both public Chrome tests passed (16.7 s), including actual sample/reference-mask parity, uploaded-image inference, mobile viewport/EXIF, invalid inputs, controls, PNG download and automated accessibility. The sample flow observed no page errors or failed HTTP responses.
+- Added a reproducible hosted-asset check: public JS/CSS match the local build; frozen ONNX hash/size, CSP, nosniff, WASM MIME and immutable model cache headers passed. Evidence: `results/public-deployment.json`. No expert labels or training were revisited.
+- Updated README, architecture, model card, portfolio, implementation plan and final report with verified hosting and accurate limits. Refreshed desktop, real-result and mobile screenshots from the public site. Final release commit CI/deployment checks are the remaining handoff gate.
