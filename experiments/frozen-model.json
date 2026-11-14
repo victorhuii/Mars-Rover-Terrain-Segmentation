@@ -1,0 +1,76 @@
+{
+  "protocol": "ai4mars-expert-min3-v1",
+  "split": "test_min3",
+  "dataset_revision": "93dbb79de6cd234799750b6129fbfb3b197582fa",
+  "checkpoint_sha256": "d8c8ceb7dc2a535aeeb0b6246fc22d4f6bab306dff32fa1664476af9c821ca8f",
+  "initialization_lineage_sha256": [
+    "02208f7b25233d184b3e5b0f352a0dd445d5c247e35b6ddc99fa41603926104c",
+    "e410b0840264150eae351449d586043b43f233eeeca4994fb572d2822c52bd63"
+  ],
+  "audit_manifest_sha256": "5c1142aea43ebd104ac50996c5e000f3437a4b9eb867e13ca92124a41be4b86f",
+  "prepared_manifest_gzip_sha256": "8dacb08ab5fef730fb5d1fcd2a353ece86e0ab572d3fddef57553f60c5b3a2bd",
+  "prepared_manifest_sha256": "1cf8870f4a96c6e0797a0f06917a16e70e86cde4848927f44120ba9384ac927a",
+  "expert_shard_sha256": "696f850c2ffdf2f29ca045ac361a1c19fb010800127c796a469aaa5e0bd6a914",
+  "validation_result_sha256": "1f6814f40fce06cad0912f89fdd107749ecd2f492bc2246014d72d20c023ae5e",
+  "validation_miou": 0.6312199757867002,
+  "validation_per_class_iou": [
+    0.7110815534027458,
+    0.880822436377225,
+    0.6934799499290236,
+    0.23949596343780635
+  ],
+  "model_config": {
+    "data": "data/processed/pairs256",
+    "output": "checkpoints/mobile-scratch-v3",
+    "seed": 42,
+    "epochs": 6,
+    "batch_size": 4,
+    "lr": 0.00015,
+    "channels": 16,
+    "architecture": "mobilenet_v3_small",
+    "pretrained": false,
+    "class_weights": "inverse-sqrt",
+    "size": 256,
+    "limit_train": 4096,
+    "limit_val": 256,
+    "patience": 4,
+    "overfit": false,
+    "device": "mps",
+    "resume": null,
+    "init_checkpoint": "checkpoints/mobile-scratch-v2/best.pt"
+  },
+  "classes": [
+    "soil",
+    "bedrock",
+    "sand",
+    "big rock"
+  ],
+  "ignore_index": 255,
+  "palette_rgb": [
+    [
+      196,
+      127,
+      73
+    ],
+    [
+      156,
+      165,
+      180
+    ],
+    [
+      231,
+      197,
+      116
+    ],
+    [
+      130,
+      80,
+      94
+    ]
+  ],
+  "preprocessing": "RGB, bilinear resize to model size, divide by 255, model-internal ImageNet normalization",
+  "reference_masks": "apply binary rover and range exclusions; nearest-neighbor resize; ignore 255",
+  "prediction": "per-pixel argmax; no threshold",
+  "metrics": "confusion matrix over valid pixels; omit class only if absent in truth and prediction",
+  "selection_reason": "Best eligible scratch-trained candidate on clean validation; pretrained weight redistribution terms unresolved."
+}

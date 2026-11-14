@@ -1,0 +1,14 @@
+{
+  "checkpoint_sha256": "d8c8ceb7dc2a535aeeb0b6246fc22d4f6bab306dff32fa1664476af9c821ca8f",
+  "device": "cpu",
+  "image_id": "NLB_528086790EDR_F0580642NCAM07753M1.JPG",
+  "batch_size": 1,
+  "input_size": 256,
+  "warmup": 5,
+  "iterations": 30,
+  "cpu_threads": 1,
+  "median_ms": 39.48287502862513,
+  "min_ms": 37.12812496814877,
+  "max_ms": 46.598374960012734,
+  "scope": "eager PyTorch forward only; image decoding, model loading and browser runtime excluded"
+}

@@ -1,0 +1,60 @@
+{
+  "confusion_matrix": [
+    [
+      9472256,
+      1103576,
+      333758,
+      26115
+    ],
+    [
+      737964,
+      37030547,
+      293428,
+      257123
+    ],
+    [
+      281557,
+      764470,
+      6727106,
+      57667
+    ],
+    [
+      18775,
+      236281,
+      10080,
+      247085
+    ]
+  ],
+  "per_class_iou": [
+    0.7910685826734105,
+    0.9160673539766792,
+    0.794408782359514,
+    0.2896231037384865
+  ],
+  "mean_iou": 0.6977919556870225,
+  "per_class_dice": [
+    0.8833481758611771,
+    0.9561953571991487,
+    0.8854267658174584,
+    0.4491592976256373
+  ],
+  "mean_dice": 0.7935323991258554,
+  "pixel_accuracy": 0.9284556899997618,
+  "support": [
+    10935705,
+    38319062,
+    7830800,
+    512221
+  ],
+  "valid_pixels": 57597788,
+  "absent_class_convention": "omit classes absent from both truth and prediction",
+  "loss": 0.5788164828095036,
+  "split": "validation",
+  "samples": 1557,
+  "seed": 42,
+  "checkpoint_sha256": "14b11a5a6bf2d3a9665555d8f1c1b9e6ec7355300dd73056db80d25b358a5b27",
+  "checkpoint_bytes": 4527799,
+  "checkpoint_epoch": 12,
+  "device": "mps",
+  "elapsed_seconds_including_io": 17.492693500011228
+}

@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw
 import torch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
-from marsterrain.models import UNet
+from marsterrain.models import make_model
 from marsterrain.train import PreparedDataset, sample_records
 
 PALETTE = np.array([[196, 127, 73], [156, 165, 180], [231, 197, 116], [130, 80, 94]], dtype=np.uint8)
@@ -32,7 +32,7 @@ def main():
     config = checkpoint['metadata']['config']
     records = sample_records(json.loads((args.data / 'prepared_manifest.json').read_text())['records'], 'val', 4, config['seed'] + 1)
     dataset = PreparedDataset(args.data, records, size=config['size'])
-    model = UNet(channels=config['channels']); model.load_state_dict(checkpoint['model']); model.eval()
+    model = make_model(config.get('architecture', 'unet'), channels=config['channels'], pretrained=False); model.load_state_dict(checkpoint['model']); model.eval()
     size = config['size']; canvas = Image.new('RGB', (size * 4, (size + 22) * len(records)))
     draw = ImageDraw.Draw(canvas)
     with torch.no_grad():

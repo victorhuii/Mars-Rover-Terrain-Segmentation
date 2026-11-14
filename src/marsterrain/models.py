@@ -37,3 +37,38 @@ class UNet(nn.Module):
         d = self.dec2(torch.cat((F.interpolate(d, size=b.shape[-2:], mode='bilinear', align_corners=False), b), dim=1))
         d = self.dec1(torch.cat((F.interpolate(d, size=a.shape[-2:], mode='bilinear', align_corners=False), a), dim=1))
         return self.output(d)
+
+
+class MobileNetUNet(nn.Module):
+    """ImageNet-pretrained MobileNetV3-small with a compact skip decoder."""
+    def __init__(self, pretrained=False, classes=4):
+        super().__init__()
+        from torchvision.models import MobileNet_V3_Small_Weights, mobilenet_v3_small
+        weights = MobileNet_V3_Small_Weights.IMAGENET1K_V1 if pretrained else None
+        self.encoder = mobilenet_v3_small(weights=weights).features[:12]
+        self.dec4 = ConvBlock(96 + 48, 64)
+        self.dec3 = ConvBlock(64 + 24, 48)
+        self.dec2 = ConvBlock(48 + 16, 32)
+        self.dec1 = ConvBlock(32 + 16, 24)
+        self.output = nn.Conv2d(24, classes, 1)
+        self.register_buffer('mean', torch.tensor([0.485, 0.456, 0.406]).view(1, 3, 1, 1))
+        self.register_buffer('std', torch.tensor([0.229, 0.224, 0.225]).view(1, 3, 1, 1))
+
+    def forward(self, image):
+        x = (image - self.mean) / self.std
+        features = []
+        for i, layer in enumerate(self.encoder):
+            x = layer(x)
+            if i in (0, 1, 3, 8, 11): features.append(x)
+        a, b, c, d, x = features
+        x = self.dec4(torch.cat((F.interpolate(x, size=d.shape[-2:], mode='bilinear', align_corners=False), d), dim=1))
+        x = self.dec3(torch.cat((F.interpolate(x, size=c.shape[-2:], mode='bilinear', align_corners=False), c), dim=1))
+        x = self.dec2(torch.cat((F.interpolate(x, size=b.shape[-2:], mode='bilinear', align_corners=False), b), dim=1))
+        x = self.dec1(torch.cat((F.interpolate(x, size=a.shape[-2:], mode='bilinear', align_corners=False), a), dim=1))
+        return self.output(F.interpolate(x, size=image.shape[-2:], mode='bilinear', align_corners=False))
+
+
+def make_model(architecture, channels=16, pretrained=False):
+    if architecture == 'unet': return UNet(channels=channels)
+    if architecture == 'mobilenet_v3_small': return MobileNetUNet(pretrained=pretrained)
+    raise ValueError(f'Unknown architecture: {architecture}')

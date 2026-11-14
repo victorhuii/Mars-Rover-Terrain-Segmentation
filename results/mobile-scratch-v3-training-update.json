@@ -1,0 +1,6 @@
+{
+  "initial_sha256": "02208f7b25233d184b3e5b0f352a0dd445d5c247e35b6ddc99fa41603926104c",
+  "parameter_tensors": 153,
+  "changed_parameter_tensors": 153,
+  "max_absolute_weight_change": 0.09335023164749146
+}

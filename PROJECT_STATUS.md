@@ -20,12 +20,18 @@ Updated: 2026-11-14
 
 ## Remaining
 
-The baseline has been trained and evaluated on validation; improved model selection, frozen expert evaluation, production inference, interface, expanded CI verification, deployment and portfolio deliverables remain. No public application exists yet.
+The baseline has been trained and evaluated on validation; the frozen expert evaluation, production inference, interface, expanded CI verification, deployment and portfolio deliverables remain. No public application exists yet.
 
 ## Exact next step
 
-Commit and push the verified baseline milestone and check its GitHub CI run. Then improve class balance and/or architecture, compare against baseline using the same validation protocol, and freeze selection before the first expert-test evaluation. Do not inspect expert labels before freezing model selection. Expand browser parity to actual image preprocessing and trained outputs. Verify licensing/attribution for redistributed assets. See IMPLEMENTATION_PLAN.md and IMPLEMENTATION_LOG.md for details.
+Run the full local suite and commit/push the frozen model, comparison evidence and guarded expert-test protocol. Verify GitHub CI. Then run exactly one expert `test_min3` evaluation using `experiments/frozen-model.json` and the selected local `checkpoints/mobile-scratch-v3/best.pt`; do not alter model selection after seeing test results. Next complete the final ONNX export, website, browser E2E, deployment and documentation.
 
 ## Baseline result
 
 The trained U-Net baseline achieved validation mIoU 0.1663 on 1,557 images, with IoU 0.0000 / 0.6653 / 0.0000 / 0.0000 for soil / bedrock / sand / big rock. It predicts almost entirely bedrock and needs improvement. The local checkpoint and reproducible experiment details are recorded in IMPLEMENTATION_LOG.md and docs/experiments.md; expert labels remain untouched.
+
+The baseline milestone was pushed as `b24f2aa`; its [GitHub Actions run](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43600757960) passed. The pretrained compact model achieved validation mIoU 0.6978 across the full 1,557-image validation split, with big-rock IoU 0.2896; a scratch-initialized alternative was selected after 512-, 2,048- and 4,096-image experiments. TorchVision warns that pretrained model weights may have separate terms; redistribution is not yet verified.
+
+## Frozen model
+
+Scratch MobileNetV3-small continuation v3, SHA-256 `d8c8ceb7dc2a535aeeb0b6246fc22d4f6bab306dff32fa1664476af9c821ca8f`, selected on clean validation: mIoU 0.6312; per-class IoU 0.7111 / 0.8808 / 0.6935 / 0.2395 for soil / bedrock / sand / big rock. The pretrained comparison scored 0.6978 but its weight redistribution terms are unresolved. The frozen protocol and lineage are in `experiments/frozen-model.json`; real expert labels remain unread.

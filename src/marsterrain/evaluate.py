@@ -8,7 +8,7 @@ from pathlib import Path
 import torch
 from torch.utils.data import DataLoader
 
-from .models import UNet
+from .models import make_model
 from .train import PreparedDataset, evaluate, sample_records
 
 
@@ -43,7 +43,7 @@ def main():
     records = sample_records(prepared['records'], 'val', args.limit, config['seed'] + 1)
     if not records: raise ValueError('Empty validation split')
     device = torch.device(args.device)
-    model = UNet(channels=config['channels']).to(device)
+    model = make_model(config.get('architecture', 'unet'), channels=config['channels'], pretrained=False).to(device)
     model.load_state_dict(checkpoint['model'])
     loader = DataLoader(PreparedDataset(args.data, records, False, config['size']), batch_size=args.batch_size, num_workers=0)
     start = time.monotonic(); result = evaluate(model, loader, device); elapsed = time.monotonic() - start

@@ -4,7 +4,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 import unittest
 import torch
 from marsterrain.losses import segmentation_loss
-from marsterrain.models import UNet
+from marsterrain.models import UNet, make_model
 from marsterrain.train import sample_records
 
 
@@ -22,6 +22,12 @@ class TrainingTest(unittest.TestCase):
         loss.backward()
         self.assertTrue(torch.isfinite(model.output.weight.grad).all())
         with self.assertRaises(ValueError): segmentation_loss(logits, torch.full_like(labels, 255))
+
+    def test_compact_model_shape(self):
+        torch.set_num_threads(1)
+        model = make_model('mobilenet_v3_small', pretrained=False).eval()
+        with torch.no_grad():
+            self.assertEqual(tuple(model(torch.rand(1, 3, 64, 64)).shape), (1, 4, 64, 64))
 
     def test_seeded_subset(self):
         rows = [{'id': str(i), 'split': 'train'} for i in range(20)]

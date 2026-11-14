@@ -23,11 +23,12 @@ const server = http.createServer((req, res) => {
   const browser = await chromium.launch(options);
   try {
     const page = await browser.newPage();
-    await page.goto(`http://127.0.0.1:${server.address().port}/`, { timeout: 15000 });
+    await page.goto(`http://127.0.0.1:${server.address().port}/${process.env.MODE === 'parity' ? 'parity.html' : ''}`,  { timeout: 15000 });
     await page.waitForFunction(() => document.querySelector('#result').textContent !== 'pending', null, { timeout: 15000 });
     const output = await page.locator('#result').innerText();
     const result = JSON.parse(output);
     if (JSON.stringify(result.shape) !== '[1,4,256,256]' || result.finite !== true) throw new Error(output);
+    if (process.env.MODE === 'parity' && (!(result.maxError <= 1e-4) || !(result.agreement >= 0.999))) throw new Error(output);
     console.log(output);
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; }).finally(() => server.close());
