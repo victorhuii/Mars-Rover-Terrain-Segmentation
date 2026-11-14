@@ -6,7 +6,7 @@ The project is complete only after all milestones and the specification's defini
 - [x] Feasibility spike: inspect 5–10 real, version-pinned AI4Mars records and their licenses and mask semantics; run load, transform, forward/backward, export and real browser WASM inference; check deployment asset limits. Exit: evidence supports architecture and identifies blockers.
 - [x] 1. Validated, reproducible data ingestion, split manifests, masks and visualizations. Full image-only leakage audit, prepared data validation and local tests passed; GitHub CI for this checkpoint remains to be verified.
 - [x] 2. Train and validate U-Net baseline. Real MPS training, local checkpoint, loss, full validation metrics and qualitative inspection recorded; performance is poor and needs improvement.
-- [ ] 3. Train and compare a compact improved model; freeze selection and evaluate expert test once. Exit: reproducible held-out metrics and error analysis recorded.
+- [x] 3. Train and compare a compact improved model; freeze selection and evaluate expert test once. Held-out metrics, per-class supports and local qualitative error analysis recorded; commit and CI pending.
 - [ ] 4. Export selected trained model and verify ONNX numerical and browser parity, metadata and size.
 - [ ] 5. Build accessible, responsive interface with real sample and upload inference, overlays and tests.
 - [ ] 6. Integrate and verify end-to-end inference and any justified local API.

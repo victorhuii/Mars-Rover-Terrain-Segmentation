@@ -6,13 +6,13 @@ Updated: 2026-11-14
 
 - Read both specifications, inspected the existing repository and toolchain, created the milestone plan, ignore rules, smoke test and CI skeleton.
 - Committed and pushed milestone 0 as `b9778ed` to the configured origin/main.
-- Pinned AI4Mars mirror revision `93dbb79de6cd234799750b6129fbfb3b197582fa`; downloaded all 13 train shards and three expert variants locally. The image-only full audit is complete; expert annotations remain unread.
+- Pinned AI4Mars mirror revision `93dbb79de6cd234799750b6129fbfb3b197582fa`; downloaded all 13 train shards and three expert variants locally. The image-only full audit is complete; expert annotations were read only after the protocol was frozen.
 
 ## Verification and findings
 
 - `python3 -m unittest discover -s tests -v`: 1 smoke test passed. GitHub CI passed for milestone 0: https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43597529495.
 - MPS is available outside the sandbox; inside the sandbox it reports unavailable. Python 3.14.2, Node 24.14.1, npm 11.11.0, PyTorch 2.15.0; 62 GiB disk free at inspection.
-- Full audit: all 322 unique expert images also occur in train by filename and content. Conservative grouping marks 6,837 of 18,130 train rows as expert-related; 9,230 labeled rows are assigned to train and 1,563 to validation before mask validation. Three non-image files are excluded. Split identity, scene, hash and near-duplicate checks passed. Expert labels remain unexamined.
+- Full audit: all 322 unique expert images also occur in train by filename and content. Conservative grouping marks 6,837 of 18,130 train rows as expert-related; 9,230 labeled rows are assigned to train and 1,563 to validation before mask validation. Three non-image files are excluded. Split identity, scene, hash and near-duplicate checks passed. Expert labels were untouched during split construction and model selection.
 - Mirror lists CC0; official Zenodo record lists CC BY 4.0. NASA catalogue leaves license unspecified. Attribution and redistribution terms require care.
 - Local dataset shards and audit cache are ignored and are not in Git; hashes and source details are in IMPLEMENTATION_LOG.md. The audit found a non-image `current.txt`; it is excluded and completed shard scans are checkpointed.
 - The data pipeline has 13 passing local Python tests and a passing clean-install Chrome smoke; GitHub CI passed for milestone 1: https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43600221766. Preparation yielded 9,154 train and 1,557 validation samples, excluding 82 further unusable annotations. Counts and manifests are tracked under `data/manifests`; raw/prepared imagery remains ignored.
@@ -20,18 +20,18 @@ Updated: 2026-11-14
 
 ## Remaining
 
-The baseline has been trained and evaluated on validation; the frozen expert evaluation, production inference, interface, expanded CI verification, deployment and portfolio deliverables remain. No public application exists yet.
+The baseline has been trained and evaluated on validation; production inference, interface, expanded CI verification, deployment and portfolio deliverables remain. No public application exists yet.
 
 ## Exact next step
 
-Run the full local suite and commit/push the frozen model, comparison evidence and guarded expert-test protocol. Verify GitHub CI. Then run exactly one expert `test_min3` evaluation using `experiments/frozen-model.json` and the selected local `checkpoints/mobile-scratch-v3/best.pt`; do not alter model selection after seeing test results. Next complete the final ONNX export, website, browser E2E, deployment and documentation.
+Commit and push the completed expert-test results and check its GitHub CI. Do not alter model selection after seeing the test results. Next export the frozen trained checkpoint with parity and metadata, then complete the website, browser E2E, deployment and documentation.
 
 ## Baseline result
 
-The trained U-Net baseline achieved validation mIoU 0.1663 on 1,557 images, with IoU 0.0000 / 0.6653 / 0.0000 / 0.0000 for soil / bedrock / sand / big rock. It predicts almost entirely bedrock and needs improvement. The local checkpoint and reproducible experiment details are recorded in IMPLEMENTATION_LOG.md and docs/experiments.md; expert labels remain untouched.
+The trained U-Net baseline achieved validation mIoU 0.1663 on 1,557 images, with IoU 0.0000 / 0.6653 / 0.0000 / 0.0000 for soil / bedrock / sand / big rock. It predicts almost entirely bedrock and needs improvement. The local checkpoint and reproducible experiment details are recorded in IMPLEMENTATION_LOG.md and docs/experiments.md; expert labels were untouched during baseline selection.
 
 The baseline milestone was pushed as `b24f2aa`; its [GitHub Actions run](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43600757960) passed. The pretrained compact model achieved validation mIoU 0.6978 across the full 1,557-image validation split, with big-rock IoU 0.2896; a scratch-initialized alternative was selected after 512-, 2,048- and 4,096-image experiments. TorchVision warns that pretrained model weights may have separate terms; redistribution is not yet verified.
 
 ## Frozen model
 
-Scratch MobileNetV3-small continuation v3, SHA-256 `d8c8ceb7dc2a535aeeb0b6246fc22d4f6bab306dff32fa1664476af9c821ca8f`, selected on clean validation: mIoU 0.6312; per-class IoU 0.7111 / 0.8808 / 0.6935 / 0.2395 for soil / bedrock / sand / big rock. The pretrained comparison scored 0.6978 but its weight redistribution terms are unresolved. The frozen protocol and lineage are in `experiments/frozen-model.json`; real expert labels remain unread.
+Scratch MobileNetV3-small continuation v3, SHA-256 `d8c8ceb7dc2a535aeeb0b6246fc22d4f6bab306dff32fa1664476af9c821ca8f`, selected on clean validation: mIoU 0.6312; per-class IoU 0.7111 / 0.8808 / 0.6935 / 0.2395 for soil / bedrock / sand / big rock. The pretrained comparison scored 0.6978 but its weight redistribution terms are unresolved. The protocol and lineage were committed in `experiments/frozen-model.json` before the single expert evaluation; [CI passed](https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43602866225) for that freeze commit. Expert mIoU is 0.6581 across 287 images with valid labels; 35 were all-ignore. Per-class IoU is 0.8463 / 0.8104 / 0.7692 / 0.2066; big-rock support is 4,852 pixels. Full results are in `results/expert-test-min3.json`.
