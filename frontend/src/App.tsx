@@ -10,7 +10,6 @@ import {
   FlaskConical,
   ImagePlus,
   LoaderCircle,
-  ScanLine,
   Upload,
   X,
 } from "lucide-react";
@@ -192,9 +191,9 @@ export default function App() {
         </a>
         <nav aria-label="Main navigation">
           <a className="nav-current" href="#lab">
-            Terrain lab
+            Analyze
           </a>
-          <a href="#research">The research</a>
+          <a href="#research">Research</a>
           <a
             className="nav-code"
             href="https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation"
@@ -208,22 +207,14 @@ export default function App() {
       <main id="top">
         <section className="hero page-wrap">
           <div className="hero-copy">
-            <div className="eyebrow">
-              <span className="pulse-dot" /> A COMPUTER VISION RESEARCH DEMO{" "}
-              <span className="eyebrow-line" /> 01 / TERRAIN LAB
-            </div>
-            <h1>
-              See Mars through
-              <br />
-              <em>a rover’s eyes.</em>
-            </h1>
+            <h1>Mars Rover Terrain Segmentation</h1>
             <p>
-              Explore how a trained model identifies terrain in historical rover
-              imagery, one pixel at a time.
+              A computer vision model that identifies soil, bedrock, sand, and
+              large rocks in Mars rover images.
             </p>
             <div className="hero-actions">
               <a className="primary-link" href="#lab">
-                Explore the terrain <ArrowDown size={16} />
+                Try the model <ArrowDown size={16} />
               </a>
               <a className="text-link" href="#research">
                 How it works <ArrowRight size={15} />
@@ -233,72 +224,32 @@ export default function App() {
           <div className="hero-art" aria-hidden="true">
             <div className="hero-image" />
             <div className="hero-art-overlay" />
-            <div className="hero-art-top">
-              <span>MSL / NAVCAM</span>
-              <span>IMAGE STUDY 001</span>
-            </div>
-            <div className="hero-art-bottom">
-              <span>
-                GALE CRATER
-                <br />
-                <strong>MARS</strong>
-              </span>
-              <span className="art-cross">✳</span>
-            </div>
-          </div>
-          <div className="hero-foot">
-            <span>
-              <span className="foot-label">MISSION</span> CURIOSITY / MSL
-            </span>
-            <span>
-              <span className="foot-label">DATA</span> AI4MARS
-            </span>
-            <span>
-              <span className="foot-label">METHOD</span> SEMANTIC SEGMENTATION
-            </span>
-            <span className="foot-index">SCROLL TO EXPLORE ↓</span>
           </div>
         </section>
 
         <section id="lab" className="lab page-wrap">
           <div className="section-heading">
             <div>
-              <div className="eyebrow">
-                <span className="index">01</span> THE INTERACTIVE LAB
-              </div>
-              <h2>
-                Read the landscape<span className="period">.</span>
-              </h2>
+              <h2>Analyze an image</h2>
               <p>
-                Choose a rover image or bring your own. The model runs right
-                here in your browser.
+                Choose an example or upload an image to see the predicted
+                terrain.
               </p>
             </div>
             <div className="section-aside">
-              <span className="aside-dot" /> PRIVATE BY DESIGN{" "}
-              <small>Your uploads stay on your device.</small>
+              Images are processed on your device.
             </div>
           </div>
           <div className="lab-shell">
-            <div className="lab-topline">
-              <span>
-                <span className="tiny-square" /> INPUT / IMAGE SELECTION
-              </span>
-              <span>
-                STEP 01 <span className="muted">—</span> 02
-              </span>
-            </div>
             <div className="input-layout">
               <div className="sample-section">
                 <div className="input-title">
                   <div>
-                    <span className="micro-label">THE ARCHIVE</span>
-                    <h3>Start with a scene</h3>
+                    <h3>Choose an example</h3>
                   </div>
-                  <span className="count-badge">04 EXAMPLES</span>
                 </div>
                 <div className="sample-grid">
-                  {samples.map((item, index) => (
+                  {samples.map((item) => (
                     <button
                       key={item.id}
                       type="button"
@@ -312,7 +263,6 @@ export default function App() {
                         alt=""
                       />
                       <span className="tile-shade" />
-                      <span className="tile-number">0{index + 1}</span>
                       {sample?.id === item.id && (
                         <span className="tile-check">
                           <Check size={14} />
@@ -342,8 +292,7 @@ export default function App() {
                 <div className="upload-icon">
                   <Upload size={20} strokeWidth={1.5} />
                 </div>
-                <span className="micro-label">YOUR OWN IMAGE</span>
-                <h3>Bring a landscape</h3>
+                <h3>Upload an image</h3>
                 <p>Drop an image here, or choose a file from your device.</p>
                 <input
                   ref={inputRef}
@@ -384,9 +333,7 @@ export default function App() {
                   ) : (
                     <>
                       <strong>No image selected</strong>
-                      <small>
-                        Choose an example or upload an image to begin
-                      </small>
+                      <small>Choose an example or upload an image</small>
                     </>
                   )}
                 </span>
@@ -434,37 +381,17 @@ export default function App() {
               </div>
             )}
           </div>
-          {!source && (
-            <div className="empty-result">
-              <div className="empty-icon">
-                <ScanLine size={23} strokeWidth={1.2} />
-              </div>
-              <div>
-                <strong>Your analysis will appear here</strong>
-                <p>
-                  Select an image above to reveal a pixel-by-pixel view of the
-                  terrain.
-                </p>
-              </div>
-              <span className="empty-index">AWAITING INPUT / 02</span>
-            </div>
-          )}
           {source && (
             <div className="result-area">
+              <div role="status" className="visually-hidden">
+                {prediction ? "Analysis complete." : ""}
+              </div>
               <div className="result-heading">
                 <div>
-                  <div className="eyebrow">
-                    <span className="index">02</span>{" "}
-                    {prediction ? "ANALYSIS COMPLETE" : "READY TO ANALYZE"}
-                  </div>
-                  <h3>
-                    {prediction ? "A closer look" : "Your image is ready"}
-                  </h3>
-                  <p>
-                    {prediction
-                      ? "Explore the model’s predicted labels and compare them with the original."
-                      : "Run the model to see the predicted terrain mask and overlay."}
-                  </p>
+                  <h3>{prediction ? "Results" : "Image ready"}</h3>
+                  {prediction && (
+                    <p>Predicted terrain classes for the selected image.</p>
+                  )}
                 </div>
                 {prediction && (
                   <button
@@ -490,8 +417,7 @@ export default function App() {
                     <span className="micro-label">SELECTED INPUT</span>
                     <strong>{sample?.title || source.name}</strong>
                     <p>
-                      Analysis runs locally. The first run downloads the model
-                      to your browser.
+                      The first analysis downloads the model to your browser.
                     </p>
                   </div>
                 </div>
@@ -499,39 +425,32 @@ export default function App() {
               {prediction && (
                 <>
                   <div className="image-triptych">
-                    {(["original", "mask", "overlay"] as const).map(
-                      (view, index) => (
-                        <div className="image-card" key={view}>
-                          <div className="image-card-title">
-                            <span>
-                              0{index + 1} /{" "}
-                              {view === "mask"
-                                ? "PREDICTED MASK"
-                                : view.toUpperCase()}
-                            </span>
-                            <span>
-                              {view === "original" ? "INPUT" : "MODEL OUTPUT"}
-                            </span>
-                          </div>
-                          <div className="image-frame">
-                            <CanvasView
-                              source={source}
-                              prediction={prediction}
-                              view={view}
-                              enabled={enabled}
-                              opacity={opacity}
-                              label={`${view} of ${source.name}`}
-                            />
-                          </div>
+                    {(["original", "mask", "overlay"] as const).map((view) => (
+                      <div className="image-card" key={view}>
+                        <div className="image-card-title">
+                          <span>
+                            {view === "mask"
+                              ? "PREDICTED MASK"
+                              : view.toUpperCase()}
+                          </span>
                         </div>
-                      ),
-                    )}
+                        <div className="image-frame">
+                          <CanvasView
+                            source={source}
+                            prediction={prediction}
+                            view={view}
+                            enabled={enabled}
+                            opacity={opacity}
+                            label={`${view} of ${source.name}`}
+                          />
+                        </div>
+                      </div>
+                    ))}
                   </div>
                   <div className="result-controls">
                     <div className="legend-block">
                       <div className="control-heading">
                         <span>CLASS FILTER</span>
-                        <span>CLICK TO TOGGLE</span>
                       </div>
                       <div className="legend">
                         {CLASSES.map((item, i) => (
@@ -560,8 +479,7 @@ export default function App() {
                         ))}
                       </div>
                       <p>
-                        Unknown / unlabeled pixels exist in reference masks;
-                        this model always predicts one of the four classes.
+                        The model assigns one of four classes to every pixel.
                       </p>
                     </div>
                     <div className="opacity-block">
@@ -585,10 +503,8 @@ export default function App() {
                     <div className="comparison">
                       <div className="card-heading">
                         <div>
-                          <span className="micro-label">BEFORE / AFTER</span>
-                          <h4>Compare the view</h4>
+                          <h4>Compare original and overlay</h4>
                         </div>
-                        <span>DRAG TO REVEAL</span>
                       </div>
                       <div className="compare-frame">
                         <CanvasView
@@ -634,14 +550,11 @@ export default function App() {
                     <div className="coverage">
                       <div className="card-heading">
                         <div>
-                          <span className="micro-label">MODEL ESTIMATE</span>
                           <h4>Predicted coverage</h4>
                         </div>
-                        <span>IMAGE AREA</span>
                       </div>
                       <p>
-                        Share of the image assigned to each class. These are
-                        pixel estimates, not accuracy or calibrated confidence.
+                        Estimated share of image pixels, not model accuracy.
                       </p>
                       <div className="coverage-list">
                         {CLASSES.map((item, i) => (
@@ -698,43 +611,28 @@ export default function App() {
           <div className="page-wrap">
             <div className="research-heading">
               <div>
-                <div className="eyebrow">
-                  <span className="index">03</span> UNDER THE HOOD
-                </div>
-                <h2>
-                  Built for understanding,
-                  <br />
-                  <em>not navigation.</em>
-                </h2>
+                <h2>Model and results</h2>
               </div>
               <p>
-                Terrain labels can provide context for future rover autonomy.
-                This demonstration does not determine whether a route is safe or
-                traversable.
+                This is a research model, not a navigation system. It cannot
+                determine whether terrain is safe to traverse.
               </p>
             </div>
             <div className="research-grid">
               <div className="research-story">
-                <span className="micro-label">THE QUESTION</span>
-                <h3>What can a rover image tell us?</h3>
+                <h3>How it works</h3>
                 <p>
-                  Loose soil, sand, exposed bedrock and large rocks interact
-                  differently with rover wheels. AI4Mars pairs historical images
-                  with terrain labels so researchers can study pixel-level
-                  classification.
-                </p>
-                <p>
-                  We trained a compact segmentation network from scratch,
-                  selected it using a separate validation split, and evaluated
-                  it once on expert labels. The interactive lab runs that
-                  trained model in your browser.
+                  A compact model trained from scratch on AI4Mars Curiosity
+                  images predicts a terrain class for each pixel. We checked the
+                  data for overlap, selected the model on a validation split,
+                  and evaluated it once against expert labels.
                 </p>
                 <a
                   href="https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Explore the methodology <ArrowRight size={15} />
+                  View code and methodology <ArrowRight size={15} />
                 </a>
               </div>
               <div className="metric-card">
@@ -777,32 +675,19 @@ export default function App() {
               </div>
             </div>
             <details className="research-detail">
-              <summary>
-                Explore the evaluation{" "}
-                <span>METRICS, METHOD & LIMITATIONS</span>
-              </summary>
+              <summary>Evaluation details</summary>
               <div className="detail-grid">
                 <div>
-                  <span className="micro-label">THE HELD-OUT RESULTS</span>
-                  <h3>What the numbers describe</h3>
+                  <h3>Test metrics</h3>
                   <p>
-                    The model was selected on a separate validation split before
-                    one expert test. On {expert.evaluated_images} test images
-                    containing valid labels, it achieved{" "}
-                    {formatPercent(expert.pixel_accuracy)} pixel accuracy and{" "}
-                    {formatPercent(expert.mean_dice)} mean Dice.{" "}
+                    Pixel accuracy: {formatPercent(expert.pixel_accuracy)}. Mean
+                    Dice: {formatPercent(expert.mean_dice)}.{" "}
                     {formatPercent(expert.ignored_fraction)} of pixels in
-                    evaluated images were ignored; {expert.skipped.length} other
-                    images contained no valid labeled pixels.
+                    evaluated images were unlabeled and excluded.
                   </p>
                   <p>
-                    Big-rock IoU is{" "}
-                    {formatPercent(expert.per_class_iou[3] ?? 0)} and its
-                    support is only {expert.support[3].toLocaleString()} pixels.
-                    A prediction on an unlabeled pixel is not measured by these
-                    metrics. The model may mislabel rover hardware, distant
-                    terrain, unusual lighting or images outside the training
-                    distribution.
+                    The model may mislabel rover hardware, distant terrain,
+                    unusual lighting, or images unlike its training data.
                   </p>
                   <span className="micro-label">CONFUSION MATRIX · PIXELS</span>
                   <p>
@@ -835,15 +720,12 @@ export default function App() {
                   </div>
                 </div>
                 <div>
-                  <span className="micro-label">REPRODUCIBLE BY DESIGN</span>
-                  <h3>From images to inference</h3>
+                  <h3>Training and inference</h3>
                   <p>
-                    The selected scratch-trained MobileNetV3-small encoder and
-                    compact decoder were trained in stages on 512, 2,048 and
-                    4,096 audited training images. The complete clean split
-                    contains 9,154 training and 1,557 validation images. The
-                    three training stages took about 147, 322 and 467 seconds
-                    respectively on MPS, including validation and data loading.
+                    The MobileNetV3-small model was trained in stages on up to
+                    4,096 images and validated on 1,557 separate images. The
+                    three training stages took 147, 322, and 467 seconds on MPS,
+                    including validation and data loading.
                   </p>
                   <p>
                     The frozen ONNX model is 4.39 MB. Inputs are resized to 256
@@ -863,25 +745,6 @@ export default function App() {
                 </div>
               </div>
             </details>
-            <div className="process-strip">
-              <div>
-                <span>01 / DATA</span>
-                <strong>Rover imagery</strong>
-                <small>AI4Mars Curiosity subset</small>
-              </div>
-              <ArrowRight size={16} />
-              <div>
-                <span>02 / LEARN</span>
-                <strong>Pixel-level model</strong>
-                <small>Scratch-trained compact network</small>
-              </div>
-              <ArrowRight size={16} />
-              <div>
-                <span>03 / EXPLORE</span>
-                <strong>Browser inference</strong>
-                <small>ONNX Runtime Web / WASM</small>
-              </div>
-            </div>
           </div>
         </section>
       </main>
@@ -926,17 +789,10 @@ export default function App() {
               Code & model documentation ↗
             </a>
           </div>
-          <div className="footer-note">
-            <span>RESEARCH PROTOTYPE</span>
-            <p>
-              Semantic classification only. Not a rover navigation or safety
-              system.
-            </p>
-          </div>
         </div>
         <div className="page-wrap footer-bottom">
           <span>MARS TERRAIN SEGMENTATION / OPEN RESEARCH</span>
-          <span>MADE FOR CURIOSITY, NOT MISSION CONTROL</span>
+          <span>MODEL, DATA AND CODE</span>
         </div>
       </footer>
     </>

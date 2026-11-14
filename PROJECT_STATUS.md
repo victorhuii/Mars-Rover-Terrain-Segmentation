@@ -43,3 +43,5 @@ GitHub CI passed for the expert-result commit: https://github.com/victorhuii/Mar
 ## Local application verification
 
 The real trained model runs in the React/TypeScript app on attributed examples and uploaded images. Local checks: 27 Python tests, six frontend unit tests and two production Chrome E2E tests passed, including accessibility, mobile/EXIF, filters, comparison, download and PyTorch-reference mask parity. `npm audit` reported zero vulnerabilities. Five warm browser inference calls had a 43 ms median in local headless Chrome, excluding load and preprocessing. Screenshots are in `docs/assets/`; no public deployment has been verified.
+
+The interface copy and layout were simplified after a usability-guidance review: the title is “Mars Rover Terrain Segmentation,” controls use direct labels, and redundant decorative text was removed. Local frontend checks and both Chrome E2E tests passed; public deployment is still pending Cloudflare account connection.

@@ -17,12 +17,14 @@ test("sample runs the trained model, controls change the mask and overlay downlo
   page.on("request", (request) => requests.push(request.url()));
   await page.goto("/");
   await expect(
-    page.getByRole("heading", { name: /See Mars through/i }),
+    page.getByRole("heading", { name: /Mars Rover Terrain Segmentation/i }),
   ).toBeVisible();
   await page.getByRole("button", { name: /Open plain/i }).click();
-  await expect(page.getByText("Your image is ready")).toBeVisible();
+  await expect(page.getByText("Image ready")).toBeVisible();
   await page.getByRole("button", { name: /Analyze terrain/i }).click();
-  await expect(page.getByText("ANALYSIS COMPLETE")).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Results", exact: true }),
+  ).toBeVisible();
   expect(
     requests.some((url) => url.includes("marsterrain-v1-be2513a68f69.onnx")),
   ).toBeTruthy();
@@ -82,7 +84,7 @@ test("sample runs the trained model, controls change the mask and overlay downlo
   expect(file).not.toBeNull();
   const bytes = await readFile(file!);
   expect([...bytes.subarray(0, 8)]).toEqual([137, 80, 78, 71, 13, 10, 26, 10]);
-  await page.getByText("Explore the evaluation").click();
+  await page.getByText("Evaluation details").click();
   await expect(page.getByRole("table")).toBeVisible();
   const accessibility = await new AxeBuilder({ page }).analyze();
   expect(accessibility.violations).toEqual([]);
@@ -124,7 +126,9 @@ test("mobile upload honors EXIF orientation, validates files, and performs infer
   await expect(page.getByText("90 × 160 px")).toBeVisible();
   await page.getByRole("button", { name: /Analyze terrain/i }).focus();
   await page.keyboard.press("Enter");
-  await expect(page.getByText("ANALYSIS COMPLETE")).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Results", exact: true }),
+  ).toBeVisible();
   const canvas = page.getByRole("img", { name: /original of/i }).first();
   await expect(canvas).toBeVisible();
   const dimensions = await canvas.evaluate((node: HTMLCanvasElement) => [

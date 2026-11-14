@@ -20,7 +20,7 @@ try {
   await page.screenshot({ path: resolve('../docs/assets/terrain-lab-desktop.png') })
   await page.getByRole('button', { name: /Open plain/i }).click()
   await page.getByRole('button', { name: /Analyze terrain/i }).click()
-  await page.getByText('ANALYSIS COMPLETE').waitFor({ timeout: 120000 })
+  await page.getByRole('heading', { name: 'Results', exact: true }).waitFor({ timeout: 120000 })
   await page.waitForFunction(() => { const canvas = document.querySelector('canvas[aria-label^="mask of"]'); return canvas && canvas.getContext('2d').getImageData(0, 0, 1, 1).data[3] > 0 })
   const maskData = await page.getByRole('img', { name: /mask of/i }).evaluate(canvas => canvas.toDataURL('image/png'))
   await writeFile(resolve('../data/processed/browser-mask.png'), Buffer.from(maskData.split(',')[1], 'base64'))
