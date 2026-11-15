@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-14T23:56:51.636Z",
+  "checked_at": "2026-11-14T23:59:27.429Z",
   "url": "https://mars-rover-terrain-segmentation.pages.dev",
   "assets": [
     {
@@ -21,5 +21,13 @@
   },
   "content_security_policy": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; connect-src 'self'; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
   "wasm_content_type": "application/wasm",
-  "scope": "Hosted assets match the local production build; model matches frozen metadata; security and cache headers verified. Browser flow is verified separately by the production E2E suite."
+  "scope": "Hosted assets match the local production build; model matches frozen metadata; security and cache headers verified. Browser flow is verified separately by the production E2E suite.",
+  "verified_source_commit": "c566355",
+  "ci_url": "https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43655843633",
+  "ci_conclusion": "success",
+  "cloudflare_check_conclusion": "success",
+  "public_browser_tests": {
+    "passed": 2,
+    "scope": "Fresh Chrome contexts; desktop sample/reference-mask parity, controls, download, accessibility; mobile viewport, EXIF, input validation and real uploaded-image inference."
+  }
 }

@@ -102,4 +102,10 @@
 - Public URL: https://mars-rover-terrain-segmentation.pages.dev/. Cloudflare Pages' successful GitHub check confirms deployment from `2803fc9`; GitHub CI passed: https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43653680324.
 - Added `PLAYWRIGHT_BASE_URL` support to reuse the production E2E suite against hosting without starting a local server. Both public Chrome tests passed (16.7 s), including actual sample/reference-mask parity, uploaded-image inference, mobile viewport/EXIF, invalid inputs, controls, PNG download and automated accessibility. The sample flow observed no page errors or failed HTTP responses.
 - Added a reproducible hosted-asset check: public JS/CSS match the local build; frozen ONNX hash/size, CSP, nosniff, WASM MIME and immutable model cache headers passed. Evidence: `results/public-deployment.json`. No expert labels or training were revisited.
-- Updated README, architecture, model card, portfolio, implementation plan and final report with verified hosting and accurate limits. Refreshed desktop, real-result and mobile screenshots from the public site. Final release commit CI/deployment checks are the remaining handoff gate.
+- Updated README, architecture, model card, portfolio, implementation plan and final report with verified hosting and accurate limits. Refreshed desktop, real-result and mobile screenshots from the public site. Final release commit CI/deployment checks passed; see the handoff record below.
+
+## Final handoff — all milestones verified
+
+- Release commit `c566355` passed Python and frontend CI: https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43655843633. Cloudflare Pages' GitHub check reported successful automatic deployment from that commit.
+- Rechecked the public site after deployment: both real browser E2E tests passed again; hosted asset/model hash, CSP, WASM and cache checks passed. Public screenshots and documentation links were checked. All implementation milestones are complete; no login or deployment step remains for the user.
+- Live application: https://mars-rover-terrain-segmentation.pages.dev/. Future maintenance follows the README's local, CI and public verification commands. This handoff record changes documentation/evidence only and does not alter model or application behavior.
