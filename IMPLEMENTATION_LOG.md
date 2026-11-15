@@ -109,3 +109,7 @@
 - Release commit `c566355` passed Python and frontend CI: https://github.com/victorhuii/Mars-Rover-Terrain-Segmentation/actions/runs/43655843633. Cloudflare Pages' GitHub check reported successful automatic deployment from that commit.
 - Rechecked the public site after deployment: both real browser E2E tests passed again; hosted asset/model hash, CSP, WASM and cache checks passed. Public screenshots and documentation links were checked. All implementation milestones are complete; no login or deployment step remains for the user.
 - Live application: https://mars-rover-terrain-segmentation.pages.dev/. Future maintenance follows the README's local, CI and public verification commands. This handoff record changes documentation/evidence only and does not alter model or application behavior.
+
+## Personal website handoff
+
+- Added `docs/PERSONAL_WEBSITE_HANDOFF.md` with concise project copy, verified results, live/source links, screenshot URLs and attribution, factual limits and a ready-to-paste website-agent prompt. Checked facts against the portfolio notes and final report. Documentation only; no application or model changes.
